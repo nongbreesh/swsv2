@@ -1,0 +1,111 @@
+// Base Class
+.masonry-grid {
+	position: relative;
+  overflow: hidden;
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+
+  // Default item
+  .grid-item {
+    float: left;
+    margin-bottom: 2.3%;
+  }
+
+  @media #{$tablet-port} {
+    .grid-sizer,
+    .grid-item {
+      margin-bottom: 3%;
+    }
+    .gutter-sizer { width: 3%; }
+  }
+
+  @media screen and (max-width: 500px) {
+    .grid-sizer,
+    .grid-item {
+      width: 100%;
+      margin-bottom: 5%;
+    }
+    .gutter-sizer { width: 0px; }
+  }
+
+	// 2 column view
+	//-----------------------------------------
+	&.grid-col-2 {
+
+		// Default item
+		.grid-sizer,
+		.grid-item { width: 49%; }
+
+    // Gap width
+    .gutter-sizer { width: 2%; }
+
+		@media #{$tablet-port} {
+			.grid-sizer,
+			.grid-item {
+				width: 98%;
+			}
+		}
+	}
+
+  // 3 column view
+	//-----------------------------------------
+	&.grid-col-3 {
+
+		// Default item
+		.grid-sizer,
+		.grid-item { width: 31.8%; }
+
+    // Gap width
+    .gutter-sizer { width: 2.3%; }
+
+		@media #{$tablet-land} {
+      .grid-sizer,
+  		.grid-item { width: 49%; }
+
+      .gutter-sizer { width: 2%; }
+		}
+
+    @media #{$mobile-land} {
+      .grid-sizer,
+  		.grid-item { width: 99%; }
+
+      .gutter-sizer { width: 1; }
+		}
+	}
+
+  // 3 column view
+	//-----------------------------------------
+	&.grid-col-4 {
+
+    // Default item
+		.grid-sizer,
+		.grid-item { width: 23.5%; }
+
+    // Gap width
+    .gutter-sizer { width: 1.9%; }
+
+		@media #{$tablet-land} {
+      .grid-sizer,
+  		.grid-item { width: 49%; }
+
+      .gutter-sizer { width: 2%; }
+		}
+
+    @media #{$tablet-land} {
+      .grid-sizer,
+  		.grid-item { width: 49%; }
+
+      .gutter-sizer { width: 2%; }
+		}
+
+    @media #{$mobile-land} {
+      .grid-sizer,
+  		.grid-item { width: 99%; }
+
+      .gutter-sizer { width: 1; }
+		}
+	}
+}

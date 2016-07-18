@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>ServeWellSolution &#8211; บริการรับทำเว็บไซต์ | รับดูแลระบบ &#8211; บริการรับทำเว็บไซต์ | รับดูแลระบบ</title>
+
+    <!--SEO Meta Tags-->
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <meta name="author" content="8Guild"/>
+
+    <!--Mobile Specific Meta Tag-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- All Theme Styles including Bootstrap, FontAwesome, etc. compiled from styles.scss-->
+    <link href="css/styles.min.css" rel="stylesheet" media="screen">
+
+    <!--Google Maps API-->
+    <script type="text/javascript"
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5DLwPPVAz88_k0yO2nmFe7T9k1urQs84"></script>
+
+
+    <!--Modernizr / Detectizr-->
+    <script src="js/vendor/modernizr.custom.js"></script>
+    <script src="js/vendor/detectizr.min.js"></script>
+
+
+</head>
+
+<!-- Body -->
+<body class="parallax">
+<div class="preloader-overlay"></div>
+
+<!-- Page Wrapper -->
+<div class="page-wrapper">
+
+    <!-- Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+            <button type="button" class="close-btn" data-dismiss="modal" aria-label="Close"><span
+                    aria-hidden="true">&times;</span></button>
+            <div class="modal-content text-center">
+                <h4>Login With Social Account</h4>
+                <div class="space-bottom-2x">
+                    <a href="#" class="btn google-login">Google<i class="fa fa-google"></i></a>
+                    <a href="#" class="btn twitter-login">Twitter<i class="fa fa-twitter"></i></a>
+                    <a href="#" class="btn facebook-login">Facebook<i class="fa fa-facebook"></i></a>
+                </div>
+                <h4>Or by Email</h4>
+                <form method="post">
+                    <input type="email" class="form-control" placeholder="Email">
+                    <input type="password" class="form-control" placeholder="Password">
+                    <div class="form-group">
+                        <button type="submit" class="btn login-btn btn-default">Login into your account<i
+                                class="icon-head"></i></button>
+                    </div>
+                    <div class="text-left">
+                        <span class="text-sm text-semibold">New to Promo? <a href="#">Sign Up</a></span>
+                    </div>
+                </form><!-- <form> -->
+            </div><!-- .modal-content -->
+        </div><!-- .modal-dialog -->
+    </div><!-- .modal.fade -->
+
+    <!-- Navbar -->
+    <!-- Add class ".navbar-sticky" to make navbar stuck when it hits the top of the page. Another modifier class is: "navbar-fullwidth" to stretch navbar and make it occupy 100% of the page width. The screen width at which navbar collapses can be controlled through the variable "$nav-collapse" in sass/variables.scss -->
+    <header class="navbar navbar-sticky">
+
+        <!-- <div class="topbar" style="background-color: #ccc;">
+          <div class="container">
+            <a href="#" class="btn btn-ghost btn-primary">call us</a>
+            <span class="text"><i class="fa fa-phone"></i> +38 050 111 22 33</span>
+
+            <ul class="social pull-right">
+              <li><a href="#"><i class="fa fa-facebook"></i>Facebook</a></li>
+              <li><a href="#"><i class="fa fa-youtube"></i>Youtube</a></li>
+              <li><a href="#"><i class="fa fa-vk"></i>Vkontakte</a></li>
+              <li><a href="#"><i class="fa fa-tumblr"></i>Tumblr</a></li>
+            </ul>
+          </div>
+        </div> -->
+
+        <!-- Light Skin for Navbar enables by adding .light-skin class. -->
+        <div class="nav-bar-inner light-skin" style="background-color: #1a1a1a;">
+            <div class="container">
+                <a href="index.html" class="site-logo">
+                    <img src="img/logos-main/swslogo1.png" alt="Promo"
+                         style="width: 250px !important; max-width: none !important;">
+                </a><!-- .site-logo -->
+
+                <!-- For alignment navigation use .menu-left-align, .menu-right-align or .menu-center-align class. To get light skin, use .light-skin. -->
+                <nav class="main-navigation menu-right-align" style="background-color: #1a1a1a;">
+                    <div class="stuck-container">
+                        <ul class="menu">
+                            <li class="current-menu-item">
+                                <a href="#1">หน้าหลัก</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#2">ตัวอย่างผลงาน</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#2">เกี่ยวกับเรา</a>
+                            </li>
+                            <li class=" menu-item">
+                                <a href="#3">บริการของเรา</a>
+                            </li>
+                            <li class="menu-item ">
+                                <a href="#4">ติดต่อเรา</a>
+                            </li>
+
+                        </ul><!-- .menu -->
+                    </div>
+                </nav><!-- .main-navigation -->
+
+                <!-- Mobile Menu Toggle -->
+                <div class="nav-toggle"><span></span></div>
+            </div>
+        </div>
+    </header><!-- .navbar -->
+
+    <main>
+        <section class="fw-section text-center text-light padding-top-3x padding-bottom-3x"
+                 data-stellar-background-ratio=".65" style="background-image: url(img/home/appbanner.png);">
+            <div class="container padding-top-2x padding-bottom-3x">
+                <h1 class="huge-text" style="text-shadow: 1px 1px 2px #232323;">รับทำ Mobile Application<br>และบริการทำเว็บไซต์
+                </h1>
+
+                <p class="text-lg text-light  padding-bottom-2x" style="text-shadow: 1px 1px 2px #232323;">
+                    ด้วยทีมงานมืออาชีพ ที่มีความรู้ความเชี่ยวชสญในด้าน Mobile application และ Website <br>
+                    ซึ่งเน้นผลิตผลงานคุณภาพเพื่อส่งต่อไปยังลูกค้า<br> และนำเทคโนโลยีใหม่ๆเข้ามานำเสนอตลอดเวลา
+                </p>
+
+                <div class="row text-left" style="text-shadow: 1px 1px 2px #232323;">
+                    <div class="col-sm-4 text-center">
+                        <p>
+                            <i class="icon-layers" style="font-size: 60px;"></i>
+                            <br><br>
+                            <i>
+                                รับทำแอพพลิเคชั่นสำหรับโมบาย รองรับ iOS Android และ Windows Phone
+                            </i>
+                        </p>
+                    </div>
+
+                    <div class="col-sm-4 text-center">
+                        <p>
+                            <i class="icon-global" style="font-size: 60px;"></i>
+                            <br><br>
+                            <i>
+                                รับทำเว็บไซต์ รองรับหน้าจอทุกอุปกรณ์ (Responsive website)
+                            </i>
+                        </p>
+                    </div>
+
+                    <div class="col-sm-4 text-center">
+                        <p>
+                            <i class="icon-bargraph" style="font-size: 60px;"></i>
+                            <br><br>
+                            <i>
+                                รับทำการตลาดออนไลน์ ทั้ง SEP , Google Adword และ Social network
+                            </i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="fw-section bg-gray padding-bottom-3x">
+            <div class="container">
+                <div class="box-split-section" style="margin-top: -70px;">
+
+                    <div class="box-with-icon bwi-tile bwi-imaged">
+                        <div class="bwi-inner">
+                            <div class="bwi-overlay" style="background-color: #fff"></div>
+                            <img src="img/features/tile_04.jpg" alt="">
+
+                            <div class="bwi-content">
+                                <div class="vertical-aligner">
+                                    <h3 class="bwi-title">Our Mission</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua.</p>
+                                    <span><a href="#" class="btn btn-ghost btn-primary">Find out more</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box-with-icon bwi-tile bwi-imaged">
+                        <div class="bwi-inner">
+                            <div class="bwi-overlay" style="background-color: #000"></div>
+                            <img src="img/features/tile_05.jpg" alt="">
+
+                            <div class="bwi-content">
+                                <div class="vertical-aligner">
+                                    <h3 class="bwi-title text-light">Stuff Management</h3>
+                                    <p class="text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                        do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    <span><a href="#" class="btn btn-ghost btn-light">Find out more</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="fw-section padding-top-3x" style="background-image: url(img/home/05.jpg)">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <div class="row text-light">
+                            <div class="col-sm-6">
+                                <ul class="list-icons">
+                                    <li class="padding-bottom-2x">
+                                        <i class="fa fa-cogs" style="color: #4290e4;"></i>
+                                        The most intelligent Java IDE
+                                        <p class="list-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    </li>
+                                    <li class="padding-bottom">
+                                        <i class="fa fa-database" style="color: #de549c;"></i>
+                                        Lightning-smart PHP IDE
+                                        <p class="list-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <ul class="list-icons">
+                                    <li class="padding-bottom-2x">
+                                        <i class="fa fa-cc-jcb" style="color: #00ff48;"></i>
+                                        Visual Studio extension
+                                        <p class="list-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    </li>
+                                    <li class="padding-bottom scrollReveal">
+                                        <i class="fa fa-github-alt" style="color: #f69b0e;"></i>
+                                        .NET memory profiler
+                                        <p class="list-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="image-carousel text-light" data-loop="true" data-autoplay="true" data-interval="4000">
+            <div class="inner">
+                <section class="fw-section padding-bottom-3x padding-top"
+                         style="background-image: url(img/home/15.jpg)">
+                    <div class="container padding-top-3x padding-bottom-3x space-bottom">
+                        <h2 class="text-huge">Making <br> Better</h2>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 col-sm-7 col-xs-8">
+                                <p>By automating routine checks and corrections, our tools speed up production, freeing
+                                    developers to grow, discover and create.</p>
+                            </div>
+                        </div>
+
+                        <a href="#" class="btn btn-3d btn-info">Learn more</a>
+                    </div>
+                </section>
+
+                <section class="fw-section padding-bottom-3x padding-top"
+                         style="background-image: url(img/home/16.jpg)">
+                    <div class="container padding-top-3x padding-bottom-3x space-bottom">
+                        <h2 class="text-huge">Making <br> Better</h2>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 col-sm-7 col-xs-8">
+                                <p>By automating routine checks and corrections, our tools speed up production, freeing
+                                    developers to grow, discover and create.</p>
+                            </div>
+                        </div>
+
+                        <a href="#" class="btn btn-3d btn-info">Learn more</a>
+                    </div>
+                </section>
+
+
+            </div>
+        </div><!-- .logo-carousel -->
+
+
+        <section class="fw-section padding-top-3x padding-bottom-3x" style="background-image: url(img/home/ourclient.jpg);">
+            <div class="container padding-bottom-3x">
+                <h2 class=" text-light">
+                    Our Clients 
+                </h2>
+
+                <!-- Data API:
+                  data-loop="true/false" enable/disable looping
+                  data-autoplay="true/false" enable/disable carousel autoplay
+                  data-interval="3000" autoplay interval timeout in miliseconds
+                  Simply add necessary data attribute to the ".logo-carousel" with appropriate value to adjust carousel functionality.
+                 -->
+                <div class="logo-carousel" data-loop="true" data-nav="true" data-autoplay="" data-interval="4000">
+                    <div class="inner">
+                        <a href="#" class="flat-hovered-logotype">
+                            <img src="img/logos/square/01.jpg" alt="">
+                        </a>
+                        <a href="#" class="flat-hovered-logotype">
+                            <img src="img/logos/square/02.jpg" alt="Logo">
+                        </a>
+                        <a href="#" class="flat-hovered-logotype">
+                            <img src="img/logos/square/03.jpg" alt="Logo">
+                        </a>
+                        <a href="#" class="flat-hovered-logotype">
+                            <img src="img/logos/square/04.jpg" alt="Logo">
+                        </a>
+                        <a href="#" class="flat-hovered-logotype">
+                            <img src="img/logos/square/05.jpg" alt="Logo">
+                        </a>
+                        <a href="#" class="flat-hovered-logotype">
+                            <img src="img/logos/square/06.jpg" alt="Logo">
+                        </a>
+                    </div>
+                </div><!-- .logo-carousel -->
+            </div>
+        </section>
+
+        <section class="padding-top-3x" style="background-color: #ff8f2b;">
+            <div class="container">
+                <!-- Data API:
+                  data-loop="true/false" enable/disable looping
+                  data-autoplay="true/false" enable/disable carousel autoplay
+                  data-interval="3000" autoplay interval timeout in miliseconds
+                  Simply add necessary data attribute to the ".comments-carousel" with appropriate value to adjust carousel functionality.
+                 -->
+                <div class="comments-carousel" data-loop="true" data-autoplay="true" data-interval="4000">
+                    <div class="inner">
+                        <!-- testimonial -->
+                        <div class="testimonial testimonial-bubble">
+                            <div class="text">“ถือว่าเป็นบริษัทที่มีการวางแผนการทำงานได้ดีครับ ตั้งแต่เก็บ requirement
+                                จนถึง production งานเรียบร้อยและตรงตามความต้องการมากครับ”
+                            </div>
+                            <div class="author-ava">
+                                <img src="http://www.servewellsolution.com/wp-content/uploads/2016/01/12705439_10201075825774111_3239046420188870654_n-123x123.jpg"
+                                     alt="Author">
+                            </div>
+                            <div class="author-info">
+                                <h3 class="author-name text-light">โดย <a href="#">ลูกค้า</a></h3>
+                            </div>
+                        </div><!-- .testimonial -->
+
+                        <!-- testimonial -->
+                        <div class="testimonial testimonial-bubble">
+                            <div class="text">“ผมจ้างทำเว็บไซต์ที่นี่ เพราะเขารองรับการแสดงผลกับทุกอุปกรณ์ครับ
+                                มันมีผลดีต่ออันดับการค้นหา และเค้ายังให้คำปรึกษาเกี่ยวกับการทำ SEO ด้วยครับ”
+                            </div>
+                            <div class="author-ava">
+                                <img src="http://www.servewellsolution.com/wp-content/uploads/2016/01/946114_10208365740480550_1219821046156951209_n-123x123.jpg"
+                                     alt="Author">
+                            </div>
+                            <div class="author-info">
+                                <h3 class="author-name text-light">โดย <a href="#">ลูกค้า</a></h3>
+                            </div>
+                        </div><!-- .testimonial -->
+                        <!-- testimonial -->
+                        <div class="testimonial testimonial-bubble">
+                            <div class="text">“ถ้าเป็นเว็บ ecommerce ไว้ใจพวกพี่เค้าได้เลยค่ะ รองรับ SEO
+                                ติดอันดับการค้นหาง่ายจริงๆค่ะ ระบบหลังบ้านก็ใช้งานง่าย”
+                            </div>
+                            <div class="author-ava">
+                                <img src="http://www.servewellsolution.com/wp-content/uploads/2016/01/12642877_1164485960242072_8336124312446964390_n-123x123.jpg"
+                                     alt="Author">
+                            </div>
+                            <div class="author-info">
+                                <h3 class="author-name text-light">โดย <a href="#">ลูกค้า</a></h3>
+                            </div>
+                        </div><!-- .testimonial -->
+                    </div>
+                </div><!-- .comments-carousel -->
+            </div>
+        </section>
+        <!-- Full Width Map -->
+        <section class="section-fw next-to-footer">
+            <!-- Wrap your map with ".google-map-container" for usage with info box. -->
+            <div class="google-map-container">
+                <div class="container">
+                    <div class="map-info-box" style="padding-top: 15px;">
+                        <div class="map-info-box-logo" style="max-width: none;">
+                            <center>
+                                <img src="img/logos-main/swslogonosub.png" alt="" style="width: 150px;max-width: none;">
+                            </center>
+                        </div>
+
+                        <div class="">
+                            <address class="space-bottom">
+                                <strong>บริษัท เซิฟ เวล โซลูชั่น จำกัด</strong><br>
+                                เลขที่ 1 ชั้น 47 ห้องเลขที่ 4703 <br>
+                                อาคารเอ็มไพร์ ทาวเวอร์ ถ.สาทรใต้ <br>
+                                แขวงยานนาวา เขตสาทร กรุงเทพฯ 10120<br>
+                                <abbr title="Phone">โทร:</abbr> +66(0) 2-119-5188
+                                <div class="social-buttons">
+                                    <a href="#" class="cbutton cbutton--effect"><i class="bi-facebook"></i></a>
+                                    <a href="#" class="cbutton cbutton--effect"><i class="bi-twitter"></i></a>
+                                    <a href="#" class="cbutton cbutton--effect"><i class="bi-skype"></i></a>
+                                </div>
+                                <div class="divider"></div>
+                            </address>
+                            <address>
+                                <strong>อีเมลล์</strong><br>
+                                <a href="mailto:t.veerayut@servewellsolution.com">t.veerayut@servewellsolution.com</a>
+                                <div class="social-buttons">
+                                    <a href="#" class="cbutton cbutton--effect"><i class="bi-facebook"></i></a>
+                                    <a href="#" class="cbutton cbutton--effect"><i class="bi-twitter"></i></a>
+                                    <a href="#" class="cbutton cbutton--effect"><i class="bi-skype"></i></a>
+                                </div>
+                            </address>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data API:
+                     data-height="500" height of the map in pixels
+                     data-address="Your address" string
+                     data-zoom="number" to control map zoom when loaded
+                     data-disable-controls="false/true" enable/disable map controls like pan, zoom, etc.
+                     data-scrollwheel="true/false" enable/disable mouse scroll wheel zoom
+                     data-marker="path_to_your_image" path to custom marker image
+                     data-marker-title=" Your title" appears on marker hover
+                     data-styles="[array]" you can adjust the look and feel of your map. Recommend to use https://snazzymaps.com
+                 -->
+                <div class="google-map"
+                     data-address="13.721055, 100.530352 "
+                     data-height="450"
+                     data-zoom="14"
+                     data-disable-controls="false"
+                     data-scrollwheel="false"
+                     data-marker="img/map-marker.png"
+                     data-marker-title="บริษัท เซิฟ เวล โซลูชั่น จำกัด"
+                ></div><!-- .google-map -->
+            </div>
+        </section><!-- Full Width Map End -->
+    </main>
+
+    <!-- Scroll To Top Button -->
+    <a href="#" class="scroll-to-top-btn">
+        <i class="fa fa-angle-up"></i>
+    </a><!-- .scroll-to-top-btn -->
+
+    <!-- Footer -->
+    <footer class="footer dark-skin" style="background-image: url(img/footer/footer_bg.jpg)">
+
+
+        <div class="container">
+            <div class="bottom-footer" style="border: 0px;">
+                <div class="text-center">
+                    <ul class="social list-unstyled list-inline">
+                        <li><a target="_blank" href="https://www.facebook.com/servewellsolution/"><i
+                                class="fa fa-facebook"></i>Facebook</a></li>
+                        <li><a href="#"><i class="fa fa-youtube"></i>Youtube</a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i>Twitter</a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i>Instagram</a></li>
+                    </ul>
+                </div><!-- .column -->
+            </div>
+        </div>
+
+        <div class="copyright">
+            <div class="container">
+                <div class="text-center">
+                    <p>&copy; Copyright ServeWellSolution,.Co.ltd. 2016. </p>
+                </div><!-- .column -->
+            </div>
+        </div><!-- .copyright -->
+
+    </footer><!-- .footer -->
+
+
+</div><!-- .page-wrapper -->
+
+<!-- JavaScript (jQuery) libraries, plugins and custom scripts -->
+<script src="js/vendor/jquery-2.1.4.min.js"></script>
+<script src="js/vendor/jquery.easing.min.js"></script>
+<script src="js/vendor/bootstrap.min.js"></script>
+<script src="js/vendor/pace.min.js"></script>
+<script src="js/vendor/placeholder.js"></script>
+<script src="js/vendor/smoothscroll.js"></script>
+<script src="js/vendor/waypoints.min.js"></script>
+<script src="js/vendor/icheck.min.js"></script>
+<script src="js/vendor/waves.min.js"></script>
+<script src="js/vendor/velocity.min.js"></script>
+<script src="js/vendor/jquery.stellar.min.js"></script>
+<script src="js/vendor/magnific-popup.min.js"></script>
+<script src="js/vendor/owl.carousel.min.js"></script>
+<script src="js/vendor/jquery.spincrement.js"></script>
+<script src="js/vendor/scrollspy.js"></script>
+<script src="js/vendor/scrollreveal.min.js"></script>
+<script src="js/vendor/gmap3.min.js"></script>
+
+
+<!-- RS5.0 Core JS Files -->
+<script src="revolution/js/jquery.themepunch.tools.min.js"></script>
+<script src="revolution/js/jquery.themepunch.revolution.min.js"></script>
+<script src="js/scripts.js"></script>
+
+</body><!-- <body> -->
+
+</html>

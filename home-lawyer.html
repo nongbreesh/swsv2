@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Promo | Lawyer</title>
+
+  <!--SEO Meta Tags-->
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta name="author" content="8Guild" />
+
+  <!--Mobile Specific Meta Tag-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- Revolution Slider 5.0 Main Stylesheet -->
+  <link rel="stylesheet" type="text/css" href="revolution/css/settings.css">
+  <link rel="stylesheet" type="text/css" href="revolution/css/layers.css">
+  <link rel="stylesheet" type="text/css" href="revolution/css/navigation.css">  
+
+  <!-- All Theme Styles including Bootstrap, FontAwesome, etc. compiled from styles.scss-->
+  <link href="css/lawyer.min.css" rel="stylesheet" media="screen">
+
+  <!--Modernizr / Detectizr-->
+  <script src="js/vendor/modernizr.custom.js"></script>
+  <script src="js/vendor/detectizr.min.js"></script>
+</head>
+
+<!-- Body -->
+<body class="parallax">
+  <div class="preloader-overlay"></div>
+
+  <!-- Page Wrapper -->
+  <div class="page-wrapper">
+
+    <!-- Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <button type="button" class="close-btn" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <div class="modal-content text-center">
+          <h4>Login With Social Account</h4>
+          <div class="space-bottom-2x">
+            <a href="#" class="btn google-login">Google<i class="fa fa-google"></i></a>
+            <a href="#" class="btn twitter-login">Twitter<i class="fa fa-twitter"></i></a>
+            <a href="#" class="btn facebook-login">Facebook<i class="fa fa-facebook"></i></a>
+          </div>
+          <h4>Or by Email</h4>
+          <form method="post">
+            <input type="email" class="form-control" placeholder="Email">
+            <input type="password" class="form-control" placeholder="Password">
+            <div class="form-group">
+              <button type="submit" class="btn login-btn btn-default">Login into your account<i class="icon-head"></i></button>
+            </div>
+            <div class="text-left">
+              <span class="text-sm text-semibold">New to Promo? <a href="#">Sign Up</a></span>
+            </div>
+          </form><!-- <form> -->
+        </div><!-- .modal-content -->
+      </div><!-- .modal-dialog -->
+    </div><!-- .modal.fade -->
+
+    <!-- Navbar -->
+    <!-- Add class ".navbar-sticky" to make navbar stuck when it hits the top of the page. Another modifier class is: "navbar-fullwidth" to stretch navbar and make it occupy 100% of the page width. The screen width at which navbar collapses can be controlled through the variable "$nav-collapse" in sass/variables.scss -->
+    <header class="navbar navbar-sticky">
+
+      <!-- <div class="topbar" style="background-color: #ccc;">
+        <div class="container">
+          <a href="#" class="btn btn-ghost btn-primary">call us</a>
+          <span class="text"><i class="fa fa-phone"></i> +38 050 111 22 33</span>
+
+          <ul class="social pull-right">
+            <li><a href="#"><i class="fa fa-facebook"></i>Facebook</a></li>
+            <li><a href="#"><i class="fa fa-youtube"></i>Youtube</a></li>
+            <li><a href="#"><i class="fa fa-vk"></i>Vkontakte</a></li>
+            <li><a href="#"><i class="fa fa-tumblr"></i>Tumblr</a></li>
+          </ul>
+        </div>
+      </div> -->
+
+      <!-- Light Skin for Navbar enables by adding .light-skin class. -->
+      <div class="nav-bar-inner">
+        <div class="container">
+          <a href="index.html" class="site-logo">
+            <img src="img/logos-main/logo_06.png" alt="Promo">
+          </a><!-- .site-logo -->
+
+          <div class="toolbar text-right">
+            <div class="header-meta text-left">
+              <div class="top">
+                <i class="icon-global"></i>
+                <span class="text-primary">Our Office</span>
+              </div>
+              <div class="bottom">E44 - Web Corner, Melbourne - 18</div>
+            </div>
+            <div class="header-meta text-left">
+              <div class="top">
+                <i class="icon-chat"></i>
+                <span class="text-primary">+(1) 800 55 555</span>
+              </div>
+              <div class="bottom">Call Us Now- 24/7 Customer Support</div>
+            </div>
+
+            <a href="#" class="btn btn-ghost btn-rounded btn-primary space-bottom-none header-meta">book appointment</a>
+          </div> <!-- .toolbar -->
+
+          <!-- Mobile Menu Toggle -->
+          <div class="nav-toggle"><span></span></div>
+        </div>
+      </div>
+
+      <!-- For alignment navigation use .menu-left-align, .menu-right-align or .menu-center-align class. To get light skin, use .light-skin. -->
+      <nav class="main-navigation menu-left-align light-skin" style="background-color: #c8a472;">
+        <div class="container">
+          <ul class="menu">
+            <li class="current-menu-item menu-item-has-children">
+              <a href="#">Home</a>
+              <ul class="sub-menu">
+                <li><a href="index.html">Theme Presentation</a></li>
+                <li><a href="home-agency.html">Home Agency</a></li>
+                <li><a href="home-saas.html">Home SAAS</a></li>
+                <li><a href="home-app.html">Home App Showcase</a></li>
+                <li><a href="home-tour.html">Home Tour</a></li>
+                <li><a href="home-event.html">Home Event</a></li>
+                <li><a href="home-development.html">Home Development</a></li>
+                <li><a href="home-medical.html">Home Medical</a></li>
+                <li><a href="home-logistics.html">Home Logistics</a></li>
+                <li class="current-menu-item"><a href="home-lawyer.html">Home Lawyer</a></li>
+                <li><a href="home-product.html">Home Product Promo</a></li>
+              </ul>
+            </li>
+            <li class="menu-item-has-children has-mega-menu">
+              <a href="#">Blog</a>
+              <ul class="sub-menu">
+                <li>
+                  <ul>
+                    <li><a href="blog-list-rs.html">Blog List Right Sidebar</a></li>
+                    <li><a href="blog-list-ls.html">Blog List Left Sidebar</a></li>
+                    <li><a href="blog-list-ns.html">Blog List No Sidebar</a></li>
+                    <li><a href="blog-grid-4-cols.html">Blog Grid 4 Cols</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <ul>
+                    <li><a href="blog-grid-3-cols.html">Blog Grid 3 Cols</a></li>
+                    <li><a href="blog-grid-3-cols-rs.html">Blog Grid 3 Cols Right Sidebar</a></li>
+                    <li><a href="blog-grid-3-cols-ls.html">Blog Grid 3 Cols Left Sidebar</a></li>
+
+                  </ul>
+                </li>
+                <li>
+                  <ul>
+                    <li><a href="blog-grid-2-cols.html">Blog Grid 2 Cols</a></li>
+                    <li><a href="blog-grid-2-cols-rs.html">Blog Grid 2 Cols Right Sidebar</a></li>
+                    <li><a href="blog-grid-2-cols-ls.html">Blog Grid 2 Cols Left Sidebar</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <ul>
+                    <li><a href="blog-single-rs.html">Single Post Right Sidebar</a></li>
+                    <li><a href="blog-single-ls.html">Single Post Left Sidebar</a></li>
+                    <li><a href="blog-single-ns.html">Single Post No Sidebar</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item-has-children">
+              <a href="#">Portfolio</a>
+              <ul class="sub-menu">
+                <li><a href="portfolio-3-cols.html">Portfolio 3 Columns</a></li>
+                <li><a href="portfolio-2-cols.html">Portfolio 2 Columns</a></li>
+                <li><a href="portfolio-hexagon.html">Portfolio Hexagon Tumbnails</a></li>
+                <li><a href="portfolio-masonry.html">Portfolio Masonry Grid</a></li>
+                <li><a href="portfolio-single.html ">Single portfolio</a></li>
+              </ul>
+            </li>
+            <li class="menu-item-has-children">
+              <a href="#">Pages</a>
+              <ul class="sub-menu">
+                <li><a href="page-about.html">About Us</a></li>
+                <li><a href="page-contacts.html">Contacts</a></li>
+                <li><a href="page-team.html">Our team</a></li>
+                <li><a href="page-pricing.html">Pricing</a></li>
+                <li><a href="page-help-center.html">Help Center</a></li>
+                <li><a href="page-customers.html">Customers / Clients</a></li>
+                <li><a href="page-we-are-hiring.html">We are Hiring</a></li>
+                <li><a href="page-under-construction.html">Under Construction</a></li>
+                <li><a href="page-404.html">404</a></li>
+              </ul>
+            </li>
+            <!-- <li class="menu-item-has-children">
+              <a href="#">Headers</a>
+              <ul class="sub-menu">
+                <li><a href="header-MP-01.html">Multi-page Type 1</a></li>
+                <li><a href="header-MP-02.html">Multi-page Type 2</a></li>
+                <li><a href="header-OP-01.html">One-page Type 1</a></li>
+                <li><a href="header-OP-02.html">One-page Type 2</a></li>
+                <li><a href="header-OP-03.html">One-page Type 3</a></li>
+              </ul>
+            </li> -->
+            <li class="has-mega-menu">
+              <a href="elements.html">Elements</a>
+              <ul class="sub-menu">
+                <li>
+                  <ul>
+                    <li><a href="elements.html#typography">Typography </a></li>
+                    <li><a href="elements.html#buttons">Buttons</a></li>
+                    <li><a href="elements.html#cta_buttons">CTA Buttons</a></li>
+                    <li><a href="elements.html#social">Social Buttons</a></li>
+                    <li><a href="elements.html#forms">Forms</a></li>
+                    <li><a href="elements.html#tables">Table</a></li>
+                    <li><a href="elements.html#timetable">Timetable</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <ul>
+                    <li><a href="elements.html#tabs">Tabs</a></li>
+                    <li><a href="elements.html#panels">Panels &amp; Accordions</a></li>
+                    <li><a href="elements.html#fclick">Features: Clickable Icons</a></li>
+                    <li><a href="elements.html#fhexa">Features: Hexagon Images</a></li>
+                    <li><a href="elements.html#ficons">Features: Icons</a></li>
+                    <li><a href="elements.html#fimaged">Features: Images</a></li>
+                    <li><a href="elements.html#tcolored">Features: Solid Color Tiles</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <ul>
+                    <li><a href="elements.html#timaged">Features: Image Tiles</a></li>
+                    <li><a href="elements.html#image_link">Image Links</a></li>
+                    <li><a href="elements.html#pricing">Pricing</a></li>
+                    <li><a href="elements.html#tpricing">Pricing Table</a></li>
+                    <li><a href="elements.html#testimonial">Testimonials</a></li>
+                    <li><a href="elements.html#port1">Portfolio Tiles: Type 1</a></li>
+                    <li><a href="elements.html#port2">Portfolio Tiles: Type 2</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <ul>
+                    <li><a href="elements.html#gallery">Gallery</a></li>
+                    <li><a href="elements.html#carousel">Carousels</a></li>
+                    <li><a href="elements.html#to_video">Responsive Video</a></li>
+                    <li><a href="elements.html#cta_info">CTA Info Box</a></li>
+                    <li><a href="elements.html#progress">Progress Bars</a></li>
+                    <li><a href="elements.html#counters">Counters</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul><!-- .menu -->
+        </div>
+      </nav><!-- .main-navigation -->
+    </header><!-- .navbar -->
+
+    <main>
+      <section class="fw-section padding-top-3x padding-bottom-3x" style="background-image: url(img/home/30.jpg);">        
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6" style="background-color: rgba(0,0,0, .7); padding: 40px;">
+              <i class="text-primary lead">We are the best full-service firm </i>
+
+              <h1 class="text-huge text-light" style="font-weight: 700;">VIBRANT HEALTH</h1>
+
+              <p class="text-light padding-bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+
+              <a href="#" class="btn btn-primary btn-rounded">learn more</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="fw-section padding-top" style="background-color: #262626;">
+        <div class="container text-center text-light">
+          <div class="row">
+            <div class="col-sm-12 col-md-10 col-md-offset-1">
+              <div class="row">
+                <div class="col-md-4">
+                  <!-- Data API:
+                       data-decimal="number" How many digits after decimal point.
+                       data-duration="number" The number of milliseconds it should take to finish counting.
+                  -->
+                  <div class="counter" data-duration="1500">
+                    <header class="counter-icon">
+                      <i class="icon-briefcase"></i>
+                    </header>
+                    <div class="digits text-light">866</div>
+                    <footer class="counter-footer">
+                      <p>Happy <br> Clients</p>
+                    </footer>
+                  </div>
+                </div><!-- .col-sm-4 -->
+                <div class="col-md-4">
+                  <!-- Data API:
+                       data-decimal="number" How many digits after decimal point.
+                       data-duration="number" The number of milliseconds it should take to finish counting.
+                  -->
+                  <div class="counter" data-duration="1500">
+                    <header class="counter-icon">
+                      <i class="icon-strategy"></i>
+                    </header>
+                    <div class="digits text-light">5100</div>
+                    <footer class="counter-footer">
+                      <p>Perfect<br> Tests</p>
+                    </footer>
+                  </div>
+                </div><!-- .col-sm-4 -->
+                <div class="col-md-4">
+                  <!-- Data API:
+                       data-decimal="number" How many digits after decimal point.
+                       data-duration="number" The number of milliseconds it should take to finish counting.
+                  -->
+                  <div class="counter" data-duration="1500">
+                    <header class="counter-icon">
+                      <i class="icon-calendar"></i>
+                    </header>
+                    <div class="digits text-light">2047</div>
+                    <footer class="counter-footer">
+                      <p>Client <br>Minutes</p>
+                    </footer>
+                  </div>
+                </div><!-- .col-sm-4 -->
+              </div><!-- .row -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="fw-section padding-top-2x">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="box-with-icon text-center">
+                <div class="bwi-inner">
+                  <div class="bwi-icon">
+                    <i class="icon-layers"></i>
+                  </div>
+                  <h3 class="bwi-title">Ultricies Ipsum</h3>
+                  <p class="bwi-text">LCD screens are uniquely modern in style, and the liquid crystals that make them work have allowed humanity to create slimmer, more</p>
+                  <a href="#" class="bwi-link">Learn more <i class="fe-icon-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="box-with-icon text-center">
+                <div class="bwi-inner">
+                  <div class="bwi-icon">
+                    <i class="icon-puzzle"></i>
+                  </div>
+                  <h3 class="bwi-title">Tristique Purus Ridiculus</h3>
+                  <p class="bwi-text">With MySpace becoming more popular every day, there is the constant need to be different. There are millions of users, and there will be</p>
+                  <a href="#" class="bwi-link">Learn more <i class="fe-icon-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="box-with-icon text-center">
+                <div class="bwi-inner">
+                  <div class="bwi-icon">
+                    <i class="icon-lightbulb"></i>
+                  </div>
+                  <h3 class="bwi-title">Vehicula Malesuada Nullam</h3>
+                  <p class="bwi-text">Shrink wrap machines use plastics to protect items from moisture and dirt during storage or transport. The plastic film is wrapped around</p>
+                  <a href="#" class="bwi-link">Learn more <i class="fe-icon-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="box-with-icon text-center">
+                <div class="bwi-inner">
+                  <div class="bwi-icon">
+                    <i class="icon-magnifying-glass"></i>
+                  </div>
+                  <h3 class="bwi-title">Sollicitudin Magna</h3>
+                  <p class="bwi-text">LCD screens are uniquely modern in style, and the liquid crystals that make them work have allowed humanity to create slimmer, more</p>
+                  <a href="#" class="bwi-link">Learn more <i class="fe-icon-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="box-with-icon text-center">
+                <div class="bwi-inner">
+                  <div class="bwi-icon">
+                    <i class="icon-global"></i>
+                  </div>
+                  <h3 class="bwi-title">Venenatis Consectetur</h3>
+                  <p class="bwi-text">With MySpace becoming more popular every day, there is the constant need to be different. There are millions of users, and there will be</p>
+                  <a href="#" class="bwi-link">Learn more <i class="fe-icon-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="box-with-icon text-center">
+                <div class="bwi-inner">
+                  <div class="bwi-icon">
+                    <i class="icon-key"></i>
+                  </div>
+                  <h3 class="bwi-title">Tortor Lorem Ultricies</h3>
+                  <p class="bwi-text">Shrink wrap machines use plastics to protect items from moisture and dirt during storage or transport. The plastic film is wrapped around</p>
+                  <a href="#" class="bwi-link">Learn more <i class="fe-icon-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="fw-section padding-top-3x padding-bottom-2x" data-stellar-background-ratio=".65" style="background-image: url(img/home/49.jpg);">
+        <div class="overlay" style="background-color: rgba(0, 0, 0, .6)"></div>
+        <div class="container">
+          <div class="col-md-4 col-lg-3">
+            <h2 class="block-title text-light">
+              Why <br> Choose Us
+              <small>industry’s standard</small>
+            </h2>
+          </div>
+          <div class="col-md-8 col-lg-9">
+            <div class="row text-light">
+              <div class="col-sm-6">
+                <h5>Positive law and economics</h5>
+
+                <p>'Positive law and economics' uses economic analysis to predict the effects of various legal rules. So, for example, a positive economic analysis of tort law would predict the effects of a strict liability rule as opposed to the effects of a negligence rule.</p>
+
+                <p>Positive law and economics has also at times purported to explain the development of legal rules, for example the common law of torts, in terms of their economic efficiency.</p>
+              </div>
+              <div class="col-sm-6">
+                <h5>Normative law and economics</h5>
+
+                <p>Normative law and economics goes one step further and makes policy recommendations based on the economic consequences of various policies. The key concept for normative economic analysis is efficiency, in particular, allocative efficiency.</p>
+
+                <p>A common concept of efficiency used by law and economics scholars is Pareto efficiency. A legal rule is Pareto efficient if it could not be changed so as to make one person better off without making another person worse off.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Data API:
+        data-loop="true/false" enable/disable looping
+        data-autoplay="true/false" enable/disable carousel autoplay
+        data-interval="3000" autoplay interval timeout in miliseconds 
+        Simply add necessary data attribute to the ".logo-carousel" with appropriate value to adjust carousel functionality.
+       -->
+      <!-- Gallery Grid -->
+      <div class="gallery-grid" data-loop="true" data-items-mobile="1" data-items-tablet="3" data-items-desktop="3">
+        <div class="inner">
+          <div class="gallery-item">
+            <img src="img/home/31.jpg" alt="">
+
+            <a href="img/home/31.jpg" class="btn btn-light waves-effect waves-light btn-circle">
+              <i class="fe-icon-search"></i>
+            </a>
+          </div><!-- .gallery-item -->
+          <div class="gallery-item">
+            <img src="img/home/32.jpg" alt="">
+
+            <a href="img/home/32.jpg" class="btn btn-light waves-effect waves-light btn-circle">
+              <i class="fe-icon-search"></i>
+            </a>
+          </div><!-- .gallery-item -->
+          <div class="gallery-item">
+            <img src="img/home/33.jpg" alt="">
+
+            <a href="img/home/33.jpg" class="btn btn-light waves-effect waves-light btn-circle">
+              <i class="fe-icon-search"></i>
+            </a>
+          </div><!-- .gallery-item -->
+        </div>
+      </div><!-- .gallery-grid -->
+
+      <section class="fw-section padding-top-3x padding-bottom-2x">
+        <div class="container">
+          <h2 class="block-title">
+            Latest News
+            <small>Read our blog</small>
+          </h2>
+          <div class="row post-compact">
+            <div class="col-sm-4">
+              <!-- Post -->
+              <article class="grid-item post-item">
+                <div class="date"><span>December</span><span>14</span></div>
+
+                <a href="blog-single-rs.html" class="post-thumb waves-effect">
+                  <img src="img/home/54.jpg" alt="Post01">
+                </a><!-- .post-thumb -->
+
+                <div class="post-body">
+                  <a href="blog-single-rs.html" class="post-title">
+                    <h3>Transport us to places we’d never</h3>
+                  </a>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ullamco laboris nisi ut aliquip ex...</p>
+                  <a href="blog-single-rs.html" class="post-link">Read More <i class="fe-icon-arrow-right"></i></a>
+
+                  <div class="post-meta">
+                    <div class="meta-info">
+                      <div class="by-name">
+                        <span class="text-muted">by</span>
+                        <a href="#">Bedismo</a>
+                      </div>
+                      <div class="in-category">
+                        <span class="text-muted">in</span>
+                        <a href="#">Support</a>
+                      </div>
+                      <div class="post-comments">
+                        <span class="text-muted">comments</span>
+                        <a href="#">12</a>
+                      </div>
+                    </div>
+                  </div><!-- .post-meta -->
+
+                </div><!-- .post-body -->
+              </article><!-- .post-item -->
+            </div>
+            <div class="col-sm-4">
+              <!-- Post -->
+              <article class="grid-item post-item">
+                <div class="date"><span>December</span><span>14</span></div>
+
+                <a href="blog-single-rs.html" class="post-thumb waves-effect">
+                  <img src="img/home/52.jpg" alt="Post01">
+                </a><!-- .post-thumb -->
+
+                <div class="post-body">
+                  <a href="blog-single-rs.html" class="post-title">
+                    <h3>Transport us to places we’d never</h3>
+                  </a>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ullamco laboris nisi ut aliquip ex...</p>
+                  <a href="blog-single-rs.html" class="post-link">Read More <i class="fe-icon-arrow-right"></i></a>
+
+                  <div class="post-meta">
+                    <div class="meta-info">
+                      <div class="by-name">
+                        <span class="text-muted">by</span>
+                        <a href="#">Bedismo</a>
+                      </div>
+                      <div class="in-category">
+                        <span class="text-muted">in</span>
+                        <a href="#">Support</a>
+                      </div>
+                      <div class="post-comments">
+                        <span class="text-muted">comments</span>
+                        <a href="#">12</a>
+                      </div>
+                    </div>
+                  </div><!-- .post-meta -->
+
+                </div><!-- .post-body -->
+              </article><!-- .post-item -->
+            </div>
+            <div class="col-sm-4">
+              <!-- Post -->
+              <article class="grid-item post-item">
+                <div class="date"><span>December</span><span>14</span></div>
+
+                <a href="blog-single-rs.html" class="post-thumb waves-effect">
+                  <img src="img/home/53.jpg" alt="Post01">
+                </a><!-- .post-thumb -->
+
+                <div class="post-body">
+                  <a href="blog-single-rs.html" class="post-title">
+                    <h3>Transport us to places we’d never</h3>
+                  </a>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ullamco laboris nisi ut aliquip ex...</p>
+                  <a href="blog-single-rs.html" class="post-link">Read More <i class="fe-icon-arrow-right"></i></a>
+
+                  <div class="post-meta">
+                    <div class="meta-info">
+                      <div class="by-name">
+                        <span class="text-muted">by</span>
+                        <a href="#">Bedismo</a>
+                      </div>
+                      <div class="in-category">
+                        <span class="text-muted">in</span>
+                        <a href="#">Support</a>
+                      </div>
+                      <div class="post-comments">
+                        <span class="text-muted">comments</span>
+                        <a href="#">12</a>
+                      </div>
+                    </div>
+                  </div><!-- .post-meta -->
+
+                </div><!-- .post-body -->
+              </article><!-- .post-item -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="fw-section padding-top-3x padding-bottom-2x" data-stellar-background-ratio=".65" style="background-image: url(img/home/51.jpg);">
+        <div class="overlay" style="background-color: rgba(0, 0, 0, .8)"></div>
+
+        <div class="container text-light text-center">
+          <h2 class="block-title text-center">
+            Meet Our Attorneys
+            <small>Our Team</small>
+          </h2>
+          <div class="row space-bottom">
+            <div class="col-sm-3">
+              <!-- Teammate -->
+              <div class="teammate text-center">
+                <div class="thumbnail">
+                  <img src="img/team/10.jpg" alt="Team">
+                </div>
+                <h3 class="teammate-name">Mike Lawson</h3>
+                <p class="teammate-job">Director</p>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <!-- Teammate -->
+              <div class="teammate text-center">
+                <div class="thumbnail">
+                  <img src="img/team/11.jpg" alt="Team">
+                </div>
+                <h3 class="teammate-name">Mike Lawson</h3>
+                <p class="teammate-job">Director</p>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <!-- Teammate -->
+              <div class="teammate text-center">
+                <div class="thumbnail">
+                  <img src="img/team/05.jpg" alt="Team">
+                </div>
+                <h3 class="teammate-name">Mike Lawson</h3>
+                <p class="teammate-job">Director</p>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <!-- Teammate -->
+              <div class="teammate text-center">
+                <div class="thumbnail">
+                  <img src="img/team/08.jpg" alt="Team">
+                </div>
+                <h3 class="teammate-name">Mike Lawson</h3>
+                <p class="teammate-job">Director</p>
+              </div>
+            </div>
+          </div>
+
+          <a href="#" class="btn btn-primary btn-pill">about us</a>
+        </div>
+      </section>
+
+      <section class="fw-section next-to-footer padding-top-3x padding-bottom-3x">
+        <div class="container">
+          <h2 class="block-title text-center">
+            Free Consultation
+            <small>Nam nec tellus a odio tincidunt</small>
+          </h2>
+
+          <form action="">
+            <textarea class="form-control space-bottom" rows="6" placeholder="Textarea"></textarea>
+            <div class="row">
+              <div class="col-sm-3">
+                <input type="text" class="form-control input-sm" placeholder="Name">
+              </div>
+              <div class="col-sm-3">
+                <input type="email" class="form-control input-sm" placeholder="E-mail">
+              </div>
+              <div class="col-sm-3">
+                <input type="text" class="form-control input-sm" placeholder="Phone">
+              </div>
+              <div class="col-sm-3">
+                <a href="#" class="btn btn-primary waves-effect waves-light btn-block btn-sm">SEND REQUEST</a>
+              </div>
+            </div>
+          </form>
+
+        </div>
+      </section>
+    </main>
+
+    <!-- Scroll To Top Button -->
+    <a href="#" class="scroll-to-top-btn">
+      <i class="fa fa-angle-up"></i>
+    </a><!-- .scroll-to-top-btn -->
+
+    <!-- Footer -->
+    <footer class="footer dark-skin"  style="background-image: url(img/footer/footer_bg.jpg)">
+      <div class="top-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-sm-6">
+              <section class="widget widget_text">
+                <a href="index.html" class="site-logo">
+                  <img src="img/logos-main/logo_01.png" alt="Promo">
+                </a><!-- .site-logo -->
+                <p>Left your phone on the train? Your photos, and videos are safe. Just sign in  from any device, and your files will be there waiting for you.</p>
+              </section><!-- .widget.widget_text -->
+            </div><!-- .col-md-3 -->
+            <div class="col-md-3 col-sm-6">
+              <section class="widget widget_categories">
+                <h3 class="widget-title">
+                  <i class="fe-icon-layers"></i>
+                  Categories
+                </h3>
+                <ul>
+                  <li><a href="#">Support<span>3</span></a></li>
+                  <li><a href="#">Design<span>4</span></a></li>
+                  <li><a href="#">Hosting<span>11</span></a></li>
+                </ul>
+              </section><!-- .widget.widget_categories -->
+            </div><!-- .col-md-3 -->
+            <div class="clearfix visible-sm"></div>
+            <div class="col-md-3 col-sm-6">
+              <section class="widget widget_recent_news">
+                <h3 class="widget-title">
+                  <i class="fe-icon-paper"></i>
+                  Recent News
+                </h3>
+                <div class="item">
+                  <div class="info">
+                    <h4><a href="blog-single-rs.html">Making Cents of Online Investment Services – Which is Best?</a></h4>
+                  </div>
+                  <div class="meta">
+                    <a href="#"><i class="icon-calendar"></i> October 7, 2015</a>
+                  </div>
+                </div><!-- .item -->
+                <div class="item">
+                  <div class="info">
+                    <h4><a href="blog-single-rs.html">Making Cents of Online Investment Services – Which is Best?</a></h4>
+                  </div>
+                  <div class="meta">
+                    <a href="#"><i class="icon-calendar"></i> October 7, 2015</a>
+                  </div>
+                </div><!-- .item -->
+              </section><!-- .widget.widget_recent_news -->
+            </div><!-- .col-md-3 -->
+            <div class="col-md-3 col-sm-6">
+              <!-- Subscribe Widget -->
+              <section class="widget widget_subscribe">
+                <h3 class="widget-title">
+                  <i class="fe-icon-paper-clip"></i>
+                  Subscribe
+                </h3>
+                <form method="post" class="subscribe-box">
+                  <input type="text" class="form-control input-sm" placeholder="E-mail">
+                  <button type="submit" class="btn btn-primary btn-block btn-sm waves-effect waves-light">Subscribe for news</button>
+                </form>
+              </section><!-- widget_subscribe -->
+            </div><!-- .col-md-3 -->
+          </div><!-- .row -->
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="bottom-footer">
+          <div class="column">
+            <ul class="social list-unstyled list-inline">
+              <li><a href="#"><i class="fa fa-facebook"></i>Facebook</a></li>
+              <li><a href="#"><i class="fa fa-youtube"></i>Youtube</a></li>
+              <li><a href="#"><i class="fa fa-vk"></i>Vkontakte</a></li>
+              <li><a href="#"><i class="fa fa-tumblr"></i>Tumblr</a></li>
+            </ul>
+          </div><!-- .column -->
+          <div class="column text-right">
+            <ul class="list-unstyled list-inline">
+              <li><a href="#">Legal</a></li>
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#">Sitemap</a></li>
+            </ul>
+          </div><!-- .column -->
+        </div>
+      </div>
+
+      <div class="copyright">
+        <div class="container">
+          <div class="column">
+            <p>&copy; Promo 2016. Made by <a href="http://8guild.com/" target="_blank">8Guild</a> with <i class="fa fa-heart text-danger"></i> love.</p>
+          </div><!-- .column -->
+        </div>
+      </div><!-- .copyright -->
+
+    </footer><!-- .footer -->
+
+
+  
+  </div><!-- .page-wrapper -->
+
+  <!-- JavaScript (jQuery) libraries, plugins and custom scripts -->
+  <script src="js/vendor/jquery-2.1.4.min.js"></script>
+  <script src="js/vendor/jquery.easing.min.js"></script>
+  <script src="js/vendor/bootstrap.min.js"></script>
+  <script src="js/vendor/pace.min.js"></script>
+  <script src="js/vendor/placeholder.js"></script>
+  <script src="js/vendor/smoothscroll.js"></script>
+  <script src="js/vendor/waypoints.min.js"></script>
+  <script src="js/vendor/icheck.min.js"></script>
+  <script src="js/vendor/waves.min.js"></script>
+  <script src="js/vendor/velocity.min.js"></script>
+  <script src="js/vendor/jquery.stellar.min.js"></script>
+  <script src="js/vendor/magnific-popup.min.js"></script>
+  <script src="js/vendor/owl.carousel.min.js"></script>
+  <script src="js/vendor/jquery.spincrement.js"></script>
+  <script src="js/vendor/scrollspy.js"></script>
+  <script src="js/vendor/scrollreveal.min.js"></script>
+
+  <!-- RS5.0 Core JS Files -->
+  <script src="revolution/js/jquery.themepunch.tools.min.js"></script>
+  <script src="revolution/js/jquery.themepunch.revolution.min.js"></script>
+
+  <script src="js/scripts.js"></script>
+
+</body><!-- <body> -->
+
+</html>

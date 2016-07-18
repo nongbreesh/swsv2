@@ -1,0 +1,112 @@
+//
+// Comments
+// --------------------------------------------------
+
+.comments-area {
+	.comments-count {
+		margin-bottom: floor($line-height-computed * 1.4) !important;
+		span {
+			color: $brand-primary;
+		}
+	}
+}
+
+.comment {
+	margin-bottom: floor($line-height-computed * 1.5);
+	padding-left: ($comment-author-ava-size + 20);
+	position: relative;
+	border-bottom: 1px solid $hr-border;
+	padding-bottom: ($line-height-computed / 2);
+	&.depth-2 {
+		margin-top: floor(($line-height-computed * 1.2));
+		padding-left: ($comment-author-ava-size + $comment-author-ava-size + 40);
+		.author-ava {
+			left: ($comment-author-ava-size + 20);
+		}
+	}
+	.author-ava {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: $comment-author-ava-size;
+		height: $comment-author-ava-size;
+		border-radius: 50%;
+		overflow: hidden;
+	}
+	.comment-body {
+		padding-top: ($line-height-computed / 2);
+	}
+	.comment-autor,
+	.comment-date,
+	.comment-reply {
+		display: inline-block;
+		font-size: $post-meta-font-size;
+		margin-right: 18px;
+		> i {
+			display: inline-block;
+			vertical-align: middle;
+			font-size: $post-meta-icon-size;
+			color: $post-meta-icon-color;
+			margin-top: -5px;
+			margin-right: 4px;
+			&.icon-reply {
+				font-size: floor($post-meta-icon-size * 1.2);
+			}
+		}
+	}
+	.comment-reply {
+		text-transform: uppercase;
+	}
+	.comment-autor {
+		font-size: ($font-size-lead * 0.75);
+		font-weight: 600;
+		a {
+			color: $brand-default;
+			&:hover {
+				color: $brand-primary;
+			}
+		}
+	}
+	.comment-date { margin-right: 0; }
+
+	@media screen and (max-width: 600px) {
+		padding-left: 0;
+		.author-ava {
+			position: relative;
+			margin-bottom: 12px;
+		}
+		&.depth-2 {
+			padding-left: $line-height-computed;
+			.author-ava {
+				left: auto;
+			}
+		}
+	}
+}
+
+.comment-respond {
+	margin-top: floor($line-height-computed * 2.5);
+	.logged-in-as {
+		font-size: $font-size-xs;
+		padding-bottom: 10px;
+	}
+	.form-submit {
+		margin-bottom: 0;
+		> .btn { margin-bottom: 0; }
+	}
+}
+.comment-reply-title small {
+  font-size: $font-size-xs;
+  font-style: normal;
+}
+.comment-navigation a,
+.comment-navigation span {
+  font-size: $font-size-xs;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-right: 8px;
+}
+.comment-navigation span {
+  color: $link-hover-color;
+  font-weight: bold;
+}

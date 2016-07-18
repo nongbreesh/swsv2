@@ -1,0 +1,125 @@
+//
+// Mixins
+// --------------------------------------------------
+
+// List options
+@mixin list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+
+// Normal Button Variants
+@mixin button-variant($bg-color) {
+  background-color: $bg-color;
+  &:hover {
+    background-color: darken($bg-color, 10%);
+  }
+}
+
+// Ghost Button Variants
+@mixin ghost-button-variant($color, $border-color) {
+  background-color: transparent;
+  color: $color;
+  border-color: $border-color;
+  i {
+    border-color: $border-color;
+  }
+  &:hover {
+    color: #fff;
+    background-color: $border-color;
+    i {
+      color: #fff;
+      border-color: #fff;
+    }
+  }
+}
+
+// Circle Button Variants
+@mixin circle-button-variant($bg-color) {
+  &:after, i {
+    background-color: $bg-color;
+  }
+}
+
+// Tile Features
+@mixin feature-tile-variant($bg-color) {
+  .bwi-inner {
+    background-color: $bg-color;
+  }
+}
+
+// Pricing Variants
+@mixin pricing-variant($bg-color) {
+  border: none;
+  background-color: $bg-color;
+  & + .pricing-plan {
+    border: none;
+  }
+  .pricing-title, p, .cost, li { color: #fff; }
+  li { border-color: #fff; }
+  .btn-ghost:hover { color: $bg-color; }
+}
+
+// Panel Hover Variants
+@mixin panel-variant($bg-color) {
+  .panel-heading:hover {
+    border-color: $bg-color;
+    a:hover {
+      background-color: $bg-color;
+      border-color: $bg-color;
+    }
+  }
+}
+
+// Tabs Title Variants
+@mixin tab-variant($bg-color) {
+  .panel-heading:hover {
+    border-color: $bg-color;
+    a:hover {
+      background-color: $bg-color;
+      border-color: $bg-color;
+    }
+  }
+}
+
+// Placeholder text
+@mixin placeholder($color: $input-color-placeholder) {
+  // Firefox
+  &::-moz-placeholder {
+    color: $color;
+    opacity: 1; // Override Firefox's unusual default opacity; see https://github.com/twbs/bootstrap/pull/11526
+  }
+  &:-ms-input-placeholder {
+    color: $color;
+  } // Internet Explorer 10+
+  &::-webkit-input-placeholder  {
+    color: $color;
+  } // Safari and Chrome
+}
+
+@mixin font-smoothing {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+// center vertically and/or horizontally an absolute positioned element
+@mixin center($xy:xy) {
+  @if $xy == xy {
+    left: 50%;
+    top: 50%;
+    bottom: auto;
+    right: auto;
+    @include transform(translateX(-50%) translateY(-50%));
+  }
+  @else if $xy == x {
+    left: 50%;
+    right: auto;
+    @include transform(translateX(-50%));
+  }
+  @else if $xy == y {
+    top: 50%;
+    bottom: auto;
+    @include transform(translateY(-50%));
+  }
+}

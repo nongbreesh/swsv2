@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Promo | FAQ</title>
+
+  <!--SEO Meta Tags-->
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta name="author" content="8Guild" />
+
+  <!--Mobile Specific Meta Tag-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- All Theme Styles including Bootstrap, FontAwesome, etc. compiled from styles.scss-->
+  <link href="css/styles.min.css" rel="stylesheet" media="screen">
+
+  <!--Modernizr / Detectizr-->
+  <script src="js/vendor/modernizr.custom.js"></script>
+  <script src="js/vendor/detectizr.min.js"></script>
+</head>
+
+<!-- Body -->
+<body class="parallax">
+  <div class="preloader-overlay"></div>
+
+  <!-- Page Wrapper -->
+  <div class="page-wrapper">
+
+    <!-- Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <button type="button" class="close-btn" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <div class="modal-content text-center">
+          <h4>Login With Social Account</h4>
+          <div class="space-bottom-2x">
+            <a href="#" class="btn google-login">Google<i class="fa fa-google"></i></a>
+            <a href="#" class="btn twitter-login">Twitter<i class="fa fa-twitter"></i></a>
+            <a href="#" class="btn facebook-login">Facebook<i class="fa fa-facebook"></i></a>
+          </div>
+          <h4>Or by Email</h4>
+          <form method="post">
+            <input type="email" class="form-control" placeholder="Email">
+            <input type="password" class="form-control" placeholder="Password">
+            <div class="form-group">
+              <button type="submit" class="btn login-btn btn-default">Login into your account<i class="icon-head"></i></button>
+            </div>
+            <div class="text-left">
+              <span class="text-sm text-semibold">New to Promo? <a href="#">Sign Up</a></span>
+            </div>
+          </form><!-- <form> -->
+        </div><!-- .modal-content -->
+      </div><!-- .modal-dialog -->
+    </div><!-- .modal.fade -->
+
+    <!-- Navbar -->
+    <!-- Add class ".navbar-sticky" to make navbar stuck when it hits the top of the page. Another modifier class is: "navbar-fullwidth" to stretch navbar and make it occupy 100% of the page width. The screen width at which navbar collapses can be controlled through the variable "$nav-collapse" in sass/variables.scss -->
+    <header class="navbar navbar-sticky">
+
+      <!-- <div class="topbar" style="background-color: #ccc;">
+        <div class="container">
+          <a href="#" class="btn btn-ghost btn-primary">call us</a>
+          <span class="text"><i class="fa fa-phone"></i> +38 050 111 22 33</span>
+
+          <ul class="social pull-right">
+            <li><a href="#"><i class="fa fa-facebook"></i>Facebook</a></li>
+            <li><a href="#"><i class="fa fa-youtube"></i>Youtube</a></li>
+            <li><a href="#"><i class="fa fa-vk"></i>Vkontakte</a></li>
+            <li><a href="#"><i class="fa fa-tumblr"></i>Tumblr</a></li>
+          </ul>
+        </div>
+      </div> -->
+
+      <!-- Light Skin for Navbar enables by adding .light-skin class. -->
+      <div class="nav-bar-inner">
+        <div class="container">
+          <a href="index.html" class="site-logo">
+            <img src="img/logos-main/logo_06.png" alt="Promo">
+          </a><!-- .site-logo -->
+
+          <!-- For alignment navigation use .menu-left-align, .menu-right-align or .menu-center-align class. To get light skin, use .light-skin. -->
+          <nav class="main-navigation menu-left-align" style="background-color: #fff;">
+            <div class="stuck-container">
+              <ul class="menu">
+                <li class="menu-item-has-children">
+                  <a href="#">Home</a>
+                  <ul class="sub-menu">
+                    <li><a href="index.html">Theme Presentation</a></li>
+                    <li><a href="home-agency.html">Home Agency</a></li>
+                    <li><a href="home-saas.html">Home SAAS</a></li>
+                    <li><a href="home-app.html">Home App Showcase</a></li>
+                    <li><a href="home-tour.html">Home Tour</a></li>
+                    <li><a href="home-event.html">Home Event</a></li>
+                    <li><a href="home-development.html">Home Development</a></li>
+                    <li><a href="home-medical.html">Home Medical</a></li>
+                    <li><a href="home-logistics.html">Home Logistics</a></li>
+                    <li><a href="home-lawyer.html">Home Lawyer</a></li>
+                    <li><a href="home-product.html">Home Product Promo</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item-has-children has-mega-menu">
+                  <a href="#">Blog</a>
+                  <ul class="sub-menu">
+                    <li>
+                      <ul>
+                        <li><a href="blog-list-rs.html">Blog List Right Sidebar</a></li>
+                        <li><a href="blog-list-ls.html">Blog List Left Sidebar</a></li>
+                        <li><a href="blog-list-ns.html">Blog List No Sidebar</a></li>
+                        <li><a href="blog-grid-4-cols.html">Blog Grid 4 Cols</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul>
+                        <li><a href="blog-grid-3-cols.html">Blog Grid 3 Cols</a></li>
+                        <li><a href="blog-grid-3-cols-rs.html">Blog Grid 3 Cols Right Sidebar</a></li>
+                        <li><a href="blog-grid-3-cols-ls.html">Blog Grid 3 Cols Left Sidebar</a></li>
+
+                      </ul>
+                    </li>
+                    <li>
+                      <ul>
+                        <li><a href="blog-grid-2-cols.html">Blog Grid 2 Cols</a></li>
+                        <li><a href="blog-grid-2-cols-rs.html">Blog Grid 2 Cols Right Sidebar</a></li>
+                        <li><a href="blog-grid-2-cols-ls.html">Blog Grid 2 Cols Left Sidebar</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul>
+                        <li><a href="blog-single-rs.html">Single Post Right Sidebar</a></li>
+                        <li><a href="blog-single-ls.html">Single Post Left Sidebar</a></li>
+                        <li><a href="blog-single-ns.html">Single Post No Sidebar</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-item-has-children">
+                  <a href="#">Portfolio</a>
+                  <ul class="sub-menu">
+                    <li><a href="portfolio-3-cols.html">Portfolio 3 Columns</a></li>
+                    <li><a href="portfolio-2-cols.html">Portfolio 2 Columns</a></li>
+                    <li><a href="portfolio-hexagon.html">Portfolio Hexagon Tumbnails</a></li>
+                    <li><a href="portfolio-masonry.html">Portfolio Masonry Grid</a></li>
+                    <li><a href="portfolio-single.html ">Single portfolio</a></li>
+                  </ul>
+                </li>
+                <li class="current-menu-item menu-item-has-children">
+                  <a href="#">Pages</a>
+                  <ul class="sub-menu">
+                    <li><a href="page-about.html">About Us</a></li>
+                    <li><a href="page-contacts.html">Contacts</a></li>
+                    <li><a href="page-team.html">Our team</a></li>
+                    <li><a href="page-pricing.html">Pricing</a></li>
+                    <li class="current-menu-item"><a href="page-help-center.html">Help Center</a></li>
+                    <li><a href="page-customers.html">Customers / Clients</a></li>
+                    <li><a href="page-we-are-hiring.html">We are Hiring</a></li>
+                    <li><a href="page-under-construction.html">Under Construction</a></li>
+                    <li><a href="page-404.html">404</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item-has-children">
+                  <a href="#">Headers</a>
+                  <ul class="sub-menu">
+                    <li><a href="home-tour.html">Full Widht With Tools</a></li>
+                    <li><a href="home-saas.html">Ghost Full Widht With Tools</a></li>
+                    <li><a href="home-app.html">Boxed Right Menu</a></li>
+                    <li><a href="elements.html">Boxed With Menu Below</a></li>
+                  </ul>
+                </li>
+                <li class="has-mega-menu">
+                  <a href="elements.html">Elements</a>
+                  <ul class="sub-menu">
+                    <li>
+                      <ul>
+                        <li><a href="elements.html#typography">Typography </a></li>
+                        <li><a href="elements.html#buttons">Buttons</a></li>
+                        <li><a href="elements.html#cta_buttons">CTA Buttons</a></li>
+                        <li><a href="elements.html#social">Social Buttons</a></li>
+                        <li><a href="elements.html#forms">Forms</a></li>
+                        <li><a href="elements.html#tables">Table</a></li>
+                        <li><a href="elements.html#timetable">Timetable</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul>
+                        <li><a href="elements.html#tabs">Tabs</a></li>
+                        <li><a href="elements.html#panels">Panels &amp; Accordions</a></li>
+                        <li><a href="elements.html#fclick">Features: Clickable Icons</a></li>
+                        <li><a href="elements.html#fhexa">Features: Hexagon Images</a></li>
+                        <li><a href="elements.html#ficons">Features: Icons</a></li>
+                        <li><a href="elements.html#fimaged">Features: Images</a></li>
+                        <li><a href="elements.html#tcolored">Features: Solid Color Tiles</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul>
+                        <li><a href="elements.html#timaged">Features: Image Tiles</a></li>
+                        <li><a href="elements.html#image_link">Image Links</a></li>
+                        <li><a href="elements.html#pricing">Pricing</a></li>
+                        <li><a href="elements.html#tpricing">Pricing Table</a></li>
+                        <li><a href="elements.html#testimonial">Testimonials</a></li>
+                        <li><a href="elements.html#port1">Portfolio Tiles: Type 1</a></li>
+                        <li><a href="elements.html#port2">Portfolio Tiles: Type 2</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul>
+                        <li><a href="elements.html#gallery">Gallery</a></li>
+                        <li><a href="elements.html#carousel">Carousels</a></li>
+                        <li><a href="elements.html#to_video">Responsive Video</a></li>
+                        <li><a href="elements.html#cta_info">CTA Info Box</a></li>
+                        <li><a href="elements.html#progress">Progress Bars</a></li>
+                        <li><a href="elements.html#counters">Counters</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+          </ul><!-- .menu -->
+        </div>
+      </nav><!-- .main-navigation -->
+
+          <div class="toolbar">
+            <a href="#" class="text-sm" data-toggle="modal" data-target="#loginModal"><i class="fe-icon-head"></i>Sign up</a>
+            <a href="#" class="text-sm" data-toggle="modal" data-target="#loginModal"><i class="fe-icon-unlock"></i>Log In</a>
+
+            <div class="search-btn">
+              <i class="fe-icon-search"></i>
+              <form method="post" class="search-box">
+                <input type="text" class="form-control input-sm" placeholder="Search">
+                <button type="submit"><i class="fe-icon-search"></i></button>
+              </form>
+            </div> <!-- .search-btn -->
+          </div> <!-- .toolbar -->
+
+          <!-- Mobile Menu Toggle -->
+          <div class="nav-toggle"><span></span></div>
+        </div>
+      </div>
+    </header><!-- .navbar -->
+
+    <!-- Page Title -->
+    <!--Add modifier class : "pt-fullwidth" to stretch page title and make it occupy 100% of the page width, or "pt-mega", for full width and imaged background -->
+    <section class="page-title pt-mega text-light" data-stellar-background-ratio="0.65" style="background-image: url(img/page-title/page-faq.jpg)">
+      <span class="overlay" style="background-color: rgba(0, 0, 0, .3);"></span>
+      <div class="title">
+        <h1>FAQ</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div><!-- .title -->
+    </section><!-- .page-title -->
+
+    <main>
+      <!-- Content -->
+      <section class="fw-section space-top-3x">
+        <div class="container padding-bottom-2x">
+          <h2 class="block-title">Licensing and Purchasing
+            <small>Some features. Some words.</small>
+          </h2>
+
+          <div class="row">
+            <div class="col-sm-6">
+              <h4>Managing Licenses and Products Information</h4>
+
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <a class="panel-title collapsed" data-toggle="collapse" href="#panelq1">
+                    Publikate Net?
+                  </a>
+                </div>
+                <div id="panelq1" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea eum itaque consequuntur voluptate, vero officiis assumenda atque odit recusandae explicabo harum, adipisci aliquid illum quibusdam saepe repudiandae distinctio, tempora voluptates!
+                  </div>
+                </div>
+              </div><!-- .panel -->
+
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <a class="panel-title" data-toggle="collapse" href="#panelq2">
+                    Linux Or Windows Which Is It?
+                  </a>
+                </div>
+                <div id="panelq2" class="panel-collapse collapse in">
+                  <div class="panel-body">
+                    We are looking for a passionate, creative and open-minded professional to join our product marketing team and help grow the YouTrack user base. YouTrack is an issue tracker designed for development teams, just like all our products. YouTrack is a team tool, and differs from our IDEs a lot, which is a challenge. It's the first product offered as SaaS. Our team is progressive, young, flexible and fun to work with. We believe that personality is as important as professional skills.
+                  </div>
+                </div>
+              </div><!-- .panel -->
+
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <a class="panel-title collapsed" data-toggle="collapse" href="#panelq3">
+                    Publikate Net?
+                  </a>
+                </div>
+                <div id="panelq3" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea eum itaque consequuntur voluptate, vero officiis assumenda atque odit recusandae explicabo harum, adipisci aliquid illum quibusdam saepe repudiandae distinctio, tempora voluptates!
+                  </div>
+                </div>
+              </div><!-- .panel -->
+            </div>
+
+            <div class="col-sm-6">
+              <h4>Our Licensing Model and JetBrains Toolbox</h4>
+
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <a class="panel-title collapsed" data-toggle="collapse" href="#panelq4">
+                    Publikate Net?
+                  </a>
+                </div>
+                <div id="panelq4" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea eum itaque consequuntur voluptate, vero officiis assumenda atque odit recusandae explicabo harum, adipisci aliquid illum quibusdam saepe repudiandae distinctio, tempora voluptates!
+                  </div>
+                </div>
+              </div><!-- .panel -->
+
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <a class="panel-title collapsed" data-toggle="collapse" href="#panelq5">
+                    Linux Or Windows Which Is It?
+                  </a>
+                </div>
+                <div id="panelq5" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea eum itaque consequuntur voluptate, vero officiis assumenda atque odit recusandae explicabo harum, adipisci aliquid illum quibusdam saepe repudiandae distinctio, tempora voluptates!
+                  </div>
+                </div>
+              </div><!-- .panel -->
+
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <a class="panel-title collapsed" data-toggle="collapse" href="#panelq6">
+                    Publikate Net?
+                  </a>
+                </div>
+                <div id="panelq6" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea eum itaque consequuntur voluptate, vero officiis assumenda atque odit recusandae explicabo harum, adipisci aliquid illum quibusdam saepe repudiandae distinctio, tempora voluptates!
+                  </div>
+                </div>
+              </div><!-- .panel -->
+
+              <h4 class="space-top-2x">License Types and Users</h4>
+
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <a class="panel-title collapsed" data-toggle="collapse" href="#panelq7">
+                    Publikate Net?
+                  </a>
+                </div>
+                <div id="panelq7" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea eum itaque consequuntur voluptate, vero officiis assumenda atque odit recusandae explicabo harum, adipisci aliquid illum quibusdam saepe repudiandae distinctio, tempora voluptates!
+                  </div>
+                </div>
+              </div><!-- .panel -->
+
+              <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <a class="panel-title collapsed" data-toggle="collapse" href="#panelq8">
+                      Publikate Net?
+                    </a>
+                  </div>
+                  <div id="panelq8" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea eum itaque consequuntur voluptate, vero officiis assumenda atque odit recusandae explicabo harum, adipisci aliquid illum quibusdam saepe repudiandae distinctio, tempora voluptates!
+                    </div>
+                  </div>
+                </div><!-- .panel -->
+
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <a class="panel-title collapsed" data-toggle="collapse" href="#panelq9">
+                    Linux Or Windows Which Is It?
+                  </a>
+                </div>
+                <div id="panelq9" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea eum itaque consequuntur voluptate, vero officiis assumenda atque odit recusandae explicabo harum, adipisci aliquid illum quibusdam saepe repudiandae distinctio, tempora voluptates!
+                  </div>
+                </div>
+              </div><!-- .panel -->
+            </div>
+          </div>
+        </div><!-- .container -->
+      </section>
+
+      <section class="fw-section bg-gray padding-bottom-2x padding-top-2x">
+        <div class="container">
+          <div class="row-">
+            <div class="col-sm-4">
+              <div class="box-with-icon text-center">
+                <div class="bwi-inner">
+                  <div class="bwi-img">
+                    <div class="button-overlay">
+                      <div class="bwi-btn">
+                        <a href="#" class="btn btn-light gray-circle waves-effect btn-circle"><i class="icon-profile-female"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                  <h3 class="bwi-title">Contact Sales</h3>
+                  <p class="bwi-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <a href="#" class="bwi-link">Learn more <i class="fe-icon-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-4">
+              <div class="box-with-icon text-center">
+                <div class="bwi-inner">
+                  <div class="bwi-img">
+                    <div class="button-overlay">
+                      <div class="bwi-btn">
+                        <a href="#" class="btn btn-light gray-circle waves-effect btn-circle"><i class="icon-puzzle"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                  <h3 class="bwi-title">Licensing FAQ</h3>
+                  <p class="bwi-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <a href="#" class="bwi-link">Learn more <i class="fe-icon-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-4">
+              <div class="box-with-icon text-center">
+                <div class="bwi-inner">
+                  <div class="bwi-img">
+                    <div class="button-overlay">
+                      <div class="bwi-btn">
+                        <a href="#" class="btn btn-light gray-circle waves-effect btn-circle"><i class="icon-strategy"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                  <h3 class="bwi-title">Customer Support</h3>
+                  <p class="bwi-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <a href="#" class="bwi-link">Learn more <i class="fe-icon-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Video Presentation -->
+      <!-- Fullwidth section has bunch of modifier classes to alter its appearance: ".border-top, .border-bottom, .arrow-top, .arrow-bottom, .bg-gray, .bg-default, .bg-primary, .bg-parallax". They can be used separately or alltogether. -->
+      <section class="fw-section no-cover space-top-3x space-bottom-2x" style="background-image: url(img/fw-images/page-faq2.jpg);">
+        <div class="container padding-top-2x padding-bottom">
+          <div class="video-popup-btn text-light text-center padding-top-3x padding-bottom-2x">
+            <a href="https://vimeo.com/33984473" class="btn play-btn btn-light waves-effect waves-light btn-circle"><i class="icon-video"></i></a>
+          </div>
+        </div><!-- .container -->
+      </section><!-- .fw-section.bg-parallax -->
+
+      <section class="fw-section next-to-footer">
+        <div class="container padding-top-2x">
+          <h2 class="block-title text-center">Can`t Find Whar Are You Looking For?
+            <small>Submit a Ticket</small>
+            <a href="#" class="btn btn-pill btn-ghost btn-info waves-effect waves-light space-top-3x">Submit a ticket</a>
+          </h2>
+          <img src="img/fw-images/page-faq.jpg" alt="">
+        </div><!-- .container -->
+      </section><!-- .fw-section -->
+    </main>
+
+    <!-- Scroll To Top Button -->
+    <a href="#" class="scroll-to-top-btn">
+      <i class="fa fa-angle-up"></i>
+    </a><!-- .scroll-to-top-btn -->
+
+    <!-- Footer -->
+    <footer class="footer dark-skin"  style="background-image: url(img/footer/footer_bg.jpg)">
+      <div class="top-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-sm-6">
+              <section class="widget widget_text">
+                <a href="index.html" class="site-logo">
+                  <img src="img/logos-main/logo_01.png" alt="Promo">
+                </a><!-- .site-logo -->
+                <p>Left your phone on the train? Your photos, and videos are safe. Just sign in  from any device, and your files will be there waiting for you.</p>
+              </section><!-- .widget.widget_text -->
+            </div><!-- .col-md-3 -->
+            <div class="col-md-3 col-sm-6">
+              <section class="widget widget_categories">
+                <h3 class="widget-title">
+                  <i class="fe-icon-layers"></i>
+                  Categories
+                </h3>
+                <ul>
+                  <li><a href="#">Support<span>3</span></a></li>
+                  <li><a href="#">Design<span>4</span></a></li>
+                  <li><a href="#">Hosting<span>11</span></a></li>
+                </ul>
+              </section><!-- .widget.widget_categories -->
+            </div><!-- .col-md-3 -->
+            <div class="clearfix visible-sm"></div>
+            <div class="col-md-3 col-sm-6">
+              <section class="widget widget_recent_news">
+                <h3 class="widget-title">
+                  <i class="fe-icon-paper"></i>
+                  Recent News
+                </h3>
+                <div class="item">
+                  <div class="info">
+                    <h4><a href="blog-single-rs.html">Making Cents of Online Investment Services – Which is Best?</a></h4>
+                  </div>
+                  <div class="meta">
+                    <a href="#"><i class="icon-calendar"></i> October 7, 2015</a>
+                  </div>
+                </div><!-- .item -->
+                <div class="item">
+                  <div class="info">
+                    <h4><a href="blog-single-rs.html">Making Cents of Online Investment Services – Which is Best?</a></h4>
+                  </div>
+                  <div class="meta">
+                    <a href="#"><i class="icon-calendar"></i> October 7, 2015</a>
+                  </div>
+                </div><!-- .item -->
+              </section><!-- .widget.widget_recent_news -->
+            </div><!-- .col-md-3 -->
+            <div class="col-md-3 col-sm-6">
+              <!-- Subscribe Widget -->
+              <section class="widget widget_subscribe">
+                <h3 class="widget-title">
+                  <i class="fe-icon-paper-clip"></i>
+                  Subscribe
+                </h3>
+                <form method="post" class="subscribe-box">
+                  <input type="text" class="form-control input-sm" placeholder="E-mail">
+                  <button type="submit" class="btn btn-primary btn-block btn-sm waves-effect waves-light">Subscribe for news</button>
+                </form>
+              </section><!-- widget_subscribe -->
+            </div><!-- .col-md-3 -->
+          </div><!-- .row -->
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="bottom-footer">
+          <div class="column">
+            <ul class="social list-unstyled list-inline">
+              <li><a href="#"><i class="fa fa-facebook"></i>Facebook</a></li>
+              <li><a href="#"><i class="fa fa-youtube"></i>Youtube</a></li>
+              <li><a href="#"><i class="fa fa-vk"></i>Vkontakte</a></li>
+              <li><a href="#"><i class="fa fa-tumblr"></i>Tumblr</a></li>
+            </ul>
+          </div><!-- .column -->
+          <div class="column text-right">
+            <ul class="list-unstyled list-inline">
+              <li><a href="#">Legal</a></li>
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#">Sitemap</a></li>
+            </ul>
+          </div><!-- .column -->
+        </div>
+      </div>
+
+      <div class="copyright">
+        <div class="container">
+          <div class="column">
+            <p>&copy; Promo 2016. Made by <a href="http://8guild.com/" target="_blank">8Guild</a> with <i class="fa fa-heart text-danger"></i> love.</p>
+          </div><!-- .column -->
+        </div>
+      </div><!-- .copyright -->
+
+    </footer><!-- .footer -->
+
+
+  
+  </div><!-- .page-wrapper -->
+
+  <!-- JavaScript (jQuery) libraries, plugins and custom scripts -->
+  <script src="js/vendor/jquery-2.1.4.min.js"></script>
+  <script src="js/vendor/jquery.easing.min.js"></script>
+  <script src="js/vendor/bootstrap.min.js"></script>
+  <script src="js/vendor/pace.min.js"></script>
+  <script src="js/vendor/placeholder.js"></script>
+  <script src="js/vendor/smoothscroll.js"></script>
+  <script src="js/vendor/waypoints.min.js"></script>
+  <script src="js/vendor/icheck.min.js"></script>
+  <script src="js/vendor/waves.min.js"></script>
+  <script src="js/vendor/velocity.min.js"></script>
+  <script src="js/vendor/jquery.stellar.min.js"></script>
+  <script src="js/vendor/magnific-popup.min.js"></script>
+  <script src="js/vendor/owl.carousel.min.js"></script>
+  <script src="js/vendor/jquery.spincrement.js"></script>
+  <script src="js/vendor/scrollspy.js"></script>
+
+  <script src="js/scripts.js"></script>
+
+</body><!-- <body> -->
+
+</html>

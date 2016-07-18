@@ -1,0 +1,2147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Promo | Elements</title>
+
+  <!--SEO Meta Tags-->
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta name="author" content="8Guild" />
+
+  <!--Mobile Specific Meta Tag-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- All Theme Styles including Bootstrap, FontAwesome, etc. compiled from styles.scss-->
+  <link href="css/styles.min.css" rel="stylesheet" media="screen">
+
+  <!--Modernizr / Detectizr-->
+  <script src="js/vendor/modernizr.custom.js"></script>
+  <script src="js/vendor/detectizr.min.js"></script>
+</head>
+
+<!-- Body -->
+<body class="">
+  <div class="preloader-overlay"></div>
+
+  <!-- Page Wrapper -->
+  <div class="page-wrapper">
+
+    <!-- Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <button type="button" class="close-btn" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <div class="modal-content text-center">
+          <h4>Login With Social Account</h4>
+          <div class="space-bottom-2x">
+            <a href="#" class="btn google-login">Google<i class="fa fa-google"></i></a>
+            <a href="#" class="btn twitter-login">Twitter<i class="fa fa-twitter"></i></a>
+            <a href="#" class="btn facebook-login">Facebook<i class="fa fa-facebook"></i></a>
+          </div>
+          <h4>Or by Email</h4>
+          <form method="post">
+            <input type="email" class="form-control" placeholder="Email">
+            <input type="password" class="form-control" placeholder="Password">
+            <div class="form-group">
+              <button type="submit" class="btn login-btn btn-default">Login into your account<i class="icon-head"></i></button>
+            </div>
+            <div class="text-left">
+              <span class="text-sm text-semibold">New to Promo? <a href="#">Sign Up</a></span>
+            </div>
+          </form><!-- <form> -->
+        </div><!-- .modal-content -->
+      </div><!-- .modal-dialog -->
+    </div><!-- .modal.fade -->
+
+    <!-- Navbar -->
+    <!-- Add class ".navbar-sticky" to make navbar stuck when it hits the top of the page. Another modifier class is: "navbar-fullwidth" to stretch navbar and make it occupy 100% of the page width. The screen width at which navbar collapses can be controlled through the variable "$nav-collapse" in sass/variables.scss -->
+    <header class="navbar navbar-sticky">
+
+      <!-- <div class="topbar" style="background-color: #ccc;">
+        <div class="container">
+          <a href="#" class="btn btn-ghost btn-primary">call us</a>
+          <span class="text"><i class="fa fa-phone"></i> +38 050 111 22 33</span>
+
+          <ul class="social pull-right">
+            <li><a href="#"><i class="fa fa-facebook"></i>Facebook</a></li>
+            <li><a href="#"><i class="fa fa-youtube"></i>Youtube</a></li>
+            <li><a href="#"><i class="fa fa-vk"></i>Vkontakte</a></li>
+            <li><a href="#"><i class="fa fa-tumblr"></i>Tumblr</a></li>
+          </ul>
+        </div>
+      </div> -->
+
+      <!-- Light Skin for Navbar enables by adding .light-skin class. -->
+      <div class="nav-bar-inner">
+        <div class="container">
+          <a href="index.html" class="site-logo">
+            <img src="img/logos-main/logo_06.png" alt="Promo">
+          </a><!-- .site-logo -->
+
+          <div class="toolbar text-right">
+            <a href="#" class="text-sm" data-toggle="modal" data-target="#loginModal"><i class="fe-icon-head"></i>Sign up</a>
+            <a href="#" class="text-sm" data-toggle="modal" data-target="#loginModal"><i class="fe-icon-unlock"></i>Log In</a>
+
+            <div class="search-btn">
+              <i class="fe-icon-search"></i>
+              <form method="post" class="search-box">
+                <input type="text" class="form-control input-sm" placeholder="Search">
+                <button type="submit"><i class="fe-icon-search"></i></button>
+              </form>
+            </div> <!-- .search-btn -->
+          </div> <!-- .toolbar -->
+
+          <!-- Mobile Menu Toggle -->
+          <div class="nav-toggle"><span></span></div>
+        </div>
+      </div>
+
+      <!-- For alignment navigation use .menu-left-align, .menu-right-align or .menu-center-align class. To get light skin, use .light-skin. -->
+      <nav class="main-navigation menu-left-align" style="background-color: #fff;">
+        <div class="container">
+          <ul class="menu">
+            <li class="menu-item-has-children">
+              <a href="#">Home</a>
+              <ul class="sub-menu">
+                <li><a href="index.html">Theme Presentation</a></li>
+                <li><a href="home-agency.html">Home Agency</a></li>
+                <li><a href="home-saas.html">Home SAAS</a></li>
+                <li><a href="home-app.html">Home App Showcase</a></li>
+                <li><a href="home-tour.html">Home Tour</a></li>
+                <li><a href="home-event.html">Home Event</a></li>
+                <li><a href="home-development.html">Home Development</a></li>
+                <li><a href="home-medical.html">Home Medical</a></li>
+                <li><a href="home-logistics.html">Home Logistics</a></li>
+                <li><a href="home-lawyer.html">Home Lawyer</a></li>
+                <li><a href="home-product.html">Home Product Promo</a></li>
+              </ul>
+            </li>
+            <li class="menu-item-has-children has-mega-menu">
+              <a href="#">Blog</a>
+              <ul class="sub-menu">
+                <li>
+                  <ul>
+                    <li><a href="blog-list-rs.html">Blog List Right Sidebar</a></li>
+                    <li><a href="blog-list-ls.html">Blog List Left Sidebar</a></li>
+                    <li><a href="blog-list-ns.html">Blog List No Sidebar</a></li>
+                    <li><a href="blog-grid-4-cols.html">Blog Grid 4 Cols</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <ul>
+                    <li><a href="blog-grid-3-cols.html">Blog Grid 3 Cols</a></li>
+                    <li><a href="blog-grid-3-cols-rs.html">Blog Grid 3 Cols Right Sidebar</a></li>
+                    <li><a href="blog-grid-3-cols-ls.html">Blog Grid 3 Cols Left Sidebar</a></li>
+
+                  </ul>
+                </li>
+                <li>
+                  <ul>
+                    <li><a href="blog-grid-2-cols.html">Blog Grid 2 Cols</a></li>
+                    <li><a href="blog-grid-2-cols-rs.html">Blog Grid 2 Cols Right Sidebar</a></li>
+                    <li><a href="blog-grid-2-cols-ls.html">Blog Grid 2 Cols Left Sidebar</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <ul>
+                    <li><a href="blog-single-rs.html">Single Post Right Sidebar</a></li>
+                    <li><a href="blog-single-ls.html">Single Post Left Sidebar</a></li>
+                    <li><a href="blog-single-ns.html">Single Post No Sidebar</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item-has-children">
+              <a href="#">Portfolio</a>
+              <ul class="sub-menu">
+                <li><a href="portfolio-3-cols.html">Portfolio 3 Columns</a></li>
+                <li><a href="portfolio-2-cols.html">Portfolio 2 Columns</a></li>
+                <li><a href="portfolio-hexagon.html">Portfolio Hexagon Tumbnails</a></li>
+                <li><a href="portfolio-masonry.html">Portfolio Masonry Grid</a></li>
+                <li><a href="portfolio-single.html ">Single portfolio</a></li>
+              </ul>
+            </li>
+            <li class="menu-item-has-children">
+              <a href="#">Pages</a>
+              <ul class="sub-menu">
+                <li><a href="page-about.html">About Us</a></li>
+                <li><a href="page-contacts.html">Contacts</a></li>
+                <li><a href="page-team.html">Our team</a></li>
+                <li><a href="page-pricing.html">Pricing</a></li>
+                <li><a href="page-help-center.html">Help Center</a></li>
+                <li><a href="page-customers.html">Customers / Clients</a></li>
+                <li><a href="page-we-are-hiring.html">We are Hiring</a></li>
+                <li><a href="page-under-construction.html">Under Construction</a></li>
+                <li><a href="page-404.html">404</a></li>
+              </ul>
+            </li>
+            <li class="menu-item-has-children">
+              <a href="#">Headers</a>
+              <ul class="sub-menu">
+                <li><a href="home-tour.html">Full Widht With Tools</a></li>
+                <li><a href="home-saas.html">Ghost Full Widht With Tools</a></li>
+                <li><a href="home-app.html">Boxed Right Menu</a></li>
+                <li><a href="elements.html">Boxed With Menu Below</a></li>
+              </ul>
+            </li>
+            <li class="current-menu-item has-mega-menu">
+              <a href="elements.html">Elements</a>
+              <ul class="sub-menu">
+                <li>
+                  <ul>
+                    <li><a href="#typography">Typography </a></li>
+                    <li><a href="#buttons">Buttons</a></li>
+                    <li><a href="#cta_buttons">CTA Buttons</a></li>
+                    <li><a href="#social">Social Buttons</a></li>
+                    <li><a href="#forms">Forms</a></li>
+                    <li><a href="#tables">Table</a></li>
+                    <li><a href="#timetable">Timetable</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <ul>
+                    <li><a href="#tabs">Tabs</a></li>
+                    <li><a href="#panels">Panels &amp; Accordions</a></li>
+                    <li><a href="#fclick">Features: Clickable Icons</a></li>
+                    <li><a href="#fhexa">Features: Hexagon Images</a></li>
+                    <li><a href="#ficons">Features: Icons</a></li>
+                    <li><a href="#fimaged">Features: Images</a></li>
+                    <li><a href="#tcolored">Features: Solid Color Tiles</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <ul>
+                    <li><a href="#timaged">Features: Image Tiles</a></li>
+                    <li><a href="#image_link">Image Links</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#tpricing">Pricing Table</a></li>
+                    <li><a href="#testimonial">Testimonials</a></li>
+                    <li><a href="#port1">Portfolio Tiles: Type 1</a></li>
+                    <li><a href="#port2">Portfolio Tiles: Type 2</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <ul>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#carousel">Carousels</a></li>
+                    <li><a href="#to_video">Responsive Video</a></li>
+                    <li><a href="#cta_info">CTA Info Box</a></li>
+                    <li><a href="#progress">Progress Bars</a></li>
+                    <li><a href="#counters">Counters</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul><!-- .menu -->
+        </div>
+      </nav><!-- .main-navigation -->
+
+    </header><!-- .navbar -->
+
+    <!-- Page Title -->
+    <!--Add modifier class : "pt-fullwidth" to stretch page title and make it occupy 100% of the page width. -->
+    <section class="page-title space-bottom-3x">
+      <div class="container">
+        <div class="inner">
+          <div class="column">
+            <div class="title">
+              <h1>Elements</h1>
+            </div><!-- .title -->
+          </div><!-- .column -->
+
+          <div class="column">
+            <div class="breadcrumbs">
+              <a href="index.html">Home</a>
+              <span class="delimiter"><i class="fa fa-angle-right"></i></span>
+              <span>Elements</span>
+            </div><!-- .breadcrumbs -->
+          </div><!-- .column -->
+        </div>
+      </div>
+    </section><!-- .page-title -->
+
+    <main>
+      <!-- Content -->
+      <div class="container">
+
+        <!-- Elements block -->
+        <div class="row">
+          <div class="col-md-3">
+            <h3 class="text-muted scrollspy" id="typography">Typography</h3>
+          </div>
+
+          <div class="col-md-9">
+            <div class="row">
+              <div class="col-sm-6">
+                <h4 class="text-muted">Titles</h4>
+
+                <h1>Heading H1</h1>
+                <h2>Heading H2</h2>
+                <h3>Heading H3</h3>
+                <h4>Heading H4</h4>
+                <h5>Heading H5</h5>
+                <h6>Heading H6</h6>
+              </div>
+
+              <div class="col-sm-6">
+                <h4 class="text-muted">Lists</h4>
+
+                <ul class="list-featured">
+                  <li>Common WordPress Installation</li>
+                  <li>How Do I Check Item Compatibility?</li>
+                  <li>Item Installation Guide &amp; Help Docs</li>
+                </ul>
+                <ul class="list-icons">
+                  <li>
+                    <i class="icon-calendar"></i>
+                    Common WordPress Installation
+                    <p class="list-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                  </li>
+                  <li>
+                    <i class="icon-browser"></i>
+                    How Do I Check Item Compatibility?
+                    <p class="list-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                  </li>
+                  <li>
+                    <i class="icon-briefcase"></i>
+                    Item Installation Guide &amp; Help Docs
+                    <p class="list-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-6">
+                <h4 class="text-muted">Paragraph</h4>
+                <p><b>NORMAL TEXT</b> dolor sit amet, consectetur adipisicing elit, sed do eiusmod <a href="#">tempor incididunt</a> ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p class="text-lg"><b>LARGE TEXT</b> dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                <p class="lead"><b>LEAD TEXT</b> dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut ltabore et dolore magna aliqua.</p>
+              </div>
+              <div class="col-sm-6">
+                <h4 class="text-muted">Colored text</h4>
+                <ul class="list-unstyled">
+                  <li class="text-muted"><strong>Muted text.</strong> Sed ut perspiciatis unde omnis iste natus voluptatem.</li>
+                  <li class="text-primary"><strong>Primary text.</strong> Maecenas sed diam eget risus varius blandit amet.</li>
+                  <li class="text-success"><strong>Success text.</strong> Et harum quidem rerum facilis est expedita natus.</li>
+                  <li class="text-info"><strong>Info text.</strong> Sed ut perspiciatis unde omnis iste natus voluptatem.</li>
+                  <li class="text-warning"><strong>Warning text.</strong> Maecenas sed diam eget risus varius blandit amet.</li>
+                  <li class="text-danger"><strong>Danger text.</strong> Et harum quidem rerum facilis est expedita natus.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div><!-- Elements block END -->
+
+        <hr>
+
+        <!-- Elements block -->
+        <div class="row padding-top">
+          <div class="col-md-3">
+            <h3 class="text-muted scrollspy" id="buttons">Buttons</h3>
+          </div>
+          
+          <div class="col-md-9">
+            <div class="row">
+              <div class="col-sm-6">
+                <!-- Normal Buttons -->
+                <h4 class="text-muted">Normal Buttons</h4>
+                <div>
+                  <a href="#" class="btn btn-default waves-effect waves-light">Default button</a>
+                  <a href="#" class="btn btn-primary waves-effect waves-light">Primary button</a>
+                  <a href="#" class="btn btn-info waves-effect waves-light">Info button</a>
+                  <a href="#" class="btn btn-success waves-effect waves-light">Success button</a>
+                  <a href="#" class="btn btn-warning waves-effect waves-light">Warning button</a>
+                  <a href="#" class="btn btn-danger waves-effect waves-light">Danger button</a>
+                </div>
+                <div class="space-bottom-2x">
+                  <a href="#" class="btn btn-ghost btn-default waves-effect waves-light">Default button</a>
+                  <a href="#" class="btn btn-ghost btn-primary waves-effect waves-light">Primary button</a>
+                  <a href="#" class="btn btn-ghost btn-info waves-effect waves-light">Info button</a>
+                  <a href="#" class="btn btn-ghost btn-success waves-effect waves-light">Success button</a>
+                  <a href="#" class="btn btn-ghost btn-warning waves-effect waves-light">Warning button</a>
+                  <a href="#" class="btn btn-ghost btn-danger waves-effect waves-light">Danger button</a>
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <!-- Ghost Buttons -->
+                <h4 class="text-muted">Pills Buttons</h4>
+                <div>
+                  <a href="#" class="btn btn-pill btn-default waves-effect waves-light">Default button</a>
+                  <a href="#" class="btn btn-pill btn-primary waves-effect waves-light">Primary button</a>
+                  <a href="#" class="btn btn-pill btn-info waves-effect waves-light">Info button</a>
+                  <a href="#" class="btn btn-pill btn-success waves-effect waves-light">Success button</a>
+                  <a href="#" class="btn btn-pill btn-warning waves-effect waves-light">Warning button</a>
+                  <a href="#" class="btn btn-pill btn-danger waves-effect waves-light">Danger button</a>
+                </div><!-- </div> -->
+                <div class="space-bottom-2x">
+                  <a href="#" class="btn btn-pill btn-ghost btn-default waves-effect waves-light">Default button</a>
+                  <a href="#" class="btn btn-pill btn-ghost btn-primary waves-effect waves-light">Primary button</a>
+                  <a href="#" class="btn btn-pill btn-ghost btn-info waves-effect waves-light">Info button</a>
+                  <a href="#" class="btn btn-pill btn-ghost btn-success waves-effect waves-light">Success button</a>
+                  <a href="#" class="btn btn-pill btn-ghost btn-warning waves-effect waves-light">Warning button</a>
+                  <a href="#" class="btn btn-pill btn-ghost btn-danger waves-effect waves-light">Danger button</a>
+                </div><!-- .space-bottom-2x -->
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-6">
+                <!-- Ghost Buttons -->
+                <h4 class="text-muted">Rounded Buttons</h4>
+                <div>
+                  <a href="#" class="btn btn-rounded btn-default waves-effect waves-light">Default button</a>
+                  <a href="#" class="btn btn-rounded btn-primary waves-effect waves-light">Primary button</a>
+                  <a href="#" class="btn btn-rounded btn-info waves-effect waves-light">Info button</a>
+                  <a href="#" class="btn btn-rounded btn-success waves-effect waves-light">Success button</a>
+                  <a href="#" class="btn btn-rounded btn-warning waves-effect waves-light">Warning button</a>
+                  <a href="#" class="btn btn-rounded btn-danger waves-effect waves-light">Danger button</a>
+                </div><!-- </div> -->
+                <div>
+                  <a href="#" class="btn btn-rounded btn-ghost btn-default waves-effect waves-light">Default button</a>
+                  <a href="#" class="btn btn-rounded btn-ghost btn-primary waves-effect waves-light">Primary button</a>
+                  <a href="#" class="btn btn-rounded btn-ghost btn-info waves-effect waves-light">Info button</a>
+                  <a href="#" class="btn btn-rounded btn-ghost btn-success waves-effect waves-light">Success button</a>
+                  <a href="#" class="btn btn-rounded btn-ghost btn-warning waves-effect waves-light">Warning button</a>
+                  <a href="#" class="btn btn-rounded btn-ghost btn-danger waves-effect waves-light">Danger button</a>
+                </div><!-- .space-bottom-2x -->
+              </div>
+              <div class="col-sm-6">
+                <!-- 3D Buttons -->
+                <h4 class="text-muted">3D Buttons</h4>
+                <div class="space-bottom-2x">
+                  <a href="#" class="btn btn-3d btn-default">Default button</a>
+                  <a href="#" class="btn btn-3d btn-primary">Primary button</a>
+                  <a href="#" class="btn btn-3d btn-info">Info button</a>
+                  <a href="#" class="btn btn-3d btn-success">Success button</a>
+                  <a href="#" class="btn btn-3d btn-warning">Warning button</a>
+                  <a href="#" class="btn btn-3d btn-danger">Danger button</a>
+                </div><!-- </div> -->
+                <div class="space-bottom-2x">
+                  <a href="#" class="btn btn-3d btn-sm btn-default">Default button</a>
+                  <a href="#" class="btn btn-3d btn-sm btn-primary">Primary button</a>
+                  <a href="#" class="btn btn-3d btn-sm btn-info">Info button</a>
+                  <a href="#" class="btn btn-3d btn-sm btn-success">Success button</a>
+                  <a href="#" class="btn btn-3d btn-sm btn-warning">Warning button</a>
+                  <a href="#" class="btn btn-3d btn-sm btn-danger">Danger button</a>
+                </div><!-- .space-bottom-2x -->
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-6">
+                <!-- Buttons with Icons -->
+                <h4 class="text-muted">Buttons with Icons</h4>
+                <div>
+                  <a href="#" class="btn btn-default waves-effect waves-light btn-icon-left"><i class="icon-flag"></i>Icon left</a>
+                  <a href="#" class="btn btn-primary waves-effect waves-light btn-icon-right">Icon right<i class="icon-attachment"></i></a>
+                  <a href="#" class="btn btn-ghost btn-default btn-pill waves-effect waves-light btn-icon-left"><i class="icon-heart"></i>Icon left</a>
+                  <a href="#" class="btn btn-ghost btn-primary btn-rounded waves-effect waves-light btn-icon-right">Icon right<i class="icon-caution"></i></a>
+                  <a href="#" class="btn btn-sm btn-ghost btn-primary btn-pill waves-effect waves-light btn-icon-right">Icon right<i class="icon-download"></i></a>
+                  <a href="#" class="btn btn-ghost btn-warning btn-rounded waves-effect waves-light btn-divided btn-icon-right">Icon right<i class="fa fa-apple"></i></a>
+                  <a href="#" class="btn btn-default btn-rounded waves-effect waves-light btn-divided btn-icon-left"><i class="fa fa-apple"></i>Icon left</a>
+                </div><!-- .space-bottom-2x -->
+              </div>
+              <div class="col-sm-6">
+                <!-- Block Buttons -->
+                <h4 class="text-muted">Block Buttons</h4>
+
+                <a href="#" class="btn btn-block btn-default waves-effect waves-light">Block button</a>
+
+                <a href="#" class="btn btn-block btn-rounded btn-primary waves-effect waves-light">Block button</a>
+
+                <a href="#" class="btn btn-block btn-pill btn-ghost btn-default waves-effect waves-light">Block button</a>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-6">
+                <!-- Circle Buttons with Icons -->
+                <h4 class="text-muted scrollspy" id="cta_buttons">Circle Buttons with Icons</h4>
+                <div>
+                  <a href="#" class="btn btn-default waves-effect waves-light btn-circle"><i class="fa fa-twitter"></i></a>
+                  <a href="#" class="btn btn-primary waves-effect waves-light btn-circle"><i class="fa fa-twitter"></i></a>
+                  <a href="#" class="btn btn-warning waves-effect waves-light btn-circle"><i class="fa fa-twitter"></i></a>
+                  <a href="#" class="btn btn-danger waves-effect waves-light btn-circle"><i class="fa fa-twitter"></i></a>
+                  <a href="#" class="btn btn-info waves-effect waves-light btn-circle"><i class="fa fa-twitter"></i></a>
+                  <a href="#" class="btn btn-light waves-effect btn-circle"><i class="fa fa-angle-down"></i></a>
+                </div><!-- .space-bottom-2x -->
+              </div>
+              <div class="col-sm-6">
+                <!-- Markets Buttons -->
+                <h4 class="text-muted">Markets Buttons</h4>
+                <div>
+                  <a href="#" class="btn-app-store"></a>
+                  <a href="#" class="btn-google-play"></a>
+                  <a href="#" class="btn-amazon"></a>
+                  <a href="#" class="btn-windows"></a>
+                </div><!-- .space-bottom-2x -->
+              </div>
+            </div>
+
+            <!-- Social Buttons -->
+            <h4 class="text-muted scrollspy" id="social">Social Buttons</h4>
+            <div class="social-bar padding-bottom">
+              <a href="#" class="sb-email" data-toggle="tooltip" data-placement="top" title="Email">
+                <i class="fa fa-envelope"></i>
+              </a>
+              <a href="#" class="sb-behance" data-toggle="tooltip" data-placement="top" title="Behance">
+                <i class="fa fa-behance"></i>
+              </a>
+              <a href="#" class="sb-bitbucket" data-toggle="tooltip" data-placement="top" title="BitBucket">
+                <i class="fa fa-bitbucket"></i>
+              </a>
+              <a href="#" class="sb-codepen" data-toggle="tooltip" data-placement="top" title="Codepent">
+                <i class="fa fa-codepen"></i>
+              </a>
+              <a href="#" class="sb-deviantart" data-toggle="tooltip" data-placement="top" title="DeviantArt">
+                <i class="fa fa-deviantart"></i>
+              </a>
+              <a href="#" class="sb-digg" data-toggle="tooltip" data-placement="top" title="Digg">
+                <i class="fa fa-digg"></i>
+              </a>
+              <a href="#" class="sb-dribbble" data-toggle="tooltip" data-placement="top" title="Dribbble">
+                <i class="fa fa-dribbble"></i>
+              </a>
+              <a href="#" class="sb-dropbox" data-toggle="tooltip" data-placement="top" title="Dropbox">
+                <i class="fa fa-dropbox"></i>
+              </a>
+              <a href="#" class="sb-facebook" data-toggle="tooltip" data-placement="top" title="Facebook">
+                <i class="fa fa-facebook"></i>
+              </a>
+              <a href="#" class="sb-flickr" data-toggle="tooltip" data-placement="top" title="Flickr">
+                <i class="fa fa-flickr"></i>
+              </a>
+              <a href="#" class="sb-foursquare" data-toggle="tooltip" data-placement="top" title="Foursquare">
+                <i class="fa fa-foursquare"></i>
+              </a>
+              <a href="#" class="sb-github" data-toggle="tooltip" data-placement="top" title="Github">
+                <i class="fa fa-github"></i>
+              </a>
+              <a href="#" class="sb-google-plus" data-toggle="tooltip" data-placement="top" title="Google+">
+                <i class="fa fa-google-plus"></i>
+              </a>
+              <a href="#" class="sb-instagram" data-toggle="tooltip" data-placement="top" title="Instagram">
+                <i class="fa fa-instagram"></i>
+              </a>
+              <a href="#" class="sb-jsfiddle" data-toggle="tooltip" data-placement="top" title="jsFiddle">
+                <i class="fa fa-jsfiddle"></i>
+              </a>
+              <a href="#" class="sb-lastfm" data-toggle="tooltip" data-placement="top" title="last.fm">
+                <i class="fa fa-lastfm"></i>
+              </a>
+              <a href="#" class="sb-linkedin" data-toggle="tooltip" data-placement="top" title="LinkedIn">
+                <i class="fa fa-linkedin"></i>
+              </a>
+              <a href="#" class="sb-paypal" data-toggle="tooltip" data-placement="top" title="PayPal">
+                <i class="fa fa-paypal"></i>
+              </a>
+              <a href="#" class="sb-pinterest" data-toggle="tooltip" data-placement="top" title="Pinterest">
+                <i class="fa fa-pinterest"></i>
+              </a>
+              <a href="#" class="sb-reddit" data-toggle="tooltip" data-placement="top" title="Reddit">
+                <i class="fa fa-reddit"></i>
+              </a>
+              <a href="#" class="sb-skype" data-toggle="tooltip" data-placement="top" title="Skype">
+                <i class="fa fa-skype"></i>
+              </a>
+              <a href="#" class="sb-soundcloud" data-toggle="tooltip" data-placement="top" title="SoundCloud">
+                <i class="fa fa-soundcloud"></i>
+              </a>
+              <a href="#" class="sb-stackoverflow" data-toggle="tooltip" data-placement="top" title="Stack Overflow">
+                <i class="fa fa-stack-overflow"></i>
+              </a>
+              <a href="#" class="sb-steam" data-toggle="tooltip" data-placement="top" title="Steam">
+                <i class="fa fa-steam"></i>
+              </a>
+              <a href="#" class="sb-stumbleupon" data-toggle="tooltip" data-placement="top" title="StumbleUpon">
+                <i class="fa fa-stumbleupon"></i>
+              </a>
+              <a href="#" class="sb-trello" data-toggle="tooltip" data-placement="top" title="Trello">
+                <i class="fa fa-trello"></i>
+              </a>
+              <a href="#" class="sb-tumblr" data-toggle="tooltip" data-placement="top" title="Tumblr">
+                <i class="fa fa-tumblr"></i>
+              </a>
+              <a href="#" class="sb-twitch" data-toggle="tooltip" data-placement="top" title="Twitch">
+                <i class="fa fa-twitch"></i>
+              </a>
+              <a href="#" class="sb-twitter" data-toggle="tooltip" data-placement="top" title="Twitter">
+                <i class="fa fa-twitter"></i>
+              </a>
+              <a href="#" class="sb-vine" data-toggle="tooltip" data-placement="top" title="Vine">
+                <i class="fa fa-vine"></i>
+              </a>
+              <a href="#" class="sb-vk" data-toggle="tooltip" data-placement="top" title="Vkontakte">
+                <i class="fa fa-vk"></i>
+              </a>
+              <a href="#" class="sb-wechat" data-toggle="tooltip" data-placement="top" title="WeChat">
+                <i class="fa fa-wechat"></i>
+              </a>
+              <a href="#" class="sb-wordpress" data-toggle="tooltip" data-placement="top" title="WordPress">
+                <i class="fa fa-wordpress"></i>
+              </a>
+              <a href="#" class="sb-xing" data-toggle="tooltip" data-placement="top" title="Xing">
+                <i class="fa fa-xing"></i>
+              </a>
+              <a href="#" class="sb-yahoo" data-toggle="tooltip" data-placement="top" title="Yahoo!">
+                <i class="fa fa-yahoo"></i>
+              </a>
+              <a href="#" class="sb-yelp" data-toggle="tooltip" data-placement="top" title="Yelp">
+                <i class="fa fa-yelp"></i>
+              </a>
+              <a href="#" class="sb-youtube" data-toggle="tooltip" data-placement="top" title="YouTube">
+                <i class="fa fa-youtube"></i>
+              </a>
+            </div><!-- .social-bar -->
+          </div>
+        </div><!-- Elements block END -->
+
+        <hr>
+
+        <!-- Elements block -->
+        <div class="row padding-top">
+          <div class="col-md-3">
+            <h3 class="text-muted scrollspy" id="forms">Forms</h3>
+          </div>
+
+          <div class="col-md-9">
+            <div class="row">
+              <div class="col-sm-6">
+                <h4>Inputs</h4>
+                <input type="text" class="form-control" placeholder="Text field">
+
+                <select name="sel" onChange="window.location.href=this.value">
+                  <option>Select</option>
+                  <option>option 1</option>
+                  <option>option 1</option>
+                </select>
+
+                <input type="text" class="form-control error" placeholder="Valid field">
+
+                <input type="text" class="form-control input-sm" placeholder="Small field">
+
+                <textarea class="form-control space-bottom" rows="6" placeholder="Textarea"></textarea>
+                <div class="row">
+                  <div class="col-sm-4">
+                    <input type="text" class="form-control input-sm" placeholder="Name">
+                  </div>
+                  <div class="col-sm-4">
+                    <input type="email" class="form-control input-sm" placeholder="E-mail">
+                  </div>
+                  <div class="col-sm-4">
+                    <a href="#" class="btn btn-primary waves-effect waves-light btn-block btn-sm">Send</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <h4 class="text-muted space-bottom">Stack</h4>
+
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label class="checkbox">
+                        <input type="checkbox"> Checkbox
+                      </label>
+                      <label class="checkbox">
+                        <input type="checkbox" checked> Checkbox
+                      </label>
+                      <label class="checkbox disabled">
+                        <input type="checkbox" disabled> Checkbox
+                      </label>
+                      <label class="checkbox disabled">
+                        <input type="checkbox" checked disabled> Checkbox
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label class="radio">
+                        <input type="radio" name="rad_demo_1"> Radio
+                      </label>
+                      <label class="radio">
+                        <input type="radio" name="rad_demo_1" checked> Radio
+                      </label>
+                      <label class="radio disabled">
+                        <input type="radio" disabled> Radio
+                      </label>
+                      <label class="radio disabled">
+                        <input type="radio" checked disabled> Radio
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+
+                <h4 class="text-muted space-bottom space-top-2x">Inline Checkboxes</h4>
+                <div class="form-group">
+                  <label class="checkbox checkbox-inline">
+                    <input type="checkbox"> Checkbox
+                  </label>
+                  <label class="checkbox checkbox-inline">
+                    <input type="checkbox" checked> Checkbox
+                  </label>
+                  <label class="checkbox checkbox-inline disabled">
+                    <input type="checkbox" disabled> Checkbox
+                  </label>
+                  <label class="checkbox checkbox-inline disabled">
+                    <input type="checkbox" checked disabled> Checkbox
+                  </label>
+                </div>
+
+                <h4 class="text-muted space-bottom space-top-2x">Inline Radios</h4>
+                <div class="form-group">
+                  <label class="radio radio-inline">
+                    <input type="radio" name="rad_demo_2"> Radio
+                  </label>
+                  <label class="radio radio-inline">
+                    <input type="radio" name="rad_demo_2" checked> Radio
+                  </label>
+                  <label class="radio radio-inline disabled">
+                    <input type="radio" disabled> Radio
+                  </label>
+                  <label class="radio radio-inline disabled">
+                    <input type="radio" checked disabled> Radio
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-6">
+                <h4 class="text-muted space-bottom">Switcher</h4>
+                <div class="switch-wrap space-bottom">
+                  <div class="switch-inner">
+                    <div class="switch">
+                      <div>
+                        <span class="knob"></span>
+
+                        <span class="state string1">ON</span>
+                        <span class="state string2">OFF</span>
+                      </div>
+                        <input type="hidden" value="off">
+                    </div>
+                  </div>
+                </div><!-- .switch-wrap -->
+              </div>
+
+              <div class="col-sm-6">
+                <h4 class="text-muted space-bottom">Switcher rounded</h4>
+                <div class="switch-wrap space-bottom">
+                  <div class="switch-inner">
+                    <div class="switch switch-rounded">
+                      <div>
+                        <span class="knob"></span>
+
+                        <span class="state string1">ON</span>
+                        <span class="state string2">OFF</span>
+                      </div>
+                        <input type="hidden" value="off">
+                    </div>
+                  </div>
+                </div><!-- .switch-wrap -->
+              </div>
+            </div>
+          </div>
+        </div><!-- Elements block END -->
+
+        <hr>
+
+        <!-- Elements block -->
+        <div class="row padding-top">
+          <div class="col-md-3">
+            <h3 class="text-muted scrollspy" id="tables">Tables</h3>
+          </div>
+
+          <div class="col-md-9">
+            <h4 class="text-muted">Table Striped</h4>
+            <div class="table-responsive">
+              <table class="table-striped">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Position</th>
+                    <th>Username</th>
+                    <th>Phone</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Johnathan</td>
+                    <td>Doe</td>
+                    <td>CEO, Founder</td>
+                    <td>@johny</td>
+                    <td>+3 555 68 70</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Anna</td>
+                    <td>Cabana</td>
+                    <td>Designer</td>
+                    <td>@cabana</td>
+                    <td>+3 434 65 93</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Kale</td>
+                    <td>Thornton</td>
+                    <td>Developer</td>
+                    <td>@thornton</td>
+                    <td>+3 285 42 88</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>Jane</td>
+                    <td>Birkins</td>
+                    <td>Support</td>
+                    <td>@birkins</td>
+                    <td>+3 774 28 50</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div><!-- .table-responsive.space-bottom-2x -->
+
+
+            <h4 class="text-muted space-top scrollspy" id="timetable">Timetable</h4>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="table">
+                  <table class="time-table">
+                    <thead>
+                      <tr>
+                        <th colspan="2">Date: January 27, 2016 <br> Day 1 – Beeline HQ</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="row-title">Time</td>
+                        <td class="row-title">Activity</td>
+                      </tr>
+                      <tr>
+                        <td class="time-row">17:00 – 19:00</td>
+                        <td>
+                          <span class="name">Keynote Speech</span>
+                          <div class="author-ava">
+                            <img src="img/testimonials/01.png" alt="">
+                          </div>
+                          <p class="about">Bedismo, Head of Internet Initiatives Development Fund (IIDF), CEO at NAUMEN Russian Federation Computer Software</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="time-row">9.30 – 10.30</td>
+                        <td>
+                          <span class="name">Short intro talks</span>
+                          <div class="about">
+                            <ul class="list-unstyled">
+                              <li>– Mikhail Slobodan, CEO, VimpelCom Russia</li>
+                              <li>– Wu Hui, General Director, Huawei Russia</li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div><!-- .table-responsive.space-bottom-2x -->
+              </div>
+              <div class="col-md-6">
+                <div class="table">
+                  <table class="time-table time-table-dark">
+                    <thead>
+                      <tr>
+                        <th colspan="2">Date: January 27, 2016 <br> Day 1 – Beeline HQ</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="row-title">Time</td>
+                        <td class="row-title">Activity</td>
+                      </tr>
+                      <tr>
+                        <td class="time-row">17:00 – 19:00</td>
+                        <td>
+                          <span class="name">Keynote Speech</span>
+                          <div class="author-ava">
+                            <img src="img/testimonials/01.png" alt="">
+                          </div>
+                          <p class="about">Bedismo, Head of Internet Initiatives Development Fund (IIDF), CEO at NAUMEN Russian Federation Computer Software</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="time-row">9.30 – 10.30</td>
+                        <td>
+                          <span class="name">Short intro talks</span>
+                          <div class="about">
+                            <ul class="list-unstyled">
+                              <li>– Mikhail Slobodan, CEO, VimpelCom Russia</li>
+                              <li>– Wu Hui, General Director, Huawei Russia</li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div><!-- .table-responsive.space-bottom-2x -->
+              </div>
+            </div>
+          </div>
+        </div><!-- Elements block END -->
+
+        <hr>
+
+        <!-- Elements block -->
+        <div class="row padding-top">
+          <div class="col-md-3">
+            <h3 class="text-muted scrollspy" id="tabs">Tabs</h3>
+          </div>
+
+          <div class="col-md-9">
+            <div class="row">
+              <div class="col-sm-6 space-bottom-2x">
+                <!-- Nav Tabs -->
+                <ul class="nav-tabs" role="tablist">
+                  <li class="active"><a href="#tab1" role="tab" data-toggle="tab">Tab 1</a></li>
+                  <li><a href="#tab2" role="tab" data-toggle="tab">Tab 2</a></li>
+                  <li><a href="#tab3" role="tab" data-toggle="tab">Tab 3</a></li>
+                </ul><!-- .nav-tabs -->
+                <!-- Tab panes -->
+                <div class="tab-content">
+                  <div role="tabpanel" class="tab-pane transition fade in active" id="tab1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut dignissimos ipsam obcaecati corrupti modi, deserunt facere asperiores. Voluptatum laudantium ut, minus nam. Libero facilis aspernatur cumque, quisquam quod sint odit.</div>
+                  <div role="tabpanel" class="tab-pane transition fade" id="tab2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui hic laboriosam odio doloribus suscipit error nostrum totam dignissimos esse numquam voluptatum, aspernatur est, at voluptatem minus temporibus reprehenderit culpa voluptates.</div>
+                  <div role="tabpanel" class="tab-pane transition fade" id="tab3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur ratione nulla asperiores repellat natus dolor delectus dolorum harum sequi fugiat vero, voluptatem reiciendis autem, vel. Repellendus ea laudantium pariatur eum!</div>
+                </div><!-- .tab-content -->
+              </div><!-- .col-sm-6 -->
+              <div class="col-sm-6 space-bottom-2x">
+                <!-- Nav Tabs -->
+                <div class="text-center">
+                  <ul class="nav-tabs" role="tablist">
+                    <li class="active">
+                      <a href="#tab7" role="tab" data-toggle="tab">
+                        Fade
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#tab8" role="tab" data-toggle="tab">
+                        Scale
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#tab9" role="tab" data-toggle="tab">
+                        Scale 2
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#tab10" role="tab" data-toggle="tab">
+                        Left
+                      </a>
+                    </li>
+                  </ul>
+                  <!-- .nav-tabs -->
+                </div><!-- .text-center -->
+                <!-- Tab panes -->
+                <div class="tab-content">
+                  <div role="tabpanel" class="tab-pane transition fade in active" id="tab7">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut dignissimos ipsam obcaecati corrupti modi, deserunt facere asperiores. Voluptatum laudantium ut, minus nam. Libero facilis aspernatur cumque, quisquam quod sint odit.</div>
+                  <div role="tabpanel" class="tab-pane transition fade scale" id="tab8">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui hic laboriosam odio doloribus suscipit error nostrum totam dignissimos esse numquam voluptatum, aspernatur est, at voluptatem minus temporibus reprehenderit culpa voluptates.</div>
+                  <div role="tabpanel" class="tab-pane transition fade scaledown" id="tab9">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur ratione nulla asperiores repellat natus dolor delectus dolorum harum sequi fugiat vero, voluptatem reiciendis autem, vel. Repellendus ea laudantium pariatur eum!</div>
+                  <div role="tabpanel" class="tab-pane transition fade left" id="tab10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut dignissimos ipsam obcaecati corrupti modi, deserunt facere asperiores. Voluptatum laudantium ut, minus nam. Libero facilis aspernatur cumque, quisquam quod sint odit.</div>
+                </div><!-- .tab-content -->
+              </div><!-- .col-sm-6 -->
+            </div><!-- .row -->
+
+            <div class="row">
+              <div class="col-sm-6 space-bottom-2x">
+                <!-- Nav Tabs -->
+                <div class="text-center">
+                  <ul class="nav-tabs" role="tablist">
+                    <li class="active">
+                      <a href="#tab4" role="tab" data-toggle="tab">
+                        <i class="icon-desktop"></i>
+                        Monthly
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#tab5" role="tab" data-toggle="tab">
+                        <i class="icon-laptop"></i>
+                        Annual (-15%)
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#tab6" role="tab" data-toggle="tab">
+                        <i class="icon-tablet"></i>
+                        Or better this
+                      </a>
+                    </li>
+                  </ul><!-- .nav-tabs -->
+                </div><!-- .text-right -->
+                <!-- Tab panes -->
+                <div class="tab-content">
+                  <div role="tabpanel" class="tab-pane transition fade in active" id="tab4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut dignissimos ipsam obcaecati corrupti modi, deserunt facere asperiores. Voluptatum laudantium ut, minus nam. Libero facilis aspernatur cumque, quisquam quod sint odit.</div>
+                  <div role="tabpanel" class="tab-pane transition fade" id="tab5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui hic laboriosam odio doloribus suscipit error nostrum totam dignissimos esse numquam voluptatum, aspernatur est, at voluptatem minus temporibus reprehenderit culpa voluptates.</div>
+                  <div role="tabpanel" class="tab-pane transition fade" id="tab6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur ratione nulla asperiores repellat natus dolor delectus dolorum harum sequi fugiat vero, voluptatem reiciendis autem, vel. Repellendus ea laudantium pariatur eum!</div>
+                </div><!-- .tab-content -->
+              </div><!-- .col-sm-6 -->
+              <div class="col-sm-6 space-bottom-2x">
+                <!-- Nav Tabs -->
+                <div class="text-center">
+                  <ul class="nav-tabs text-center" role="tablist">
+                    <li class="active">
+                      <a href="#tab11" role="tab" data-toggle="tab">
+                        <i class="icon-desktop"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#tab12" role="tab" data-toggle="tab">
+                        <i class="icon-laptop"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#tab13" role="tab" data-toggle="tab">
+                        <i class="icon-tablet"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#tab14" role="tab" data-toggle="tab">
+                        <i class="icon-phone"></i>
+                      </a>
+                    </li>
+                  </ul><!-- .nav-tabs -->
+                </div><!-- .text-center -->
+                <!-- Tab panes -->
+                <div class="tab-content">
+                  <div role="tabpanel" class="tab-pane transition fade right in active" id="tab11">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut dignissimos ipsam obcaecati corrupti modi, deserunt facere asperiores. Voluptatum laudantium ut, minus nam. Libero facilis aspernatur cumque, quisquam quod sint odit.</div>
+                  <div role="tabpanel" class="tab-pane transition fade top" id="tab12">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui hic laboriosam odio doloribus suscipit error nostrum totam dignissimos esse numquam voluptatum, aspernatur est, at voluptatem minus temporibus reprehenderit culpa voluptates.</div>
+                  <div role="tabpanel" class="tab-pane transition fade bottom" id="tab13">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur ratione nulla asperiores repellat natus dolor delectus dolorum harum sequi fugiat vero, voluptatem reiciendis autem, vel. Repellendus ea laudantium pariatur eum!</div>
+                  <div role="tabpanel" class="tab-pane transition fade flip" id="tab14">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut dignissimos ipsam obcaecati corrupti modi, deserunt facere asperiores. Voluptatum laudantium ut, minus nam. Libero facilis aspernatur cumque, quisquam quod sint odit.</div>
+                </div><!-- .tab-content -->
+              </div><!-- .col-sm-6 -->
+            </div><!-- .row.space-bottom -->
+          </div>
+        </div><!-- Elements block END -->
+
+        <hr>
+
+        <!-- Elements block -->
+        <div class="row padding-top">
+          <div class="col-md-3">
+            <h3 class="text-muted scrollspy" id="panels">Panels &amp; Accordions</h3>
+          </div>
+
+          <div class="col-md-9">
+            <!-- Panels & Accordions -->
+            <div class="row space-bottom">
+              <div class="col-sm-6">
+                <div class="panel">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">Static Panel Example</h3>
+                  </div>
+                  <div class="panel-body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis nostrum hic quae ab nihil fuga? Maiores expedita quod eligendi accusamus, animi doloribus totam soluta, dolores sed laborum repudiandae repellendus praesentium?
+                  </div>
+                </div><!-- .panel -->
+
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <a class="panel-title" data-toggle="collapse" href="#panel">
+                      Collapsible Panel Example
+                    </a>
+                  </div>
+                  <div id="panel" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea eum itaque consequuntur voluptate, vero officiis assumenda atque odit recusandae explicabo harum, adipisci aliquid illum quibusdam saepe repudiandae distinctio, tempora voluptates!
+                    </div>
+                  </div>
+                </div><!-- .panel -->
+              </div><!-- .col-sm-6 -->
+
+              <div class="col-sm-6">
+                <div class="panel-group" id="accordion">
+                  <div class="panel panel-primary">
+                    <div class="panel-heading">
+                      <a class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                        Collapsible Group Item #1
+                      </a>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse in">
+                      <div class="panel-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Brunch 3 wolf, Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                      </div>
+                    </div>
+                  </div><!-- .panel -->
+                  <div class="panel panel-info">
+                    <div class="panel-heading">
+                      <a class="panel-title collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                        Collapsible Group Item #2
+                      </a>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel">
+                      <div class="panel-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Brunch 3 wolf, Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                      </div>
+                    </div>
+                  </div><!-- .panel -->
+                  <div class="panel panel-warning">
+                    <div class="panel-heading">
+                      <a class="panel-title collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                        Collapsible Group Item #3
+                      </a>
+                    </div>
+                    <div id="collapseThree" class="panel-collapse collapse">
+                      <div class="panel-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Brunch 3 wolf, Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                      </div>
+                    </div>
+                  </div><!-- .panel -->
+                </div><!-- .panel-group -->
+              </div><!-- .col-sm-6 -->
+            </div><!-- .row -->
+          </div>
+        </div><!-- Elements block END -->
+
+        <hr>
+
+        <!-- Elements block -->
+        <div class="row padding-top">
+          <div class="col-md-3">
+            <h3 class="text-muted scrollspy" id="fclick">Features</h3>
+          </div>
+          <div class="col-md-9">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="box-with-icon text-center">
+                  <div class="bwi-inner">
+                    <div class="bwi-img">
+                      <div class="button-overlay">
+                        <div class="bwi-btn">
+                          <a href="#" class="btn btn-light waves-effect btn-circle"><i class="icon-layers"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <h3 class="bwi-title">55 Second Provisioning</h3>
+                    <p class="bwi-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <a href="#" class="bwi-link">Learn more <i class="fe-icon-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="box-with-icon text-center">
+                  <div class="bwi-inner">
+                    <div class="bwi-img">
+                      <div class="button-overlay">
+                        <div class="bwi-btn">
+                          <a href="#" class="btn btn-light waves-effect btn-circle"><i class="icon-newspaper"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <h3 class="bwi-title">Simple Control Panel</h3>
+                    <p class="bwi-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <a href="#" class="bwi-link">Learn more <i class="fe-icon-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <h4 class="text-muted text-center scrollspy" id="fhexa">Hexagon Images</h4>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="box-with-icon text-center">
+                  <div class="bwi-inner">
+                    <div class="hexagon-img">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 271.03 313.15">
+                        <clipPath id="hexagon_01">
+                          <path d="M300,246.5l135,78v156l-135,78-135-78v-156Z" transform="translate(-164.48 -245.92)"/>
+                        </clipPath>
+
+                        <a class="hexa-link" xlink:href="http://www.8guild.com" target="_blank">
+                          <image clip-path="url(#hexagon_01)" width="100%" height="100%" xlink:href="img/features/hexa_04.jpg"></image>
+                        </a>
+                      </svg>
+
+                      <div class="button-overlay">
+                        <div class="bwi-btn">
+                          <a href="#" class="btn btn-primary waves-effect btn-circle"><i class="fa fa-safari"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <h3 class="bwi-title">All-in-one? Done </h3>
+                    <p class="bwi-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <a href="#" class="bwi-link">Learn more <i class="fe-icon-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="box-with-icon text-center">
+                  <div class="bwi-inner">
+                    <div class="hexagon-img">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 271.03 313.15">
+                        <clipPath id="hexagon_02">
+                          <path d="M300,246.5l135,78v156l-135,78-135-78v-156Z" transform="translate(-164.48 -245.92)" style="stroke: #2db34a;stroke-miterlimit: 10" />
+                        </clipPath>
+
+                        <a class="hexa-link" xlink:href="http://www.8guild.com" target="_blank">
+                          <image clip-path="url(#hexagon_02)" width="100%" height="100%" xlink:href="img/features/hexa_05.jpg"></image>
+                        </a>
+                      </svg>
+
+                      <div class="button-overlay">
+                        <div class="bwi-btn">
+                          <a href="#" class="btn btn-light waves-effect btn-circle"><i class="fa fa-firefox"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <h3 class="bwi-title">Budgets? You betcha </h3>
+                    <p class="bwi-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <a href="#" class="bwi-link">Learn more <i class="fe-icon-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <h4 class="text-muted text-center scrollspy" id="ficons">Icons</h4>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="box-with-icon text-center">
+                  <div class="bwi-inner">
+                    <div class="bwi-icon">
+                      <i class="icon-newspaper"></i>
+                    </div>
+                    <h3 class="bwi-title">Simple Control Panel</h3>
+                    <p class="bwi-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <a href="#" class="bwi-link">Learn more <i class="fe-icon-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="box-with-icon text-right">
+                  <div class="bwi-inner">
+                    <div class="bwi-icon">
+                      <i class="icon-recycle"></i>
+                    </div>
+                    <h3 class="bwi-title">SSD Hard Drives</h3>
+                    <p class="bwi-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <a href="#" class="bwi-link">Learn more <i class="fe-icon-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <h4 class="text-muted text-center scrollspy" id="fimaged">Images</h4>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="box-with-icon text-center">
+                  <div class="bwi-inner">
+                    <div class="bwi-icon">
+                      <img src="img/features/features_01.png" alt="Feature">
+                    </div>
+                    <h3 class="bwi-title">55 Second Provisioning</h3>
+                    <p class="bwi-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <a href="#" class="bwi-link">Learn more <i class="fe-icon-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="box-with-icon text-center">
+                  <div class="bwi-inner">
+                    <div class="bwi-icon">
+                      <img src="img/features/features_02.png" alt="Feature">
+                    </div>
+                    <h3 class="bwi-title">Simple Control Panel</h3>
+                    <p class="bwi-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <a href="#" class="bwi-link">Learn more <i class="fe-icon-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- Elements block END -->
+
+        <hr>
+
+        <!-- Elements block -->
+        <div class="row padding-top">
+          <div class="col-md-3">
+            <h3 class="text-muted scrollspy" id="tcolored">Tiles</h3>
+          </div>
+
+          <div class="col-md-9">
+            <h4 class="text-muted">Colored</h4>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="box-with-icon bwi-tile tile-info">
+                  <div class="bwi-inner text-light">
+                    <div class="bwi-icon">
+                      <i class="icon-paperclip"></i>
+                    </div>
+                    <h3 class="bwi-title">Provisioning</h3>
+                    <p class="bwi-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <a href="#" class="bwi-link">Learn more <i class="fe-icon-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="box-with-icon bwi-tile tile-primary">
+                  <div class="bwi-inner text-light">
+                    <div class="bwi-icon">
+                      <i class="icon-tools-2"></i>
+                    </div>
+                    <h3 class="bwi-title">Simple Control Panel</h3>
+                    <p class="bwi-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <a href="#" class="bwi-link">Learn more <i class="fe-icon-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <h4 class="text-muted scrollspy" id="timaged">Imaged</h4>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="box-with-icon bwi-tile bwi-imaged">
+                  <span class="tile-counter">2</span>
+                  <div class="bwi-inner text-light">
+                    <div class="bwi-overlay" style="background-color: #00c96d"></div>
+                    <img src="img/features/tile_02.jpg" alt="">
+
+                    <div class="bwi-content">
+                      <div class="vertical-aligner">
+                        <h3 class="bwi-title">Big Data Solutions</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <span><a href="#" class="btn btn-ghost btn-light">Find out more</a></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="box-with-icon bwi-tile bwi-imaged">
+                  <span class="tile-counter">3</span>
+                  <div class="bwi-inner text-light">
+                    <div class="bwi-overlay" style="background-color: #2391ca"></div>
+                    <img src="img/features/tile_03.jpg" alt="">
+
+                    <div class="bwi-content">
+                      <div class="vertical-aligner">
+                        <h3 class="bwi-title">Stuff Management</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <span><a href="#" class="btn btn-ghost btn-light">Find out more</a></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- Elements block END -->
+
+        <hr>
+
+        <!-- Elements block -->
+        <div class="row padding-top padding-bottom">
+          <div class="col-md-3">
+            <h3 class="text-muted scrollspy" id="pricing">Pricing</h3>
+          </div>
+          
+          <div class="col-md-9">
+            <div class="row">
+              <!-- Plan -->
+              <div class="col-sm-6">
+                <div class="pricing-plans">
+                  <div class="pricing-header">
+                    <h3 class="pricing-title">Starter</h3>
+                    <div class="cost">20 <sup>$</sup></div>
+                    <p>per user per month billed <br> annually 3 users max. </p>
+                  </div>
+                  <ul>
+                    <li>Market Mood</li>
+                    <li>Communication DNA</li>
+                    <li><strong>1-day classroom training</strong></li>
+                    <li><strong>Advisors</strong></li>
+                  </ul>
+                  <div class="btn-block-split">
+                    <a href="#" class="btn btn-default btn-block waves-effect waves-light">try</a>
+                    <a href="#" class="btn btn-success btn-block waves-effect waves-light">buy</a>
+                  </div>
+                </div>
+              </div>
+              <!-- Plan -->
+              <div class="col-sm-6">
+                <div class="pricing-plans">
+                  <div class="pricing-header">
+                    <h3 class="pricing-title">Premium</h3>
+                    <div class="cost">60 <sup>$</sup></div>
+                    <p>per user per month <br> billed annually</p>
+                  </div>
+                  <ul>
+                    <li>Market Mood</li>
+                    <li>Communication DNA </li>
+                    <li><strong>1-day classroom training</strong></li>
+                    <li><strong>Advisors</strong></li>
+                  </ul>
+                  <a href="#" class="btn btn-success btn-block waves-effect waves-light">start free trial</a>
+                </div>
+              </div>
+            </div>
+
+            <h4 class="text-muted scrollspy" id="tpricing">Pricing tables</h4>
+            <div class="pricing-container">
+              <div class="pricing-table">
+                <!-- Plan -->
+                <div class="pricing-plan pricing-success">
+                  <div class="pricing-header">
+                    <h3 class="pricing-title">Personal Solution</h3>
+                    <p><span class="cost text-success">$0</span> Per user / month</p>
+                    <a href="#" class="btn btn-ghost btn-light waves-effect">try for free</a>
+                  </div>
+                  <ul>
+                    <li>Unlimited calls</li>
+                    <li>Free hovsting</li>
+                    <li>Advisors</li>
+                  </ul>
+                </div>
+                <!-- Plan -->
+                <div class="pricing-plan">
+                  <div class="pricing-header">
+                    <h3 class="pricing-title">Team Solution</h3>
+                    <p><span class="cost text-success">$25</span> Per user / month</p>
+                    <div class="btn-group-container">
+                      <a href="#" class="btn btn-default waves-effect waves-light">try</a>
+                      <a href="#" class="btn btn-success waves-effect waves-light">buy</a>
+                    </div>
+                  </div>
+                  <ul>
+                    <li>Market Mood</li>
+                    <li>Communication DNA</li>
+                    <li><strong>1-day classroom training</strong></li>
+                    <li><strong>Advisors</strong></li>
+                  </ul>
+                </div>
+                <!-- Plan -->
+                <div class="pricing-plan">
+                  <div class="pricing-header">
+                    <h3 class="pricing-title">Company Solution</h3>
+                    <p><span class="cost text-success">$65</span> Per user / month</p>
+                    <div class="btn-group-container">
+                      <a href="#" class="btn btn-primary waves-effect waves-light">demo</a>
+                      <a href="#" class="btn btn-default waves-effect waves-light">buy</a>
+                    </div>
+                  </div>
+                  <ul>
+                    <li>Market Mood</li>
+                    <li>Communication DNA</li>
+                    <li><strong>4-day classroom training</strong></li>
+                    <li><strong>Personal Advisors</strong></li>
+                  </ul>
+                </div>
+              </div><!-- .row -->
+            </div>
+          </div>
+        </div><!-- Elements block END -->
+
+        <hr>
+
+        <h3 class="text-muted padding-top scrollspy" id="testimonial">Testimonilas</h3>
+        <div class="row space-bottom-2x">
+          <div class="testimonial-horizontal">
+            <div class="logo-thumb">
+              <img src="img/logos/1.png" alt="">
+            </div>
+            <!-- testimonial -->
+            <div class="testimonial">
+              <div class="text">“Adipisicing elit, sed do eiusmod eiusmod tempor incididunt ut labore et dolore magna aliqua.” <a href="#">Read Full Story</a></div>
+              <div class="author-ava">
+                <img src="img/testimonials/01.png" alt="Author">
+              </div>
+              <div class="author-info">
+                <h3 class="author-name">by <a href="#">Bedismo</a></h3>
+                <div class="autho-company">Designer at <a href="#">8Guild</a></div>
+              </div>
+            </div><!-- .testimonial -->
+          </div>
+
+          <div class="testimonial-horizontal">
+            <div class="logo-thumb">
+              <img src="img/logos/2.png" alt="">
+            </div>
+            <!-- testimonial -->
+            <div class="testimonial">
+              <div class="text">“Adipisicing elit, sed do eiusmod eiusmod tempor incididunt ut labore et dolore magna aliqua.” <a href="#">Read Full Story</a></div>
+              <div class="author-ava">
+                <img src="img/testimonials/02.png" alt="Author">
+              </div>
+              <div class="author-info">
+                <h3 class="author-name">by <a href="#">Bedismo</a></h3>
+                <div class="autho-company">Designer at <a href="#">8Guild</a></div>
+              </div>
+            </div><!-- .testimonial -->
+          </div>
+
+          <div class="testimonial-horizontal">
+            <div class="logo-thumb">
+              <img src="img/logos/3.png" alt="">
+            </div>
+            <!-- testimonial -->
+            <div class="testimonial">
+              <div class="text">“Adipisicing elit, sed do eiusmod eiusmod tempor incididunt ut labore et dolore magna aliqua.” <a href="#">Read Full Story</a></div>
+              <div class="author-ava">
+                <img src="img/testimonials/03.png" alt="Author">
+              </div>
+              <div class="author-info">
+                <h3 class="author-name">by <a href="#">Bedismo</a></h3>
+                <div class="autho-company">Designer at <a href="#">8Guild</a></div>
+              </div>
+            </div><!-- .testimonial -->
+          </div>
+        </div>
+
+        <div class="row padding-top">
+          <div class="col-md-4">
+            <!-- testimonial -->
+            <div class="testimonial">
+              <div class="text">“Adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</div>
+              <div class="author-ava">
+                <img src="img/testimonials/01.png" alt="Author">
+              </div>
+              <div class="author-info">
+                <h3 class="author-name">by <a href="#">Bedismo</a></h3>
+                <div class="autho-company">Designer at <a href="#">8Guild</a></div>
+              </div>
+            </div><!-- .testimonial -->
+          </div>
+          <div class="col-md-4">
+            <!-- testimonial -->
+            <div class="testimonial testimonial-boxed">
+              <div class="author-ava">
+                <img src="img/testimonials/02.png" alt="Author">
+              </div>
+              <div class="text">“Adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</div>
+              <div class="author-info">
+                <h3 class="author-name">by <a href="#">Bedismo</a></h3>
+                <div class="autho-company">Designer at <a href="#">8Guild</a></div>
+              </div>
+            </div><!-- .testimonial -->
+          </div>
+          <div class="col-md-4">
+            <!-- testimonial -->
+            <div class="testimonial testimonial-bubble">
+              <div class="text">“Adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</div>
+              <div class="author-ava">
+                <img src="img/testimonials/03.png" alt="Author">
+              </div>
+              <div class="author-info">
+                <h3 class="author-name">by <a href="#">Bedismo</a></h3>
+                <div class="autho-company">Designer at <a href="#">8Guild</a></div>
+              </div>
+            </div><!-- .testimonial -->
+          </div>
+        </div>
+
+        <hr>
+
+        <h3 class="text-muted scrollspy padding-top" id="port1">Portfolio Tiles: Type 1</h3>
+
+        <div class="row">
+          <!-- Portfolio Post -->
+          <article class="col-xs-4 portfolio-item">
+            <div class="port-thumb">
+              <img src="img/portfolio/01.jpg" alt="">
+
+              <div class="overlay-inner">
+                <a href="#" class="btn btn-light waves-effect waves-light btn-circle"><i class="icon-attachment"></i></a>
+              </div>
+            </div><!-- .post-thumb -->
+
+            <a href="blog-single-rs.html" class="port-title">
+              <h3>Transport us to places we’d never</h3>
+            </a>
+
+            <div class="by-name">
+              <span class="text-muted">by</span>
+              <a href="#">Bedismo</a>
+            </div>
+
+          </article><!-- .post-item -->
+
+          <!-- Portfolio Post -->
+          <article class="col-xs-4 portfolio-item">
+            <div class="port-thumb">
+              <img src="img/portfolio/02.jpg" alt="">
+
+              <div class="overlay-inner">
+                <a href="#" class="btn btn-light waves-effect waves-light btn-circle"><i class="icon-attachment"></i></a>
+              </div>
+            </div><!-- .post-thumb -->
+
+            <a href="blog-single-rs.html" class="port-title">
+              <h3>Transport us to places we’d never</h3>
+            </a>
+
+            <div class="by-name">
+              <span class="text-muted">by</span>
+              <a href="#">Bedismo</a>
+            </div>
+
+          </article><!-- .post-item -->
+
+          <!-- Portfolio Post -->
+          <article class="col-xs-4 portfolio-item">
+            <div class="port-thumb">
+              <img src="img/portfolio/10.jpg" alt="">
+
+              <div class="overlay-inner">
+                <a href="#" class="btn btn-light waves-effect waves-light btn-circle"><i class="icon-attachment"></i></a>
+              </div>
+            </div><!-- .post-thumb -->
+
+            <a href="blog-single-rs.html" class="port-title">
+              <h3>Transport us to places we’d never</h3>
+            </a>
+
+            <div class="by-name">
+              <span class="text-muted">by</span>
+              <a href="#">Bedismo</a>
+            </div>
+
+          </article><!-- .post-item -->
+        </div>
+
+        <hr>
+
+        <h3 class="text-muted scrollspy padding-top" id="port2">Portfolio Tiles: Type 2</h3>
+        <div class="row">
+          <!-- Portfolio Post -->
+          <article class="col-xs-4 portfolio-item text-center">
+            <div class="box-with-icon">
+              <div class="bwi-inner">
+                <div class="hexagon-img">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 271.03 313.15">
+                    <clipPath id="hexagon_03">
+                      <path d="M300,246.5l135,78v156l-135,78-135-78v-156Z" transform="translate(-164.48 -245.92)"/>
+                    </clipPath>
+
+                    <a class="hexa-link" xlink:href="http://www.8guild.com" target="_blank">
+                      <image clip-path="url(#hexagon_03)" width="100%" height="100%" xlink:href="img/features/hexa_01.jpg"></image>
+                    </a>
+                  </svg>
+
+                  <div class="button-overlay">
+                    <div class="bwi-btn">
+                      <a href="#" class="btn btn-primary waves-effect btn-circle"><i class="icon-attachment"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <a href="blog-single-rs.html" class="port-title">
+              <h3>Transport us to places we’d never</h3>
+            </a>
+
+            <div class="by-name">
+              <span class="text-muted">by</span>
+              <a href="#">Bedismo</a>
+            </div>
+
+          </article><!-- .post-item -->
+
+          <!-- Portfolio Post -->
+          <article class="col-xs-4 portfolio-item text-center">
+            <div class="box-with-icon">
+              <div class="bwi-inner">
+                <div class="hexagon-img">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 271.03 313.15">
+                    <clipPath id="hexagon_04">
+                      <path d="M300,246.5l135,78v156l-135,78-135-78v-156Z" transform="translate(-164.48 -245.92)"/>
+                    </clipPath>
+
+                    <a class="hexa-link" xlink:href="http://www.8guild.com" target="_blank">
+                      <image clip-path="url(#hexagon_04)" width="100%" height="100%" xlink:href="img/features/hexa_02.jpg"></image>
+                    </a>
+                  </svg>
+
+                  <div class="button-overlay">
+                    <div class="bwi-btn">
+                      <a href="#" class="btn btn-primary waves-effect btn-circle"><i class="icon-attachment"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <a href="blog-single-rs.html" class="port-title">
+              <h3>Transport us to places we’d never</h3>
+            </a>
+
+            <div class="by-name">
+              <span class="text-muted">by</span>
+              <a href="#">Bedismo</a>
+            </div>
+
+          </article><!-- .post-item -->
+
+          <!-- Portfolio Post -->
+          <article class="col-xs-4 portfolio-item text-center">
+            <div class="box-with-icon">
+              <div class="bwi-inner">
+                <div class="hexagon-img">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 271.03 313.15">
+                    <clipPath id="hexagon_05">
+                      <path d="M300,246.5l135,78v156l-135,78-135-78v-156Z" transform="translate(-164.48 -245.92)"/>
+                    </clipPath>
+
+                    <a class="hexa-link" xlink:href="http://www.8guild.com" target="_blank">
+                      <image clip-path="url(#hexagon_05)" width="100%" height="100%" xlink:href="img/features/hexa_03.jpg"></image>
+                    </a>
+                  </svg>
+
+                  <div class="button-overlay">
+                    <div class="bwi-btn">
+                      <a href="#" class="btn btn-primary waves-effect btn-circle"><i class="icon-attachment"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <a href="blog-single-rs.html" class="port-title">
+              <h3>Transport us to places we’d never</h3>
+            </a>
+
+            <div class="by-name">
+              <span class="text-muted">by</span>
+              <a href="#">Bedismo</a>
+            </div>
+
+          </article><!-- .post-item -->
+        </div>
+
+        <hr>
+
+        <!-- Elements block -->
+        <h3 class="text-muted scrollspy padding-top" id="gallery">Gallery</h3>
+      </div><!-- .container -->
+                
+        <!-- Data API:
+          data-loop="true/false" enable/disable looping
+          data-autoplay="true/false" enable/disable carousel autoplay
+          data-interval="3000" autoplay interval timeout in miliseconds 
+          Simply add necessary data attribute to the ".logo-carousel" with appropriate value to adjust carousel functionality.
+         -->
+        <!-- Gallery Grid -->
+        <div class="gallery-grid" data-loop="true" data-items-mobile="2" data-items-tablet="4" data-items-desktop="6">
+          <div class="inner">
+            <div class="gallery-item">
+              <img src="img/gallery/th01.jpg" alt="">
+
+              <a href="img/gallery/01.jpg" class="btn btn-light waves-effect waves-light btn-circle">
+                <i class="fe-icon-search"></i>
+              </a>
+            </div><!-- .gallery-item -->
+            <div class="gallery-item">
+              <img src="img/gallery/th02.jpg" alt="">
+
+              <a href="img/gallery/02.jpg" class="btn btn-light waves-effect waves-light btn-circle">
+                <i class="fe-icon-search"></i>
+              </a>
+            </div><!-- .gallery-item -->
+            <div class="gallery-item">
+              <img src="img/gallery/th03.jpg" alt="">
+
+              <a href="img/gallery/03.jpg" class="btn btn-light waves-effect waves-light btn-circle">
+                <i class="fe-icon-search"></i>
+              </a>
+            </div><!-- .gallery-item -->
+            <div class="gallery-item">
+              <img src="img/gallery/th04.jpg" alt="">
+
+              <a href="img/gallery/04.jpg" class="btn btn-light waves-effect waves-light btn-circle">
+                <i class="fe-icon-search"></i>
+              </a>
+            </div><!-- .gallery-item -->
+            <div class="gallery-item">
+              <img src="img/gallery/th05.jpg" alt="">
+
+              <a href="img/gallery/05.jpg" class="btn btn-light waves-effect waves-light btn-circle">
+                <i class="fe-icon-search"></i>
+              </a>
+            </div><!-- .gallery-item -->
+            <div class="gallery-item">
+              <img src="img/gallery/th06.jpg" alt="">
+
+              <a href="img/gallery/06.jpg" class="btn btn-light waves-effect waves-light btn-circle">
+                <i class="fe-icon-search"></i>
+              </a>
+            </div><!-- .gallery-item -->
+          </div>
+        </div><!-- .gallery-grid --><!-- Elements block END -->
+
+      <div class="container space-top">
+        <hr>
+        <h3 class="text-muted scrollspy padding-top" id="carousel">Carousels</h3>
+
+        <!-- Image Carousel -->
+        <!-- Data API:
+          data-loop="true/false" - enable/disable looping
+          data-autoplay="true/false" - enable/disable carousel autoplay
+          data-interval="3000" - autoplay interval timeout in miliseconds
+          data-nav="true/false" - enable/disable carousel Nex Prev buttons
+          data-bullets="true/false" - enable/disable carousel bullets`
+          data-autoheight="true/false" - enable/disable autoheight with transition
+          Simply add necessary data attribute to the ".image-carousel" with appropriate value to adjust carousel functionality.
+         -->
+        <div class="image-carousel space-top-2x" data-nav="true">
+          <div class="inner">
+            <img src="img/blog/single/slide01.jpg" alt="Image">
+            <img src="img/blog/single/slide02.jpg" alt="Image">
+            <img src="img/blog/single/slide03.jpg" alt="Image">
+          </div>
+        </div><!-- .image-carousel -->
+
+        <hr>
+
+        <!-- Progress bar -->
+        <h3 class="text-muted space-bottom padding-top scrollspy" id="progress">Progress Bars</h3>
+        <div class="row space-bottom-2x">
+          <div class="col-md-6">
+            <div class="progress-container">
+              <div class="progress-cell">
+                <div class="label">
+                  <span>Progress</span>
+                </div>
+              </div>
+              <div class="progress-cell">
+                <div class="progress progress-bar-default progress-animated">
+                  <div class="progress-bar" data-valuenow="65">
+                    <span class="units text-white"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- .col-md-6 -->
+
+          <div class="col-md-6">
+            <div class="progress-container progress-dark">
+              <div class="progress-cell">
+                <div class="label">
+                  <i class="fa fa-apple"></i>
+                  <span>Progress</span>
+                </div>
+              </div>
+              <div class="progress-cell">
+                <div class="progress progress-bar-primary progress-animated">
+                  <div class="progress-bar" data-valuenow="78">
+                    <span class="units text-white"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- .col-md-6 -->
+        </div><!-- .row -->
+
+        <!-- Progress bar thin -->
+        <!-- Progress bars has bunch of modifier classes to alter progress bar appearance: '' -->
+        <div class="row space-bottom-3x">
+          <div class="col-md-6">
+            <h6 class="text-muted space-bottom">Progress Bars Thin</h6>
+            <div class="progress-container progress-thin">
+              <div class="progress-cell">
+                <div class="label">
+                  <span>Funded</span>
+                </div>
+                <span class="units"></span>
+              </div>
+              <div class="progress-cell">
+                <div class="progress progress-bar-success progress-animated">
+                  <div class="progress-bar" data-valuenow="65"></div>
+                  <div class="progress-dividers-cont">
+                    <span class="sections"></span>
+                    <span class="sections"></span>
+                    <span class="sections"></span>
+                    <span class="sections"></span>
+                    <span class="sections"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- .col-md-6 -->
+
+          <div class="col-md-6">
+            <h6 class="text-muted space-bottom">Progress Bars Thin</h6>
+            <div class="progress-container progress-thin">
+              <div class="progress-cell">
+                <div class="label">
+                  <span>Funded</span>
+                  <i class="fa fa-map"></i>
+                </div>
+                <span class="units"></span>
+              </div>
+              <div class="progress-cell">
+                <div class="progress progress-bar-primary progress-animated">
+                  <div class="progress-bar" data-valuenow="92"></div>
+                  <div class="progress-dividers-cont">
+                    <span class="sections"></span>
+                    <span class="sections"></span>
+                    <span class="sections"></span>
+                    <span class="sections"></span>
+                    <span class="sections"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- .col-md-6 -->
+        </div><!-- .row -->
+
+        <hr>
+
+        <!-- Counters -->
+        <h3 class="text-muted text-center space-bottom padding-top scrollspy" id="counters">Counters</h3>
+        <h4 class="text-center">Horizontal with icon counters</h4>
+        <div class="row space-bottom-2x text-center">
+          <div class="col-md-4">
+            <!-- Data API:
+                 data-decimal="number" How many digits after decimal point.
+                 data-duration="number" The number of milliseconds it should take to finish counting.
+            -->
+            <div class="counter" data-duration="1500">
+              <header class="counter-icon">
+                <i class="icon-map"></i>
+              </header>
+              <div class="digits">513</div>
+              <footer class="counter-footer">
+                <p>Happy <br> Clients</p>
+              </footer>
+            </div>
+          </div><!-- .col-sm-4 -->
+          <div class="col-md-4">
+            <!-- Data API:
+                 data-decimal="number" How many digits after decimal point.
+                 data-duration="number" The number of milliseconds it should take to finish counting.
+            -->
+            <div class="counter" data-duration="1500">
+              <header class="counter-icon">
+                <i class="icon-tablet"></i>
+              </header>
+              <div class="digits">1025</div>
+              <footer class="counter-footer">
+                <p>Happy <br> Clients</p>
+              </footer>
+            </div>
+          </div><!-- .col-sm-4 -->
+          <div class="col-md-4">
+            <!-- Data API:
+                 data-decimal="number" How many digits after decimal point.
+                 data-duration="number" The number of milliseconds it should take to finish counting.
+            -->
+            <div class="counter" data-duration="1500">
+              <header class="counter-icon">
+                <i class="icon-cloud"></i>
+              </header>
+              <div class="digits">2047</div>
+              <footer class="counter-footer">
+                <p>Happy <br> Clients</p>
+              </footer>
+            </div>
+          </div><!-- .col-sm-4 -->
+        </div><!-- .row -->
+
+        <h4 class="text-center">Vertical counters</h4>
+        <div class="row text-center">
+          <div class="col-md-4">
+            <!-- Data API:
+                 data-decimal="number" How many digits after decimal point.
+                 data-duration="number" The number of milliseconds it should take to finish counting.
+            -->
+            <div class="counter vertical" data-duration="1500">
+              <header class="counter-icon">
+                <p>They can't be wrong</p>
+              </header>
+              <div class="digits">513</div>
+              <footer class="counter-footer">
+                <p>Happy Clients</p>
+              </footer>
+            </div>
+          </div><!-- .col-sm-4 -->
+          <div class="col-md-4">
+            <!-- Data API:
+                 data-decimal="number" How many digits after decimal point.
+                 data-duration="number" The number of milliseconds it should take to finish counting.
+            -->
+            <div class="counter vertical" data-duration="1500">
+              <header class="counter-icon">
+                <p>Many more to come</p>
+              </header>
+              <div class="digits">102</div>
+              <footer class="counter-footer">
+                <p>Pre-made Layouts</p>
+              </footer>
+            </div>
+          </div><!-- .col-sm-4 -->
+          <div class="col-md-4">
+            <!-- Data API:
+                 data-decimal="number" How many digits after decimal point.
+                 data-duration="number" The number of milliseconds it should take to finish counting.
+            -->
+            <div class="counter vertical" data-duration="3300">
+              <header class="counter-icon">
+                <p>Available to you</p>
+              </header>
+              <div class="digits">470</div>
+              <footer class="counter-footer">
+                <p>Development Hours</p>
+              </footer>
+            </div>
+          </div><!-- .col-sm-4 -->
+        </div><!-- .row -->
+
+      </div><!-- .container -->
+    </main>
+
+    <!-- Scroll To Top Button -->
+    <a href="#" class="scroll-to-top-btn">
+      <i class="fa fa-angle-up"></i>
+    </a><!-- .scroll-to-top-btn -->
+
+    <!-- Footer -->
+    <footer class="footer" style="background-color: #f2f2f2">
+      <div class="top-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-sm-6">
+              <section class="widget widget_text">
+                <a href="index.html" class="site-logo">
+                  <img src="img/logos-main/logo_06.png" alt="Promo">
+                </a><!-- .site-logo -->
+                <p>Left your phone on the train? Your photos, and videos are safe. Just sign in  from any device, and your files will be there waiting for you.</p>
+              </section><!-- .widget.widget_text -->
+            </div><!-- .col-md-3 -->
+            <div class="col-md-3 col-sm-6">
+              <section class="widget widget_categories">
+                <h3 class="widget-title">
+                  <i class="fe-icon-layers"></i>
+                  Categories
+                </h3>
+                <ul>
+                  <li><a href="#">Support<span>3</span></a></li>
+                  <li><a href="#">Design<span>4</span></a></li>
+                  <li><a href="#">Hosting<span>11</span></a></li>
+                  <li><a href="#">Development<span>6</span></a></li>
+                </ul>
+              </section><!-- .widget.widget_categories -->
+            </div><!-- .col-md-3 -->
+            <div class="clearfix visible-sm"></div>
+            <div class="col-md-3 col-sm-6">
+              <section class="widget widget_recent_news">
+                <h3 class="widget-title">
+                  <i class="fe-icon-paper"></i>
+                  Recent News
+                </h3>
+                <div class="item">
+                  <div class="info">
+                    <h4><a href="blog-single-rs.html">Fast and Easy Prototyping App</a></h4>
+                  </div>
+                  <div class="meta">
+                    <a href="#"><i class="icon-calendar"></i> October 7, 2015</a>
+                  </div>
+                </div><!-- .item -->
+                <div class="item">
+                  <div class="info">
+                    <h4><a href="blog-single-rs.html">Resize Your Server in a Single Click</a></h4>
+                  </div>
+                  <div class="meta">
+                    <a href="#"><i class="icon-calendar"></i> October 7, 2015</a>
+                  </div>
+                </div><!-- .item -->
+              </section><!-- .widget.widget_recent_news -->
+            </div><!-- .col-md-3 -->
+            <div class="col-md-3 col-sm-6">
+              <section class="widget widget_social">
+                <h3 class="widget-title">
+                  <i class="fe-icon-star"></i>
+                  We Are Social
+                </h3>
+
+                <div class="social-bar">
+                  <a href="#" class="sb-bitbucket" data-toggle="tooltip" data-placement="top" title="BitBucket">
+                    <i class="fa fa-bitbucket"></i>
+                  </a>
+                  <a href="#" class="sb-codepen" data-toggle="tooltip" data-placement="top" title="Codepent">
+                    <i class="fa fa-codepen"></i>
+                  </a>
+                  <a href="#" class="sb-deviantart" data-toggle="tooltip" data-placement="top" title="DeviantArt">
+                    <i class="fa fa-deviantart"></i>
+                  </a>
+                  <a href="#" class="sb-digg" data-toggle="tooltip" data-placement="top" title="Digg">
+                    <i class="fa fa-digg"></i>
+                  </a>
+                  <a href="#" class="sb-dribbble" data-toggle="tooltip" data-placement="top" title="Dribbble">
+                    <i class="fa fa-dribbble"></i>
+                  </a>
+                  <a href="#" class="sb-vine" data-toggle="tooltip" data-placement="top" title="Vine">
+                    <i class="fa fa-vine"></i>
+                  </a>
+                  <a href="#" class="sb-vk" data-toggle="tooltip" data-placement="top" title="Vkontakte">
+                    <i class="fa fa-vk"></i>
+                  </a>
+                  <a href="#" class="sb-wechat" data-toggle="tooltip" data-placement="top" title="WeChat">
+                    <i class="fa fa-wechat"></i>
+                  </a>
+                  <a href="#" class="sb-wordpress" data-toggle="tooltip" data-placement="top" title="WordPress">
+                    <i class="fa fa-wordpress"></i>
+                  </a>
+                  <a href="#" class="sb-xing" data-toggle="tooltip" data-placement="top" title="Xing">
+                    <i class="fa fa-xing"></i>
+                  </a>
+                  <a href="#" class="sb-yahoo" data-toggle="tooltip" data-placement="top" title="Yahoo!">
+                    <i class="fa fa-yahoo"></i>
+                  </a>
+                </div>
+              </section><!-- .widget.widget_social -->
+            </div><!-- .col-md-3 -->
+          </div><!-- .row -->
+          <div class="copyright">
+            <div class="column">
+              <p>&copy; Promo 2016. Made by <a href="http://8guild.com/" target="_blank">8Guild</a> with <i class="fa fa-heart text-danger"></i> love.</p>
+            </div><!-- .column -->
+            <div class="column">
+              <ul class="list-unstyled list-inline">
+                <li><a href="#">Legal</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Sitemap</a></li>
+              </ul>
+            </div><!-- .column -->
+          </div><!-- .copyright -->
+        </div><!-- .container -->
+      </div><!-- .bottom-footer -->
+    </footer><!-- .footer -->
+
+
+  
+  </div><!-- .page-wrapper -->
+
+  <!-- JavaScript (jQuery) libraries, plugins and custom scripts -->
+  <script src="js/vendor/jquery-2.1.4.min.js"></script>
+  <script src="js/vendor/jquery.easing.min.js"></script>
+  <script src="js/vendor/bootstrap.min.js"></script>
+  <script src="js/vendor/pace.min.js"></script>
+  <script src="js/vendor/placeholder.js"></script>
+  <script src="js/vendor/smoothscroll.js"></script>
+  <script src="js/vendor/waypoints.min.js"></script>
+  <script src="js/vendor/icheck.min.js"></script>
+  <script src="js/vendor/waves.min.js"></script>
+  <script src="js/vendor/velocity.min.js"></script>
+  <script src="js/vendor/magnific-popup.min.js"></script>
+  <script src="js/vendor/owl.carousel.min.js"></script>
+  <script src="js/vendor/jquery.spincrement.js"></script>
+  <script src="js/vendor/scrollspy.js"></script>
+
+  <script src="js/scripts.js"></script>
+
+</body><!-- <body> -->
+
+</html>

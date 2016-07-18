@@ -1,0 +1,423 @@
+//
+// Variables
+// --------------------------------------------------
+
+//== Colors
+//
+//## Gray and brand colors for use across Theme.
+
+$gray-darker:            #000;
+$gray-dark:            	 #333;
+$gray:                   #4d4d4d;
+$gray-light:             #808080;
+$gray-lighter:           #d9d9d9;
+
+$brand-default:         #4d4d4d;
+$brand-primary:         #ff8f2b;
+$brand-info:		        #988ae8;
+$brand-success:         #00c96d;
+$brand-warning:         #ffc12b;
+$brand-danger:          #ff2b2b;
+
+$default-bg: 						#e7f3fd;
+$primary-bg: 						$brand-primary;
+$gray-bg: 							#f6f6f6;
+
+$body-bg: 							#fff;
+
+
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+
+$font-family-base: 			"Source Sans Pro", Helvetica, Arial, sans-serif;
+$text-color: 						$gray-darker;
+
+$font-size-base:          16px;
+$font-size-lead:          floor(($font-size-base * 1.5)); // ~20px
+$font-size-large: 				floor(($font-size-base * 1.125)); // ~18px
+$font-size-small: 				floor(($font-size-base * 0.875)); // ~14px
+$font-size-xs:         		floor(($font-size-base * 0.75)); // ~12px
+$font-size-h1:            floor(($font-size-base * 3.8)); // ~56px
+$font-size-h2:            floor(($font-size-base * 3)); // ~48px
+$font-size-h3:            floor(($font-size-base * 2.25)); // ~36px
+$font-size-h4:            floor(($font-size-base * 1.5)); // ~24px
+$font-size-h5:            $font-size-large; // ~18px
+$font-size-h6:            $font-size-base; // ~16px
+
+$headings-color:	 				$gray-dark;
+
+$font-weight-h1:          600;
+$font-weight-h2:          600;
+$font-weight-h3:          600;
+$font-weight-h4:          600;
+$font-weight-h5:          600;
+$font-weight-h6:          600;
+
+$font-style-h1:          normal;
+$font-style-h2:          normal;
+$font-style-h3:          normal;
+$font-style-h4:          normal;
+$font-style-h5:          normal;
+$font-style-h6:          normal;
+
+$text-transform-h1:      none;
+$text-transform-h2:      none;
+$text-transform-h3:      none;
+$text-transform-h4:      none;
+$text-transform-h5:      none;
+$text-transform-h6:      none;
+
+$quote-font-size: 				$font-size-lead;
+$quote-text-transform: 		none;
+$quote-font-weight: 			600;
+$quote-font-style: 				italic;
+$quote-font-color:				$gray-darker;
+$quote-bg-color: 					$primary-bg;
+$quote-author-font-color: $gray-light;
+$quote-share-btn-size: 		48px;
+$quote-share-font-size: 	24px;
+$quote-share-btn-bg: 			#55acee;
+$quote-share-btn-color: 	#fff;
+
+$line-height-base:        1.5	;
+$headings-line-height:   	1.3;
+$line-height-computed:    ceil(($font-size-base * $line-height-base)); // ~24px
+
+$link-color: 							$brand-primary;
+$link-hover-color: 				darken($brand-primary, 15%);
+
+$text-gray: 							$gray;
+$text-muted: 							$gray-light;
+
+$hr-border: 							$gray-lighter;
+
+
+//== Forms
+//
+$input-height:								48px;
+$input-sm-height:							38px;
+$input-font-size: 						$font-size-base;
+$input-sm-font-size: 					$font-size-small;
+$input-bg: 										#f2f2f2;;
+$input-focus-bg: 							#fff;
+$input-color: 								$gray-dark;
+$input-border-color: 					#fff;
+$input-color-placeholder: 		$gray;
+$checkbox-radio-color: 				$brand-default;
+$checkbox-radio-border-color: $brand-primary;
+$checkbox-radio-label-color:  $gray-dark;
+$disabled-color: 							darken($gray-lighter, 10%);
+
+
+//== Buttons
+//
+$switcher-color:							$brand-primary;
+
+
+//== Buttons
+//
+
+$btn-font-size: 							$font-size-xs;
+$btn-sm-font-size: 						$font-size-xs; // 12px;
+$btn-font-weight: 						400;
+$btn-font-color: 							#fff;
+
+$btn-height: 									48px;
+$btn-sm-height: 							36px;
+
+$btn-default-bg: 							$brand-default;
+$btn-primary-bg: 							$brand-primary;
+$btn-success-bg: 							$brand-success;
+$btn-info-bg: 								$brand-info;
+$btn-warning-bg: 							$brand-warning;
+$btn-danger-bg: 							$brand-danger;
+$btn-light-bg: 								#fff;
+
+$btn-3d-font-size:		 				$font-size-xs; //12px;
+$btn-3d-border-radius: 				6px;
+
+$scroll-top-btn-size: 				48px;
+$scroll-top-btn-color: 				$brand-primary;
+$scroll-top-btn-bg: 					$body-bg;
+$scroll-top-btn-border: 			none;
+$scroll-top-btn-hover-color: 	$brand-primary;
+$scroll-top-btn-hover-bg:			#fff;
+
+$market-btn-appstore-bg: 			#454545;
+$market-btn-google-bg: 				#f4b400;
+$market-btn-windows-bg: 			#00bcf2;
+
+
+//== Modals
+//
+
+$zindex-modal: 								1800;
+$zindex-modal-background: 		1700;
+$modal-width: 								410px;
+$modal-content-bg: 						#fff;
+$modal-backdrop-bg: 					$brand-default;
+$modal-backdrop-opacity:			.9;
+
+
+//== Social Buttons
+//
+
+$social-btn-size: 						36px;
+$social-bar-zindex: 					$zindex-modal - 50;
+
+
+//== Tables
+//
+
+$table-border-color: 					$hr-border;
+$table-dark-border-color: 		$gray;
+$table-cell-padding:					14px 15px;
+$table-bg-accent: 						$gray-bg;
+$table-author-ava-size:				40px;
+
+
+//== Widgets
+//
+
+$widget-border: 										1px solid $gray-lighter;
+$widget-title-font-size: 						$font-size-base;
+$widget-title-color: 								$gray-light;
+$widget-title-icon-font-size: 			$font-size-base;
+$widget-title-icon-color: 					$brand-default;
+
+$widget-link-font-size: 						$font-size-small; // 14px;
+$widget-link-color:									$gray-darker;
+$widget-link-hover-color:						$brand-primary;
+$widget-link-border-color:					$brand-primary;
+$widget-link-hover-bg:							$brand-primary;
+$widget-count-color: 								$gray-light;
+
+$widget-search-height: 							35px;
+$widget-search-bg: 									#fff;
+
+$widget-posts-thumb-width: 					60px;
+$widget-posts-title-font-size: 			$font-size-small;
+
+$widget-tags-font-size: 						$font-size-small;
+$widget-tags-height: 								$line-height-computed;
+$widget-tags-color: 								#fff;
+$widget-tags-bg: 										$brand-primary;
+$widget-tags-hover-bg:							darken($widget-tags-bg, 10%);
+
+
+//== Navbar / Logo
+//
+
+$navbar-zindex: 								$zindex-modal - 100;
+$navbar-bg: 										transparent;
+$navbar-tool-btn-size: 					$btn-sm-height;
+$navbar-tool-btn-color: 				$brand-default;
+$navbar-tool-btn-hover-color: 	$brand-primary;
+
+$logo-width: 							      147px;
+
+$navi-border: 							    1px solid $hr-border;
+$navi-bg: 									    #fff;
+$navi-link-font-size: 			    $font-size-xs; // 12px;
+$navi-link-color: 					    $text-color;
+$navi-link-icon-size: 			    47px;
+$navi-link-hover-bg: 				    transparent;
+$navi-link-hover-color: 		    $brand-primary;
+
+$submenu-width: 						    265px;
+$megamenu-width: 						    100%;
+$mega-menu-top-margin: 					-27px;
+$submenu-bg: 								    #fff;
+$submenu-link-font-size: 		    $font-size-small; // 12px;
+$submenu-link-color:				    $brand-default;
+$submenu-link-border-color:	    transparent;
+$submenu-link-hover:				    $brand-primary;
+
+$navi-toggle-width: 				    36px;
+$navi-toggle-height: 		    		47px;
+$navi-toggle-color:     				$brand-default;
+
+
+//== Page Title / Breadcrumbs
+//
+
+$page-title-bg:   						  lighten($gray-lighter, 10%);
+$page-title-color:					 	  $gray;
+
+
+//== Block Title / Breadcrumbs
+//
+
+$small-color:					 	  			$brand-success;
+
+//== Sidebar
+//
+
+$sidebar-max-width: 					  300px;
+
+
+//== Tabs
+//
+
+$nav-tabs-font-size:								$font-size-xs;
+$nav-tabs-icon-size:								36px;
+$nav-tabs-link-color: 							$brand-primary;
+$nav-tabs-link-hover-color: 				$brand-primary;
+$nav-tabs-border-color:       			$gray-lighter;
+$nav-tabs-link-active-border-color: $brand-primary;
+
+
+//== Filters
+//
+
+$nav-filters-color: 				$brand-default;
+$nav-filters-border-color:  $nav-filters-color;
+$nav-filters-bg: 						$nav-filters-color;
+
+
+//== Panels and Accordions
+//
+
+$panel-heading-font-size:  	$font-size-base;
+$panel-heading-font-color:  $text-color;
+$panel-default-border: 			$gray-lighter;
+$panel-hover-border: 			  $brand-primary;
+
+
+// == Shortcodes
+//
+
+// Box with icon
+$bwi-max-width: 								380px;
+$bwi-bg: 												transparent;
+$bwi-icon-width: 								60px;
+
+// Image Box
+$image-box-max-width: 					300px;
+$image-box-border-hover-color: 	$brand-primary;
+
+// Testimonials
+$testimonial-max-width:					700px;
+$testimonial-bg: 								transparent;
+$testimonial-boxed-bg: 					lighten($gray-lighter, 8%);
+$testimonial-author-ava-size:		48px;
+
+// Pricing Plans
+$pricing-max-width: 						400px;
+$pricing-border-color: 					lighten($gray-lighter, 6%);
+$pricing-icon-size: 						68px;
+
+// Full Width Sections
+$fw-section-overlay-color:   			$gray-dark;
+$fw-section-overlay-light-color:  #fff;
+$fw-section-border-color:   			$gray-lighter;
+
+// Video Popup Button
+$video-popup-btn-size: 					150px;
+$video-popup-btn-sm-size: 			84px;
+
+// Progress Bars
+$pb-height: 						24px;
+$pb-thin-height: 				12px;
+$pb-font-size: 					$font-size-small;
+$pb-bg: 								$gray-lighter;
+
+// Logo Carousel
+$logo-carousel-item-width: 			170px;
+
+// Team
+$teamate-max-width: 						300px;
+
+// Countdown
+$countdown-item-max-width: 			170px;
+
+// Counters (Animated Digits)
+$counter-max-width: 						400px;
+$counter-icon-width: 						60px;
+
+// Video Tile
+$video-tile-max-width: 					300px;
+$video-tile-btn-size: 					120px;
+
+
+//== Tooltips
+//
+
+$tooltip-opacity:    		1;
+$tooltip-max-width:  		200px;
+$tooltip-bg: 				 		$gray-darker;
+$tooltip-arrow-color: 	$tooltip-bg;
+
+
+//== Comments
+//
+
+$comment-author-ava-size: 	70px;
+
+
+// Maps
+//##
+
+//@map-collapse-max-height:    					600px;
+$map-collapse-toggle-height: 					48px;
+$map-collapse-toggle-color: 					#fff;
+$map-collapse-toggle-bg: 							$brand-primary;
+$map-collapse-toggle-opacity:   			.55;
+$map-collapse-toggle-hover-opacity:   .9;
+$map-info-box-bg: 										#fff;
+$map-info-box-opacity: 								.9;
+
+
+//== Footer
+//
+
+$footer-light-bg: 								transparent;
+$footer-dark-bg: 									#111f2b;
+$footer-border: 									1px solid $gray-lighter;
+$footer-subscribe-bg:							$default-bg;
+$footer-subscribe-btn-size: 			36px;
+$footer-subscribe-btn-icon-size:	$font-size-base;
+$footer-subscribe-btn-color: 			#fff;
+$footer-subscribe-btn-bg: 				$brand-primary;
+$footer-subscribe-btn-hover-bg: 	darken($brand-primary, 10%);
+$footer-copyright-font-size:			$font-size-small;
+
+
+//== Posts
+//
+
+$post-tile-bg: 												#fff;
+$post-tile-border: 										none;
+$post-title-font-size: 								$font-size-h3;
+$post-meta-font-size: 								$font-size-small;
+$post-meta-color: 										$gray-light;
+$post-meta-icon-color: 								$link-hover-color;
+$post-meta-icon-size: 								floor($font-size-base * 0.6875); // 11px
+$post-meta-background-color:          $brand-primary;
+$post-pagination-color: 							$brand-primary;
+
+
+//== Carousel
+//
+
+$carousel-navs-size: 			36px;
+$carousel-navs-color: 		$brand-primary;
+$carousel-dots-size: 			12px;
+$carousel-dots-color: 		$brand-default;
+$carousel-dots-opacity: 	.3;
+
+// Gallery
+$gallery-overlay-color: 				$brand-primary;
+$gallery-overlay-saturation: 		.5;
+
+//== Media queries (responsive breackpoints)
+//## Descktop, Tablet, Mobile
+
+$desktop:   		   "screen and (max-width: 1200px)";
+$tablet-land:      "screen and (max-width: 991px)";
+$tablet-port:    	 "screen and (max-width: 768px)";
+$mobile-land:		 	 "screen and (max-width: 480px)";
+$mobile-port:		 	 "screen and (max-width: 360px)";
+$nav-collapse: 		 $tablet-land;
+$top-bar-hide: 		 $tablet-land;

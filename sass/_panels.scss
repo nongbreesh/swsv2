@@ -1,0 +1,148 @@
+//
+// Panels & Accordions
+// --------------------------------------------------
+
+
+// Base class
+.panel {
+  margin-bottom: ($line-height-computed / 2);
+  background-color: $body-bg;
+  border: none;
+  border-radius: 0;
+  > .panel-heading { background: none; }
+}
+
+// Panel contents
+.panel-body {
+  padding: 20px $line-height-computed 25px $line-height-computed;
+  border: 1px solid $panel-default-border;
+  border-top: none;
+  @include clearfix;
+}
+
+// Optional heading
+.panel-heading {
+  border-bottom: 0;
+  border-radius: 0;
+  padding: 0;
+  border: 1px solid $panel-default-border;
+  @include transition(all .25s);
+  .panel-title {
+    display: block;
+    font-size: $panel-heading-font-size;
+    font-weight: 600;
+    margin: 0;
+    padding: 15px $line-height-computed;
+    border-radius: 0;
+    @include transition(all .25s);
+  }
+  .panel-title:not(a) {
+    padding: 15px $line-height-computed;
+    color: $text-color !important;
+    background-color: transparent !important;
+  }
+  > a {
+    position: relative;
+    color: $panel-heading-font-color;
+    padding: 14px 30px 14px 0;
+    text-decoration: none;
+    border: none;
+    &:before {
+      position: absolute;
+      display: block;
+      font-family: "FontAwesome";
+      content: "\f0d7";
+      top: 50%;
+      right: $line-height-computed;
+      margin-top: -12px;
+      font-weight: normal;
+      @include transform(rotate(0deg));
+      @include transition(transform .3s);
+    }
+    &.collapsed:before {
+      @include transform(rotate(-180deg));
+    }
+    &:hover {
+      background-color: $brand-primary;
+      color: #fff;
+    }
+  }
+}
+
+// Collapsable panels (aka, accordion)
+.panel-group {
+
+  // Tighten up margin so it's only between panels
+  .panel {
+    margin-bottom: 0;
+    border-radius: 0;
+    border-top: 0;
+    border-bottom: 0;
+
+    + .panel {
+      margin-top: 0;
+      .panel-heading {
+        border-top: none;
+      }
+    }
+    .panel-collapse {
+       padding: 0; 
+    }
+    .panel-body {
+      padding: 12px $line-height-computed 30px;
+    }
+  }
+
+  .panel-heading {
+    border-bottom: 0;
+    > .panel-title {
+      border-bottom: 1px solid $panel-default-border;
+    }
+
+    + .panel-collapse {
+      > .panel-body {
+        border-top: 0;
+        border-bottom: 1px solid $panel-default-border;
+      }
+    }
+  }
+}
+
+// Component Animation
+.collapse {
+  display: none;
+  &.in { display: block; }
+}
+.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  @include transition(height .35s ease, visibility .35s ease);
+}
+
+// Panel colors
+.panel {
+  &.panel-default {
+    @include panel-variant($brand-default);
+  }
+  &.panel-primary {
+    @include panel-variant($brand-primary);
+  }
+  &.panel-success {
+    @include panel-variant($brand-success);
+  }
+  &.panel-info {
+    @include panel-variant($brand-info);
+  }
+  &.panel-warning {
+    @include panel-variant($brand-warning);
+  }
+  &.panel-danger {
+    @include panel-variant($brand-danger);
+  }
+}
+
+
+
+
+
