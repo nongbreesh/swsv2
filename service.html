@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>ServeWellSolution &#8211; บริการรับทำเว็บไซต์ | รับดูแลระบบ &#8211; บริการรับทำเว็บไซต์ | รับดูแลระบบ</title>
+
+    <!--SEO Meta Tags-->
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <meta name="author" content="8Guild"/>
+
+    <!--Mobile Specific Meta Tag-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- All Theme Styles including Bootstrap, FontAwesome, etc. compiled from styles.scss-->
+    <link href="css/styles.min.css" rel="stylesheet" media="screen">
+
+    <!--Google Maps API-->
+    <script type="text/javascript"
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5DLwPPVAz88_k0yO2nmFe7T9k1urQs84"></script>
+
+
+    <!--Modernizr / Detectizr-->
+    <script src="js/vendor/modernizr.custom.js"></script>
+    <script src="js/vendor/detectizr.min.js"></script>
+
+    <style>
+        .block-title small {
+            display: block;
+            font-size: 16px;
+            color: #ff8f2b;
+            line-height: 1.5;
+            font-style: italic;
+            max-width: 585px;
+            margin-top: 5px;
+        }
+
+        .pricing-plans.pricing-animated {
+            background-color: #ff922f;
+            position: relative;
+            z-index: 10;
+            margin: 0;
+            border: none;
+        }
+    </style>
+
+</head>
+
+<!-- Body -->
+<body class="parallax">
+<div class="preloader-overlay"></div>
+
+<!-- Page Wrapper -->
+<div class="page-wrapper">
+
+    <!-- Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+            <button type="button" class="close-btn" data-dismiss="modal" aria-label="Close"><span
+                    aria-hidden="true">&times;</span></button>
+            <div class="modal-content text-center">
+                <h4>Login With Social Account</h4>
+                <div class="space-bottom-2x">
+                    <a href="#" class="btn google-login">Google<i class="fa fa-google"></i></a>
+                    <a href="#" class="btn twitter-login">Twitter<i class="fa fa-twitter"></i></a>
+                    <a href="#" class="btn facebook-login">Facebook<i class="fa fa-facebook"></i></a>
+                </div>
+                <h4>Or by Email</h4>
+                <form method="post">
+                    <input type="email" class="form-control" placeholder="Email">
+                    <input type="password" class="form-control" placeholder="Password">
+                    <div class="form-group">
+                        <button type="submit" class="btn login-btn btn-default">Login into your account<i
+                                class="icon-head"></i></button>
+                    </div>
+                    <div class="text-left">
+                        <span class="text-sm text-semibold">New to Promo? <a href="#">Sign Up</a></span>
+                    </div>
+                </form><!-- <form> -->
+            </div><!-- .modal-content -->
+        </div><!-- .modal-dialog -->
+    </div><!-- .modal.fade -->
+
+    <!-- Navbar -->
+    <!-- Add class ".navbar-sticky" to make navbar stuck when it hits the top of the page. Another modifier class is: "navbar-fullwidth" to stretch navbar and make it occupy 100% of the page width. The screen width at which navbar collapses can be controlled through the variable "$nav-collapse" in sass/variables.scss -->
+    <header class="navbar navbar-sticky">
+
+        <!-- <div class="topbar" style="background-color: #ccc;">
+          <div class="container">
+            <a href="#" class="btn btn-ghost btn-primary">call us</a>
+            <span class="text"><i class="fa fa-phone"></i> +38 050 111 22 33</span>
+
+            <ul class="social pull-right">
+              <li><a href="#"><i class="fa fa-facebook"></i>Facebook</a></li>
+              <li><a href="#"><i class="fa fa-youtube"></i>Youtube</a></li>
+              <li><a href="#"><i class="fa fa-vk"></i>Vkontakte</a></li>
+              <li><a href="#"><i class="fa fa-tumblr"></i>Tumblr</a></li>
+            </ul>
+          </div>
+        </div> -->
+
+        <!-- Light Skin for Navbar enables by adding .light-skin class. -->
+        <div class="nav-bar-inner light-skin" style="background-color: #1a1a1a;">
+            <div class="container">
+                <a href="index.html" class="site-logo">
+                    <img src="img/logos-main/swslogo1.png" alt="Promo"
+                         style="width: 250px !important; max-width: none !important;">
+                </a><!-- .site-logo -->
+
+                <!-- For alignment navigation use .menu-left-align, .menu-right-align or .menu-center-align class. To get light skin, use .light-skin. -->
+                <nav class="main-navigation menu-right-align" style="background-color: #1a1a1a;">
+                    <div class="stuck-container">
+                        <ul class="menu">
+                            <li class="menu-item">
+                                <a href="index.html">หน้าหลัก</a>
+                            </li>
+                            <!--<li class="menu-item">-->
+                            <!--<a href="#2">ตัวอย่างผลงาน</a>-->
+                            <!--</li>-->
+                            <!--<li class="menu-item">-->
+                                <!--<a href="about.html">เกี่ยวกับเรา</a>-->
+                            <!--</li>-->
+                            <li class="current-menu-item">
+                                <a href="service.html">บริการของเรา</a>
+                            </li>
+                            <li class="menu-item ">
+                                <a href="contact.html">ติดต่อเรา</a>
+                            </li>
+
+                        </ul><!-- .menu -->
+                    </div>
+                </nav><!-- .main-navigation -->
+
+                <!-- Mobile Menu Toggle -->
+                <div class="nav-toggle"><span></span></div>
+            </div>
+        </div>
+    </header><!-- .navbar -->
+    <!-- Page Title -->
+    <!--Add modifier class : "pt-fullwidth" to stretch page title and make it occupy 100% of the page width. -->
+    <section class="page-title space-bottom-3x">
+        <div class="container">
+            <div class="inner">
+                <div class="column">
+                    <div class="title">
+                        <h1>Service</h1>
+                    </div><!-- .title -->
+                </div><!-- .column -->
+
+                <div class="column">
+                    <div class="breadcrumbs">
+                        <a href="index.html">หน้าหลัก</a>
+                        <span class="delimiter"><i class="fa fa-angle-right"></i></span>
+                        <span>Service</span>
+                    </div><!-- .breadcrumbs -->
+                </div><!-- .column -->
+            </div>
+        </div>
+    </section><!-- .page-title -->
+    <main>
+        <div class="container">
+            <h2 class="block-title text-center">
+                Packages
+            </h2>
+
+            <div class="text-center space-bottom-2x">
+                <!-- Nav Tabs -->
+                <ul class="nav-tabs text-center" role="tablist">
+                    <li class="active"><a href="#tab1" role="tab" data-toggle="tab">Mobile application Package</a></li>
+                    <li><a href="#tab2" role="tab" data-toggle="tab">Website Package</a></li>
+                </ul><!-- .nav-tabs -->
+            </div>
+
+            <!-- Tab panes -->
+            <div class="tab-content space-bottom-3x">
+                <div role="tabpanel" class="tab-pane in active" id="tab1">
+                    <div class="row">
+                        <!-- Plan -->
+                        <div class="col-lg-10 col-lg-offset-1 col-md-12">
+                            <div class="pricing-animated-stack-container">
+
+
+                                <div class="pricing-plans pricing-animated pricing-highlighted">
+                                    <div class="pricing-header">
+                                        <h3 class="pricing-title">Basic</h3>
+                                        <div class="cost">เริ่มต้นที่ 20,000.-</div>
+                                        <p>เหมาะสำหรับแอพพลิเคชั่นที่มีการทำงานไม่ซับซ้อน. </p>
+                                    </div>
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="svg-pricing" viewBox="0 0 551 100">
+                                        <g transform="scale(1.4)">
+                                            <path class="layer_01"
+                                                  d="M15,59.19L15 1.88 61.46 18 102.16 0 142.87 18 183.58 0 224.28 18 264.99 0 305.69 18 346.4 0 387.11 18 427.82 0 468.54 18 515 1.88 515 59.18 15 59.19z"
+                                                  style="opacity: .2"/>
+
+                                            <path class="layer_02"
+                                                  d="M51,65.19L51 7.88 97.46 24 138.16 6 178.87 24 219.58 6 260.29 24 300.99 6 341.69 24 382.4 6 423.11 24 463.82 6 504.54 24 551 7.88 551 65.18 51 65.19z"
+                                                  style="opacity: .6"/>
+
+                                            <path class="layer_03"
+                                                  d="M0,88.78L0 31.48 46.46 47.59 87.16 29.59 127.87 47.59 168.58 29.59 209.28 47.59 249.99 29.59 290.69 47.59 331.4 29.59 372.11 47.59 412.82 29.59 453.54 47.59 500 31.48 500 88.77 0 88.78z"
+                                                  style="opacity: 1"/>
+                                        </g>
+                                    </svg>
+
+                                    <ul>
+                                        <li>รองรับ iOS และ Android</li>
+                                        <li>พัฒนาเป็น Hybrid Application</li>
+                                        <li>รองรับหน้าจอ Smartphone และ Tablet</li>
+                                        <li><a href="contact.html"
+                                               class="btn btn-primary text-normal waves-effect waves-light">ติดต่อเรา</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="pricing-plans pricing-animated">
+                                    <div class="pricing-header">
+                                        <h3 class="pricing-title">Advance</h3>
+                                        <div class="cost">เริ่มต้นที่ 50,000.-</div>
+                                        <p>เหมาะสำหรับแอพพลิเคชั่นที่มีความซับซ้อน ต้องการฟังชั่นสำหรับการใช้งานโดยเฉพาะ </p>
+                                    </div>
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="svg-pricing" viewBox="0 0 551 100">
+                                        <g transform="scale(1.4)">
+                                            <path class="layer_01"
+                                                  d="M15,59.19L15 1.88 61.46 18 102.16 0 142.87 18 183.58 0 224.28 18 264.99 0 305.69 18 346.4 0 387.11 18 427.82 0 468.54 18 515 1.88 515 59.18 15 59.19z"
+                                                  style="opacity: .2"/>
+
+                                            <path class="layer_02"
+                                                  d="M51,65.19L51 7.88 97.46 24 138.16 6 178.87 24 219.58 6 260.29 24 300.99 6 341.69 24 382.4 6 423.11 24 463.82 6 504.54 24 551 7.88 551 65.18 51 65.19z"
+                                                  style="opacity: .6"/>
+
+                                            <path class="layer_03"
+                                                  d="M0,88.78L0 31.48 46.46 47.59 87.16 29.59 127.87 47.59 168.58 29.59 209.28 47.59 249.99 29.59 290.69 47.59 331.4 29.59 372.11 47.59 412.82 29.59 453.54 47.59 500 31.48 500 88.77 0 88.78z"
+                                                  style="opacity: 1"/>
+                                        </g>
+                                    </svg>
+
+                                    <ul>
+                                        <li>รองรับ iOS และ Android</li>
+                                        <li>พัฒนาเป็น Native Application</li>
+                                        <li>รองรับหน้าจอ Smartphone และ Tablet</li>
+                                        <li><a href="contact.html"
+                                               class="btn btn-default text-normal waves-effect waves-light">ติดต่อเรา</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="tab2">
+                    <div class="row">
+                        <!-- Plan -->
+                        <div class="col-lg-10 col-lg-offset-1 col-md-12">
+                            <div class="pricing-animated-stack-container">
+                                <div class="pricing-plans pricing-animated">
+                                    <div class="pricing-header">
+                                        <h3 class="pricing-title">Basic</h3>
+                                        <div class="cost">15,900.- </div>
+                                        <p>เหมาะสำหรับธุรกิจขนาดเล็กมีปริมาณข้อมูลไม่มาก แน้นการประชาสัมพันธ์
+                                            ให้ข้อมูลสินค้าและบริการ เปลี่ยนแปลงไม่บ่อย </p>
+                                    </div>
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="svg-pricing" viewBox="0 0 551 100">
+                                        <g transform="scale(1.4)">
+                                            <path class="layer_01"
+                                                  d="M15,59.19L15 1.88 61.46 18 102.16 0 142.87 18 183.58 0 224.28 18 264.99 0 305.69 18 346.4 0 387.11 18 427.82 0 468.54 18 515 1.88 515 59.18 15 59.19z"
+                                                  style="opacity: .2"/>
+
+                                            <path class="layer_02"
+                                                  d="M51,65.19L51 7.88 97.46 24 138.16 6 178.87 24 219.58 6 260.29 24 300.99 6 341.69 24 382.4 6 423.11 24 463.82 6 504.54 24 551 7.88 551 65.18 51 65.19z"
+                                                  style="opacity: .6"/>
+
+                                            <path class="layer_03"
+                                                  d="M0,88.78L0 31.48 46.46 47.59 87.16 29.59 127.87 47.59 168.58 29.59 209.28 47.59 249.99 29.59 290.69 47.59 331.4 29.59 372.11 47.59 412.82 29.59 453.54 47.59 500 31.48 500 88.77 0 88.78z"
+                                                  style="opacity: 1"/>
+                                        </g>
+                                    </svg>
+
+                                    <ul>
+                                        <li>ออกแบบเว็บไซต์ จำนวนไม่เกิน 5 หน้า</li>
+                                        <li> HTML,CSS,JS</li>
+                                        <li> RESPONSIVE DESIGN</li>
+                                        <li><strong> DOMAIN ฟรี 1 ปี</strong></li>
+                                        <li><strong>HOST ฟรี 1 ปี</strong></li>
+                                        <li><a href="contact.html"
+                                               class="btn btn-default text-normal waves-effect waves-light">ติดต่อเรา</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="pricing-plans pricing-animated pricing-highlighted">
+                                    <div class="pricing-header">
+                                        <h3 class="pricing-title">Company</h3>
+                                        <div class="cost">25,900.-</div>
+                                        <p>เหมาะสำหรับธุรกิจขนาดกลางนำเสอนสินค้าและบริการ ประชาสัมพันธ์ มีข้อมูลบริมาณมาก มีการปรับเปลี่ยนข้อมูลบ่อยๆ</p>
+                                    </div>
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="svg-pricing" viewBox="0 0 551 100">
+                                        <g transform="scale(1.4)">
+                                            <path class="layer_01"
+                                                  d="M15,59.19L15 1.88 61.46 18 102.16 0 142.87 18 183.58 0 224.28 18 264.99 0 305.69 18 346.4 0 387.11 18 427.82 0 468.54 18 515 1.88 515 59.18 15 59.19z"
+                                                  style="opacity: .2"/>
+
+                                            <path class="layer_02"
+                                                  d="M51,65.19L51 7.88 97.46 24 138.16 6 178.87 24 219.58 6 260.29 24 300.99 6 341.69 24 382.4 6 423.11 24 463.82 6 504.54 24 551 7.88 551 65.18 51 65.19z"
+                                                  style="opacity: .6"/>
+
+                                            <path class="layer_03"
+                                                  d="M0,88.78L0 31.48 46.46 47.59 87.16 29.59 127.87 47.59 168.58 29.59 209.28 47.59 249.99 29.59 290.69 47.59 331.4 29.59 372.11 47.59 412.82 29.59 453.54 47.59 500 31.48 500 88.77 0 88.78z"
+                                                  style="opacity: 1"/>
+                                        </g>
+                                    </svg>
+
+                                    <ul>
+                                        <li>ออกแบบเว็บไซต์ จำนวนไม่เกิน 12 หน้า</li>
+                                        <li> HTML,CSS,JS</li>
+                                        <li> RESPONSIVE DESIGN</li>
+                                        <li> Content Management System</li>
+                                        <li><strong> DOMAIN ฟรี 1 ปี</strong></li>
+                                        <li><strong>HOST ฟรี 1 ปี</strong></li>
+                                        <li><a href="contact.html"
+                                               class="btn btn-primary text-normal waves-effect waves-light">ติดต่อเรา</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="pricing-plans pricing-animated">
+                                    <div class="pricing-header">
+                                        <h3 class="pricing-title">Advance</h3>
+                                        <div class="cost">ราคาเริ่มต้น 45,000.-</div>
+                                        <p>เป็นเว็บไซต์ที่ถูกเขียนขึ้นเฉพาะทั้ง การออกแบบลูกเล่น และ web application ต่างๆตามความต้องการของคุณ มีความยืดหนุ่นสูง</p>
+                                    </div>
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="svg-pricing" viewBox="0 0 551 100">
+                                        <g transform="scale(1.4)">
+                                            <path class="layer_01"
+                                                  d="M15,59.19L15 1.88 61.46 18 102.16 0 142.87 18 183.58 0 224.28 18 264.99 0 305.69 18 346.4 0 387.11 18 427.82 0 468.54 18 515 1.88 515 59.18 15 59.19z"
+                                                  style="opacity: .2"/>
+
+                                            <path class="layer_02"
+                                                  d="M51,65.19L51 7.88 97.46 24 138.16 6 178.87 24 219.58 6 260.29 24 300.99 6 341.69 24 382.4 6 423.11 24 463.82 6 504.54 24 551 7.88 551 65.18 51 65.19z"
+                                                  style="opacity: .6"/>
+
+                                            <path class="layer_03"
+                                                  d="M0,88.78L0 31.48 46.46 47.59 87.16 29.59 127.87 47.59 168.58 29.59 209.28 47.59 249.99 29.59 290.69 47.59 331.4 29.59 372.11 47.59 412.82 29.59 453.54 47.59 500 31.48 500 88.77 0 88.78z"
+                                                  style="opacity: 1"/>
+                                        </g>
+                                    </svg>
+
+                                    <ul>
+                                        <li>ออกแบบเว็บไซต์ จำนวนไม่เกิน 20 หน้า</li>
+                                        <li> HTML,CSS,JS</li>
+                                        <li> RESPONSIVE DESIGN</li>
+                                        <li> Content Management System</li>
+                                        <li><strong> DOMAIN ฟรี 1 ปี</strong></li>
+                                        <li><strong>HOST ฟรี 1 ปี</strong></li>
+                                        <li><a href="contact.html"
+                                               class="btn btn-default text-normal waves-effect waves-light">ติดต่อเรา</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- .tab-content -->
+
+        </div>
+    </main>
+
+    <!-- Scroll To Top Button -->
+    <a href="#" class="scroll-to-top-btn">
+        <i class="fa fa-angle-up"></i>
+    </a><!-- .scroll-to-top-btn -->
+
+    <!-- Footer -->
+    <footer class="footer dark-skin" style="background-image: url(img/footer/footer_bg.jpg)">
+
+
+        <div class="container">
+            <div class="bottom-footer" style="border: 0px;">
+                <div class="text-center">
+                    <ul class="social list-unstyled list-inline">
+                        <li><a target="_blank" href="https://www.facebook.com/servewellsolution/"><i
+                                class="fa fa-facebook"></i>Facebook</a></li>
+                        <li><a href="#"><i class="fa fa-youtube"></i>Youtube</a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i>Twitter</a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i>Instagram</a></li>
+                    </ul>
+                </div><!-- .column -->
+            </div>
+        </div>
+
+        <div class="copyright">
+            <div class="container">
+                <div class="text-center">
+                    <p>&copy; Copyright ServeWellSolution,.Co.ltd. 2016. </p>
+                </div><!-- .column -->
+            </div>
+        </div><!-- .copyright -->
+
+    </footer><!-- .footer -->
+
+
+</div><!-- .page-wrapper -->
+
+<!-- JavaScript (jQuery) libraries, plugins and custom scripts -->
+<script src="js/vendor/jquery-2.1.4.min.js"></script>
+<script src="js/vendor/jquery.easing.min.js"></script>
+<script src="js/vendor/bootstrap.min.js"></script>
+<script src="js/vendor/pace.min.js"></script>
+<script src="js/vendor/placeholder.js"></script>
+<script src="js/vendor/smoothscroll.js"></script>
+<script src="js/vendor/waypoints.min.js"></script>
+<script src="js/vendor/icheck.min.js"></script>
+<script src="js/vendor/waves.min.js"></script>
+<script src="js/vendor/velocity.min.js"></script>
+<script src="js/vendor/jquery.stellar.min.js"></script>
+<script src="js/vendor/magnific-popup.min.js"></script>
+<script src="js/vendor/owl.carousel.min.js"></script>
+<script src="js/vendor/jquery.spincrement.js"></script>
+<script src="js/vendor/scrollspy.js"></script>
+<script src="js/vendor/scrollreveal.min.js"></script>
+<script src="js/vendor/gmap3.min.js"></script>
+
+
+<!-- RS5.0 Core JS Files -->
+<script src="revolution/js/jquery.themepunch.tools.min.js"></script>
+<script src="revolution/js/jquery.themepunch.revolution.min.js"></script>
+<script src="js/scripts.js"></script>
+
+</body><!-- <body> -->
+
+</html>
