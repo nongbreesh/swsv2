@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 
 <head>
     <meta charset="utf-8">
@@ -28,6 +28,7 @@
     <!--Modernizr / Detectizr-->
     <script src="js/vendor/modernizr.custom.js"></script>
     <script src="js/vendor/detectizr.min.js"></script>
+
 
     <style>
         .block-title small {
@@ -161,29 +162,42 @@
                 <h2 class="block-title text-center">ฝากข้อความหาเราที่ด้านล่าง
                     <small>หรือสามารถติดต่อได้ตามที่อยู่ด้านล่างครับ</small>
                 </h2>
+                <form method="post" id="formcontact">
+                    <div class="row">
+                        <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+                            <textarea name="message" class="form-control space-bottom" rows="6" placeholder="ข้อความ"
+                                      required></textarea>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <input name="fullname" type="text" class="form-control input-sm" placeholder="ชื่อ"
+                                           required>
+                                </div>
+                                <div class="col-sm-4">
+                                    <input name="email" type="email" class="form-control input-sm" placeholder="อีเมลล์"
+                                           required>
+                                </div>
+                                <div class="col-sm-4">
+                                    <input name="tel" type="tel" class="form-control input-sm"
+                                           placeholder="เบอร์ติดต่อกลับ" required>
+                                </div>
 
-                <div class="row">
-                    <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
-                        <textarea class="form-control space-bottom" rows="6" placeholder="ข้อความ"></textarea>
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <input type="text" class="form-control input-sm" placeholder="ชื่อ">
                             </div>
-                            <div class="col-sm-4">
-                                <input type="email" class="form-control input-sm" placeholder="อีเมลล์">
-                            </div>
-                            <div class="col-sm-4">
-                                <input type="tel" class="form-control input-sm" placeholder="เบอร์ติดต่อกลับ">
-                            </div>
+                            <div id="captcha" class="row">
+                                <div class="col-sm-12">
+                                    <div class="g-recaptcha"
+                                         data-sitekey="6LfxhSUTAAAAANJiZqOp7i1yEss-NbZ6tvCQolcG"></div>
+                                </div>
 
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-offset-8 col-sm-4">
-                                <a href="#" class="btn btn-primary waves-effect waves-light btn-block btn-sm">Send</a>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-offset-8 col-sm-4">
+                                            <button class="btn btn-primary waves-effect waves-light btn-block btn-sm">ส่งข้อความ
+                                    </button >
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </form>
             </div><!-- .container -->
         </section>
 
@@ -205,7 +219,7 @@
                                 เลขที่ 1 ชั้น 47 ห้องเลขที่ 4703 <br>
                                 อาคารเอ็มไพร์ ทาวเวอร์ ถ.สาทรใต้ <br>
                                 แขวงยานนาวา เขตสาทร กรุงเทพฯ 10120<br>
-                                <abbr title="Phone">โทร:</abbr> +66(0) 2-119-5188
+                                <abbr title="Phone">โทร:</abbr> 086-364-7397 หรือ 02-119-5188
                                 <div class="social-buttons">
                                     <a href="#" class="cbutton cbutton--effect"><i class="bi-facebook"></i></a>
                                     <a href="#" class="cbutton cbutton--effect"><i class="bi-twitter"></i></a>
@@ -285,6 +299,27 @@
 
 </div><!-- .page-wrapper -->
 
+<div id="modalstatus" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="button-overlay">
+                    <div class="bwi-btn text-center">
+                        <a href="#" class="btn btn-light waves-effect btn-circle"><i class="fe-icon-check"
+                                                                                     style="color: #00c96d; !important;"></i></a>
+                    </div>
+                </div>
+                <p class="text-success  text-center"><strong>Thank you.</strong>เราได้รับข้อความของคุณแล้ว
+                    จะรีบติดต่อกลับทันทีครับ.
+                </p>
+            </div>
+            <div class="modal-footer  text-center">
+                <button type="button" class="btn btn-success" data-dismiss="modal">รับทราบ</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
 <!-- JavaScript (jQuery) libraries, plugins and custom scripts -->
 <script src="js/vendor/jquery-2.1.4.min.js"></script>
 <script src="js/vendor/jquery.easing.min.js"></script>
@@ -303,7 +338,7 @@
 <script src="js/vendor/scrollspy.js"></script>
 <script src="js/vendor/scrollreveal.min.js"></script>
 <script src="js/vendor/gmap3.min.js"></script>
-
+<script src='https://www.google.com/recaptcha/api.js'></script>
 
 <!-- RS5.0 Core JS Files -->
 <script src="revolution/js/jquery.themepunch.tools.min.js"></script>
@@ -324,6 +359,96 @@
 
     ga('create', 'UA-39217117-7', 'auto');
     ga('send', 'pageview');
+
+</script>
+
+<script>
+
+    $(document).ready(function () {
+
+         $("#formcontact").on("submit", function (event) {
+             var googleResponse = jQuery('#g-recaptcha-response').val();
+             if (!googleResponse) {
+                 $('<p style="color:red !important" class=error-captcha"><span class="glyphicon glyphicon-remove " ></span> Please fill up the captcha.</p>" ').insertAfter("#captcha");
+                 return false;
+             } else {
+                 ajaxindicatorstart("กรุณารอสักครู่...");
+                 event.preventDefault();
+                 $.ajax({
+                     type: "POST",
+                     url: "http://www.servewellsolution.com/admin/service/sendcontact",
+                     data: $(this).serialize(),
+                     success: function (response) {
+                         ajaxindicatorstop();
+                         $("#modalstatus").modal("show");
+                         console.log(response);
+                         $("#formcontact")[0].reset();
+
+                     },
+                     error: function (err) {
+                         ajaxindicatorstop();
+                         console.log(err);
+                     }
+                 });
+
+                 return true;
+             }
+
+         });
+    });
+
+
+    function ajaxindicatorstart(text) {
+        if (jQuery('body').find('#resultLoading').attr('id') != 'resultLoading') {
+            jQuery('body').append('<div id="resultLoading" style="display:none"><div><img src="ajax-loader.gif" style="display: inline;"><div>' + text + '</div></div><div class="bg"></div></div>');
+        }
+
+        jQuery('#resultLoading').css({
+            'width': '100%',
+            'height': '100%',
+            'position': 'fixed',
+            'z-index': '10000000',
+            'top': '0',
+            'left': '0',
+            'right': '0',
+            'bottom': '0',
+            'margin': 'auto'
+        });
+
+        jQuery('#resultLoading .bg').css({
+            'background': '#000000',
+            'opacity': '0.7',
+            'width': '100%',
+            'height': '100%',
+            'position': 'absolute',
+            'top': '0'
+        });
+
+        jQuery('#resultLoading>div:first').css({
+            'width': '250px',
+            'height': '75px',
+            'text-align': 'center',
+            'position': 'fixed',
+            'top': '0',
+            'left': '0',
+            'right': '0',
+            'bottom': '0',
+            'margin': 'auto',
+            'font-size': '16px',
+            'z-index': '10',
+            'color': '#ffffff'
+
+        });
+
+        jQuery('#resultLoading .bg').height('100%');
+        jQuery('#resultLoading').fadeIn(300);
+        jQuery('body').css('cursor', 'wait');
+    }
+    function ajaxindicatorstop() {
+        jQuery('#resultLoading .bg').height('100%');
+        jQuery('#resultLoading').fadeOut(300);
+        jQuery('body').css('cursor', 'default');
+    }
 
 </script>
 </body><!-- <body> -->
